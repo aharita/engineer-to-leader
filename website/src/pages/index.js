@@ -1,0 +1,80 @@
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+
+import Heading from '@theme/Heading';
+import styles from './index.module.css';
+
+function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
+        </Heading>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--primary button--lg"
+            to="/docs/module-1">
+            Start Module 1: The Rewire →
+          </Link>
+        </div>
+        <div style={{ marginTop: '2rem', color: 'var(--ifm-color-content-secondary)' }}>
+          <p>Master the identity shift from Senior Engineer to Engineering Leader</p>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function HomepageFeatures() {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--4">
+            <div className="text--center padding-horiz--md">
+              <h3>🎯 Stop Coding. Start Leading.</h3>
+              <p>
+                Learn to let go of individual contribution and embrace your role as a force multiplier.
+              </p>
+            </div>
+          </div>
+          <div className="col col--4">
+            <div className="text--center padding-horiz--md">
+              <h3>📈 Actionable Frameworks</h3>
+              <p>
+                Real-world tactics, scripts, and challenges you can apply immediately in your role.
+              </p>
+            </div>
+          </div>
+          <div className="col col--4">
+            <div className="text--center padding-horiz--md">
+              <h3>⚡ Built for Doers</h3>
+              <p>
+                No theory. No fluff. Just practical guidance for engineers transitioning to leadership.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <Layout
+      title="Home"
+      description="Transform from Individual Contributor to Engineering Leader. Learn the frameworks, scripts, and tactics to succeed as an engineering manager.">
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  );
+}
