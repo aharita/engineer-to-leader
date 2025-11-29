@@ -50,7 +50,6 @@ const config = {
           // Disable edit page links
           editUrl: undefined,
         },
-        blog: false, // Disable blog for now
         theme: {
           customCss: './src/css/custom.css',
         },

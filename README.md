@@ -1,190 +1,78 @@
-# Engineer to Leader
+# Engineer to Leader: A Practical Guide for Senior Software Engineers Transitioning to Management
 
-Transform from Individual Contributor to Engineering Leader.
+A **comprehensive, action-oriented guide** for experienced Senior Software Engineers making the leap to Engineering Manager, with a trajectory toward Senior EM, Director, and VP roles.
 
-## 🚀 Live Site
+**Target Audience:** Senior Engineers who code but now need to lead. No fluff. Just frameworks, scripts, and challenges that work.
 
-- **Local Development**: http://localhost:3000/engineer-to-leader/
-- **Production**: https://aharita.github.io/engineer-to-leader/ (after deployment)
+## What This Course Covers
 
-## 📚 Content
+This is not "Management 101." This is a **practical guide designed for high-performing engineers** who understand systems, trade-offs, and the importance of moving fast.
 
 ### Module 1: The Rewire (Identity Shift)
+Stop coding. Start leading. Learn to shift from Individual Contributor dopamine to Multiplier impact.
+- The Maker vs. Multiplier Metric
+- The "Empty Calendar" Panic
+- The 85% Rule (Delegation)
+- The Heat Shield (Managing Information Flow)
 
-Learn the fundamental identity shift from Senior Engineer to Engineering Manager:
+### Module 2: High-Performance Psychology (People)
+Debug the human element. Master the skills that separate great managers from burnout cases.
+- One-on-Ones: The Anti-Status Update
+- Radical Candor for Introverts
+- Debugging Underperformance (The PIP)
+- Hiring: Culture Add vs. Culture Fit
 
-1. **The Maker vs. Multiplier Metric** - Andy Grove's output equation
-2. **The "Empty Calendar" Panic** - Why conversation is your work
-3. **The 85% Rule** - Learning to delegate and let go
-4. **The Heat Shield** - Filtering organizational chaos
+### Module 3: Operational Excellence (Process)
+Build the machine that builds the product.
+- The "Meetings as API" Philosophy
+- Incident Command for Managers
+- Technical Debt as a Financial Instrument
+- Estimating the Unknown
 
-## 🛠 Development
+### Module 4: Managing Up & Out (Business Strategy)
+The skill gap that separates career Managers from Directors.
+- The Rosetta Stone: Engineering to English
+- Political Capital & Influence
+- Managing Your Manager
+- The Budget: Headcount & AWS
 
-### Prerequisites
+### Module 5: Modern Tech Leadership (The 2025 Manager)
+Specific challenges for the current era of software.
+- Managing AI-Augmented Engineers
+- Remote/Hybrid Culture Building
+- Mental Health First Aid (Burnout Detection)
 
-- Node.js 18+ and npm
+### Module 6: The Director Path (Future Outlook)
+Plant the seeds for the next promotion.
+- Org Design Principles (Conway's Law)
+- Strategy > Tactics
+- Managing Managers (Meta-Management)
 
-### Local Setup
+---
 
-```bash
-# Navigate to website directory
-cd website
+## Access the Course
 
-# Install dependencies (first time only)
-npm install
+**Production**: https://aharita.github.io/engineer-to-leader/
 
-# Start development server
-npm start
+## Course Format
 
-# Open http://localhost:3000/engineer-to-leader/
-```
+Each lesson includes:
+1. **The Hook** (15 seconds) - The problem you're probably facing
+2. **The Framework** - The core mental model or equation
+3. **The Script** - Copy/paste-ready language for real situations
+4. **The Challenge** - One actionable thing to do differently tomorrow
 
-### Build for Production
+## Who Should Take This
 
-```bash
-cd website
-npm run build
-```
+- Senior Software Engineers promoted to or considering an EM role
+- Individual Contributors wanting to understand the management mindset
+- Engineers on the path to Director, VP, or CTO roles
+- Anyone tired of generic "Management 101" content
 
-This creates a `build/` directory with optimized static files.
+## What You'll Learn
 
-## 🚢 Deployment to GitHub Pages
-
-### Option 1: Automated Deploy Command
-
-```bash
-cd website
-GIT_USER=aharita npm run deploy
-```
-
-This will:
-- Build the production bundle
-- Deploy to `gh-pages` branch
-- Make the site live at https://aharita.github.io/engineer-to-leader/
-
-### Option 2: GitHub Actions (Recommended)
-
-1. Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-jobs:
-  deploy:
-    name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
-          cache-dependency-path: website/package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-        working-directory: website
-        
-      - name: Build website
-        run: npm run build
-        working-directory: website
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/build
-```
-
-2. Push to GitHub:
-
-```bash
-git add .
-git commit -m "Add Docusaurus site with Module 1"
-git push origin main
-```
-
-3. Enable GitHub Pages:
-   - Go to repository Settings → Pages
-   - Set source to `gh-pages` branch
-   - Save
-
-Your site will be live at: `https://aharita.github.io/engineer-to-leader/`
-
-## 📁 Project Structure
-
-```
-engineer-to-leader/
-├── _archive_html_version/    # Original HTML version (backup)
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-└── website/                   # Docusaurus site
-    ├── docs/                  # Documentation
-    │   └── module-1/         # Module 1 content
-    │       ├── index.md
-    │       ├── maker-vs-multiplier.md
-    │       ├── empty-calendar.md
-    │       ├── 85-percent-rule.md
-    │       └── heat-shield.md
-    ├── src/
-    │   ├── css/
-    │   │   └── custom.css    # Custom theme
-    │   └── pages/
-    │       └── index.js      # Landing page
-    ├── docusaurus.config.js  # Site configuration
-    ├── sidebars.js           # Sidebar configuration
-    └── package.json
-```
-
-## 🎨 Customization
-
-### Colors
-
-Edit `website/src/css/custom.css` to change the color scheme:
-
-```css
-[data-theme='dark'] {
-  --ifm-color-primary: #a78bfa;  /* Purple */
-  --ifm-background-color: hsl(230, 25%, 8%);  /* Dark blue */
-}
-```
-
-### Adding More Modules
-
-1. Create new directory: `website/docs/module-2/`
-2. Add markdown files
-3. Sidebar updates automatically
-
-## 📖 Documentation
-
-- [Docusaurus Documentation](https://docusaurus.io/docs)
-- [Markdown/MDX Guide](https://docusaurus.io/docs/markdown-features)
-
-## ✅ Ready to Deploy
-
-- ✅ Custom branding applied
-- ✅ All Module 1 content converted
-- ✅ Production build tested and working
-- ✅ GitHub Pages configuration complete
-- ✅ SEO meta tags configured
-- ✅ Responsive design verified
-
-## 🚀 Next Steps
-
-Run the deploy command when ready:
-
-```bash
-cd website
-GIT_USER=aharita npm run deploy
-```
-
-Your site will be live in a few minutes!
+- How to transition from shipping code to enabling your team
+- Real scripts for difficult conversations (feedback, firing, career discussions)
+- How to navigate organizational politics without compromising your values
+- How to speak the language of business without losing technical credibility
+- How to build, scale, and lead high-performing engineering teams
