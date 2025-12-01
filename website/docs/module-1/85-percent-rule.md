@@ -6,7 +6,7 @@ description: Learn to let go of perfection
 
 # 1.3 Trust vs. Micromanagement (The 85% Rule)
 
-## 🎣 The Hook
+## The Hook
 
 **"It would be faster if I just did it myself."**
 
@@ -16,7 +16,7 @@ But if you do it today, you have to do it next week, too. And next month. You ar
 
 ---
 
-## 🧠 The Framework: The 85% Rule
+## The Framework: The 85% Rule
 
 As a Senior Engineer, your standard is 100%. As a Manager, your new standard for delegation is **85%**.
 
@@ -30,7 +30,7 @@ Research shows that most "perfect" solutions aren't actually 15% better than "go
 
 ---
 
-## 📜 The Script
+## The Script
 
 **Scenario:** Reviewing a PR that works, but isn't written exactly how *you* would write it.
 
@@ -44,7 +44,7 @@ Research shows that most "perfect" solutions aren't actually 15% better than "go
 
 ---
 
-## ⚡ The Challenge
+## The Challenge
 
 ### Delegate the Solution, not the Task
 

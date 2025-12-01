@@ -6,7 +6,7 @@ description: Conversation IS the work
 
 # 1.2 The "Empty Calendar" Panic
 
-## 🎣 The Hook
+## The Hook
 
 **"I didn't do any work today. I just talked to people."**
 
@@ -16,7 +16,7 @@ This is the most common thought new managers have at 5:00 PM. You feel guilty be
 
 ---
 
-## 🧠 The Framework: Maker vs. Manager Schedule
+## The Framework: Maker vs. Manager Schedule
 
 - **Maker Schedule (Engineers):** Needs 4-hour blocks of uninterrupted deep work. A single meeting ruins the afternoon.
 - **Manager Schedule (You):** The day is sliced into 30-60 minute slots. You are the router, the API gateway, and the load balancer.
@@ -24,7 +24,7 @@ This is the most common thought new managers have at 5:00 PM. You feel guilty be
 
 ---
 
-## 🛠 The Tactic: Calendar Partitioning
+## The Tactic: Calendar Partitioning
 
 Don't let your calendar become a chaotic Tetris board.
 
@@ -37,7 +37,7 @@ If you don't block out time for strategic thinking, you'll spend 100% of your ti
 
 ---
 
-## ⚡ The Challenge
+## The Challenge
 
 ### The "No" Audit
 

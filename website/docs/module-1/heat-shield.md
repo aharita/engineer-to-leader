@@ -6,7 +6,7 @@ description: Filter chaos without hiding reality
 
 # 1.4 The Shit Umbrella vs. The Heat Shield
 
-## 🎣 The Hook
+## The Hook
 
 **"Should I tell the team about the re-org rumors?"**
 
@@ -17,7 +17,7 @@ New managers often swing to extremes:
 
 ---
 
-## 🧠 The Framework: Be a Heat Shield
+## The Framework: Be a Heat Shield
 
 Don't block information (Umbrella). Don't amplify chaos (Pipe). **Slow it down (Shield).**
 
@@ -31,7 +31,7 @@ When you hide everything, your team loses trust. When the truth eventually comes
 
 ---
 
-## 📜 The Script
+## The Script
 
 **Scenario:** Leadership changes a priority at the last minute. The team is angry.
 
@@ -47,7 +47,7 @@ When you hide everything, your team loses trust. When the truth eventually comes
 
 ---
 
-## ⚡ The Challenge
+## The Challenge
 
 ### Context Injection
 
@@ -74,14 +74,14 @@ Your job is not to protect your team from reality. It's to protect them from bei
 
 ---
 
-## Module 1 Complete! 🎉
+## Module 1 Complete!
 
 You've completed **Module 1: The Rewire**. You now understand:
 
-- ✅ How to shift from Maker to Multiplier mindset
-- ✅ Why meetings are your real work
-- ✅ When to delegate and when to let go
-- ✅ How to filter organizational chaos
+- How to shift from Maker to Multiplier mindset
+- Why meetings are your real work
+- When to delegate and when to let go
+- How to filter organizational chaos
 
 **What's Next?**
 

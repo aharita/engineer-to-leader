@@ -6,7 +6,7 @@ description: Stop maximizing your output. Start maximizing your team's output.
 
 # 1.1 The Maker vs. Multiplier Metric
 
-## 🎣 The Hook
+## The Hook
 
 **You are addicted to the dopamine hit of "Done."**
 
@@ -16,7 +16,7 @@ As a Senior Engineer, your value was measured in Commits, PRs merged, and ticket
 
 ---
 
-## 🧠 The Framework: Andy Grove's Equation
+## The Framework: Andy Grove's Equation
 
 Stop maximizing your own output. Start maximizing the equation from *High Output Management*:
 
@@ -28,7 +28,7 @@ Stop maximizing your own output. Start maximizing the equation from *High Output
 
 ---
 
-## 📜 The Script
+## The Script
 
 **Scenario:** The team asks you to pick up a ticket because "you can do it fastest."
 
@@ -38,7 +38,7 @@ Stop maximizing your own output. Start maximizing the equation from *High Output
 
 ---
 
-## ⚡ The Challenge
+## The Challenge
 
 ### The "Zero Commit" Week
 
