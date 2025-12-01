@@ -19,11 +19,13 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--lg"
             to="/docs/module-1">
-            Start Module 1: The Rewire →
+            Start Senior → Manager Guide →
           </Link>
         </div>
         <div style={{ marginTop: '2rem', color: 'var(--ifm-color-content-secondary)' }}>
-          <p>Master the identity shift from Senior Engineer to Engineering Leader</p>
+          <p style={{ fontSize: '1.2rem', fontWeight: '500' }}>Senior Engineer → Engineering Manager</p>
+          <p style={{ marginTop: '0.5rem' }}>8 modules covering the complete transition from code to leadership</p>
+          <p style={{ marginTop: '1rem', fontSize: '0.9rem', fontStyle: 'italic' }}>Coming soon: Junior → Senior Engineer guide</p>
         </div>
       </div>
     </header>
@@ -34,12 +36,13 @@ function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Senior → Manager: Your Complete Transition Guide</h2>
         <div className="row">
           <div className="col col--4">
             <div className="text--center padding-horiz--md">
               <h3>🎯 Identity to Impact</h3>
               <p>
-                Master the transition from Individual Contributor to Engineering Leader. 8 modules covering everything from delegation to team dynamics.
+                Master the transition from Senior Engineer to Engineering Manager. 8 modules covering everything from delegation to team dynamics.
               </p>
             </div>
           </div>

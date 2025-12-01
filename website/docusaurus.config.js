@@ -75,9 +75,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'seniorSidebar',
             position: 'left',
-            label: 'Modules',
+            label: 'Senior → Manager',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'juniorSidebar',
+            position: 'left',
+            label: 'Junior → Senior',
           },
           {
             href: 'https://github.com/aharita/engineer-to-leader',
@@ -90,11 +96,20 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Modules',
+            title: 'Senior → Manager',
             items: [
               {
                 label: 'Module 1: The Rewire',
-                to: '/docs/module-1',
+                to: '/docs/senior-to-manager/module-1',
+              },
+            ],
+          },
+          {
+            title: 'Junior → Senior',
+            items: [
+              {
+                label: 'Module 1: The Ascent',
+                to: '/docs/junior-to-senior/module-1',
               },
             ],
           },
