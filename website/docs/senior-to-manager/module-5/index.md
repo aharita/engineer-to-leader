@@ -2,7 +2,6 @@
 id: module-5-modern-leadership
 title: "Module 5: Modern Tech Leadership (The 2025 Manager)"
 ---
-
 # Module 5: Modern Tech Leadership (The 2025 Manager)
 
 **Specific challenges for the current era of software.**

@@ -2,7 +2,6 @@
 id: module-5-communication
 title: "Module 5: Communication & Visibility (Loud Work)"
 ---
-
 # Module 5: Communication & Visibility (Loud Work)
 
 **If you do great work in the forest and nobody sees it, you didn't do it.**

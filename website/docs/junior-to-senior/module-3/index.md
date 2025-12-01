@@ -2,7 +2,6 @@
 id: module-3-code-quality
 title: "Module 3: Code Quality & Review (Writing for Humans)"
 ---
-
 # Module 3: Code Quality & Review (Writing for Humans)
 
 **Code is read 10x more than it is written.**

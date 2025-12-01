@@ -2,7 +2,6 @@
 id: module-6-ops
 title: "Module 6: Operational Maturity (Sleeping at Night)"
 ---
-
 # Module 6: Operational Maturity (Sleeping at Night)
 
 **It doesn't matter if the code is clean if the site is down.**

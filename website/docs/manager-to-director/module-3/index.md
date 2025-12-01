@@ -1,9 +1,7 @@
-
 ---
 id: module-3-money
 title: "Module 3: The P&L (Budgeting)"
 ---
-
 # Module 3: The P&L (Budgeting)
 
 **Your code compiles to Money.**

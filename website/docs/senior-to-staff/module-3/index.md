@@ -2,7 +2,6 @@
 id: module-3-strategy
 title: "Module 3: Technical Strategy (The Long Game)"
 ---
-
 # Module 3: Technical Strategy (The Long Game)
 
 **Code is tactical. Strategy is logistical.**

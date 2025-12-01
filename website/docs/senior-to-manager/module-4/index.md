@@ -2,7 +2,6 @@
 id: module-4-strategy
 title: "Module 4: Managing Up & Out (Business Strategy)"
 ---
-
 # Module 4: Managing Up & Out (Business Strategy)
 
 **The skill gap that separates career Managers from Directors.**

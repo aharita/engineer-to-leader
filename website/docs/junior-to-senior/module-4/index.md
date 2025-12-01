@@ -2,7 +2,6 @@
 id: module-4-system-design
 title: "Module 4: System Design Basics (Thinking in Boxes)"
 ---
-
 # Module 4: System Design Basics (Thinking in Boxes)
 
 **Stop seeing lines of code. Start seeing boxes and arrows.**

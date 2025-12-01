@@ -2,7 +2,6 @@
 id: module-3-process
 title: "Module 3: Operational Excellence (Process)"
 ---
-
 # Module 3: Operational Excellence (Process)
 
 **Build the machine that builds the product.**

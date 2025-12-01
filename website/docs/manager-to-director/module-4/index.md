@@ -1,9 +1,7 @@
-
 ---
 id: module-4-hiring
 title: "Module 4: The Hiring Machine (Talent Acquisition)"
 ---
-
 # Module 4: The Hiring Machine (Talent Acquisition)
 
 **Hiring isn't an event. It's a pipeline.**

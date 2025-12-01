@@ -2,7 +2,6 @@
 id: module-2-writing
 title: "Module 2: Writing is Engineering (The RFC)"
 ---
-
 # Module 2: Writing is Engineering (The RFC)
 
 **The compiler for Staff Engineers is Google Docs.**

@@ -1,9 +1,7 @@
-
 ---
 id: module-5-performance
 title: "Module 5: Performance at Scale (The Bell Curve)"
 ---
-
 # Module 5: Performance at Scale (The Bell Curve)
 
 **You are the Judge, Jury, and Executioner.**

@@ -2,7 +2,6 @@
 id: module-8-team-os
 title: "Module 8: The Team Operating System (Group Dynamics)"
 ---
-
 # Module 8: The Team Operating System (Group Dynamics)
 
 **You manage individuals, but you lead a Team. Designing the collective brain.**

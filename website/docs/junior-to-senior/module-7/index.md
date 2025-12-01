@@ -2,7 +2,6 @@
 id: module-7-mentoring
 title: "Module 7: Mentoring & Onboarding (The Multiplier Effect)"
 ---
-
 # Module 7: Mentoring & Onboarding (The Multiplier Effect)
 
 **A Senior Engineer is a force multiplier.**

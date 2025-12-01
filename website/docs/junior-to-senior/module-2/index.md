@@ -2,7 +2,6 @@
 id: module-2-independence
 title: "Module 2: Technical Independence (The 'Unstuck' Framework)"
 ---
-
 # Module 2: Technical Independence (The "Unstuck" Framework)
 
 **Stop asking for fish. Learn how to fish.**

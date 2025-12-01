@@ -1,9 +1,7 @@
-
 ---
 id: module-1-meta-management
 title: "Module 1: Meta-Management (Managing Managers)"
 ---
-
 # Module 1: Meta-Management (Managing Managers)
 
 **You are now one step removed from reality. It is terrifying.**

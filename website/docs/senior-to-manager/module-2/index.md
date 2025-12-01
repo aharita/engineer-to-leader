@@ -2,7 +2,6 @@
 id: module-2-psychology
 title: "Module 2: High-Performance Psychology (People)"
 ---
-
 # Module 2: High-Performance Psychology (People)
 
 **Debug the human element.**

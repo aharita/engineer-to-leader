@@ -2,7 +2,6 @@
 id: module-1-scope
 title: "Module 1: The Scope Shift (Solves-via-Others)"
 ---
-
 # Module 1: The Scope Shift (Solves-via-Others)
 
 **You are no longer a code machine. You are a force multiplier.**

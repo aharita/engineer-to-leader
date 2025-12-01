@@ -1,9 +1,7 @@
-
 ---
 id: module-7-politics
 title: "Module 7: Executive Presence (Politics)"
 ---
-
 # Module 7: Executive Presence (Politics)
 
 **Politics is just "Human Engineering" at scale.**

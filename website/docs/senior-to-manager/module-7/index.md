@@ -2,7 +2,6 @@
 id: module-7-calibration
 title: "Module 7: The Calibration Room (Career Mechanics)"
 ---
-
 # Module 7: The Calibration Room (Career Mechanics)
 
 **The dark arts of the corporation. The administrative machinery most new managers fear.**

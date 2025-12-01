@@ -2,7 +2,6 @@
 id: module-4-architecture
 title: "Module 4: Architectural Thinking (The 'Buy' Button)"
 ---
-
 # Module 4: Architectural Thinking (The "Buy" Button)
 
 **Building less to achieve more.**

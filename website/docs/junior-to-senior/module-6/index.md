@@ -2,7 +2,6 @@
 id: module-6-ownership
 title: "Module 6: Ownership & Accountability (The 'Bus Factor')"
 ---
-
 # Module 6: Ownership & Accountability (The "Bus Factor")
 
 **You built it. You run it. You fix it.**

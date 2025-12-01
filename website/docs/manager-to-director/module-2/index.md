@@ -1,9 +1,7 @@
-
 ---
 id: module-2-org-design
 title: "Module 2: Org Design (Conway's Architect)"
 ---
-
 # Module 2: Org Design (Conway's Architect)
 
 **The Org Chart is the Codebase.**

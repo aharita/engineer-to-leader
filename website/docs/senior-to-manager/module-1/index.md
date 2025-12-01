@@ -2,7 +2,6 @@
 id: module-1-rewire
 title: "Module 1: The Rewire (Identity Shift)"
 ---
-
 # Module 1: The Rewire (Identity Shift)
 
 **Stop coding. Start leading.**

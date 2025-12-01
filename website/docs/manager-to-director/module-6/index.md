@@ -1,9 +1,7 @@
-
 ---
 id: module-6-strategy
 title: "Module 6: Strategy & Vision (The North Star)"
 ---
-
 # Module 6: Strategy & Vision (The North Star)
 
 **Managers look at next week. Directors look at next year.**

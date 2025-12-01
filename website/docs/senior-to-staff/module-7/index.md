@@ -2,7 +2,6 @@
 id: module-7-glue
 title: "Module 7: Glue Work (The Janitor)"
 ---
-
 # Module 7: Glue Work (The Janitor)
 
 **Doing the unglamorous work that keeps the ship afloat.**

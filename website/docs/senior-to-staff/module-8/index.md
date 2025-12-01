@@ -2,7 +2,6 @@
 id: module-8-promotion
 title: "Module 8: The Staff-Level Gap (Career Game)"
 ---
-
 # Module 8: The Staff-Level Gap (Career Game)
 
 **The hardest promotion in tech.**

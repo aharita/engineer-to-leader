@@ -1,9 +1,7 @@
-
 ---
 id: module-8-culture
 title: "Module 8: Culture as an OS (Shadow of the Leader)"
 ---
-
 # Module 8: Culture as an OS (Shadow of the Leader)
 
 **Culture is what happens when you leave the room.**

@@ -2,7 +2,6 @@
 id: module-1-mindset
 title: "Module 1: The Mindset Shift (From 'How' to 'Why')"
 ---
-
 # Module 1: The Mindset Shift (From "How" to "Why")
 
 **Stop coding blindly. Start solving problems.**

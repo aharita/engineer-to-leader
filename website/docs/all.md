@@ -11,7 +11,6 @@
 id: module-1-mindset
 title: "Module 1: The Mindset Shift (From 'How' to 'Why')"
 ---
-
 # Module 1: The Mindset Shift (From "How" to "Why")
 
 **Stop coding blindly. Start solving problems.**
@@ -139,7 +138,6 @@ Welcome to the big leagues.
 id: module-2-independence
 title: "Module 2: Technical Independence (The 'Unstuck' Framework)"
 ---
-
 # Module 2: Technical Independence (The "Unstuck" Framework)
 
 **Stop asking for fish. Learn how to fish.**
@@ -265,7 +263,6 @@ Independence is earned by proving you can handle the unknown.
 id: module-3-code-quality
 title: "Module 3: Code Quality & Review (Writing for Humans)"
 ---
-
 # Module 3: Code Quality & Review (Writing for Humans)
 
 **Code is read 10x more than it is written.**
@@ -387,7 +384,6 @@ Quality is what happens when you care.
 id: module-4-system-design
 title: "Module 4: System Design Basics (Thinking in Boxes)"
 ---
-
 # Module 4: System Design Basics (Thinking in Boxes)
 
 **Stop seeing lines of code. Start seeing boxes and arrows.**
@@ -514,7 +510,6 @@ System design is the art of managing complexity.
 id: module-5-communication
 title: "Module 5: Communication & Visibility (Loud Work)"
 ---
-
 # Module 5: Communication & Visibility (Loud Work)
 
 **If you do great work in the forest and nobody sees it, you didn't do it.**
@@ -633,7 +628,6 @@ Communication is the API for your career.
 id: module-6-ownership
 title: "Module 6: Ownership & Accountability (The 'Bus Factor')"
 ---
-
 # Module 6: Ownership & Accountability (The "Bus Factor")
 
 **You built it. You run it. You fix it.**
@@ -767,7 +761,6 @@ Ownership is the price of autonomy.
 id: module-7-mentoring
 title: "Module 7: Mentoring & Onboarding (The Multiplier Effect)"
 ---
-
 # Module 7: Mentoring & Onboarding (The Multiplier Effect)
 
 **A Senior Engineer is a force multiplier.**
@@ -887,7 +880,6 @@ You rise by lifting others.
 id: module-8-career
 title: "Module 8: Career Navigation (The Promotion Game)"
 ---
-
 # Module 8: Career Navigation (The Promotion Game)
 
 **Hope is not a strategy.**
@@ -1009,12 +1001,10 @@ You are the CEO of your own career. Good luck.
 
 # Source: manager-to-director/module-1/index.md
 
-
 ---
 id: module-1-meta-management
 title: "Module 1: Meta-Management (Managing Managers)"
 ---
-
 # Module 1: Meta-Management (Managing Managers)
 
 **You are now one step removed from reality. It is terrifying.**
@@ -1090,12 +1080,10 @@ Do you force them to align?
 
 # Source: manager-to-director/module-2/index.md
 
-
 ---
 id: module-2-org-design
 title: "Module 2: Org Design (Conway's Architect)"
 ---
-
 # Module 2: Org Design (Conway's Architect)
 
 **The Org Chart is the Codebase.**
@@ -1148,12 +1136,10 @@ Create "Platform" teams that treat the Squads as customers.
 
 # Source: manager-to-director/module-3/index.md
 
-
 ---
 id: module-3-money
 title: "Module 3: The P&L (Budgeting)"
 ---
-
 # Module 3: The P&L (Budgeting)
 
 **Your code compiles to Money.**
@@ -1206,12 +1192,10 @@ If you let it grow unchecked, you are burning the company's runway. AWS Sales Re
 
 # Source: manager-to-director/module-4/index.md
 
-
 ---
 id: module-4-hiring
 title: "Module 4: The Hiring Machine (Talent Acquisition)"
 ---
-
 # Module 4: The Hiring Machine (Talent Acquisition)
 
 **Hiring isn't an event. It's a pipeline.**
@@ -1261,12 +1245,10 @@ You are competing with Google and OpenAI. You can't beat their salaries. You mus
 
 # Source: manager-to-director/module-5/index.md
 
-
 ---
 id: module-5-performance
 title: "Module 5: Performance at Scale (The Bell Curve)"
 ---
-
 # Module 5: Performance at Scale (The Bell Curve)
 
 **You are the Judge, Jury, and Executioner.**
@@ -1318,12 +1300,10 @@ Do not blame HR. Do not blame the CEO. You must lead through the valley of death
 
 # Source: manager-to-director/module-6/index.md
 
-
 ---
 id: module-6-strategy
 title: "Module 6: Strategy & Vision (The North Star)"
 ---
-
 # Module 6: Strategy & Vision (The North Star)
 
 **Managers look at next week. Directors look at next year.**
@@ -1375,12 +1355,10 @@ You don't pick the libraries, but you pick the direction.
 
 # Source: manager-to-director/module-7/index.md
 
-
 ---
 id: module-7-politics
 title: "Module 7: Executive Presence (Politics)"
 ---
-
 # Module 7: Executive Presence (Politics)
 
 **Politics is just "Human Engineering" at scale.**
@@ -1434,12 +1412,10 @@ You are the diplomat. You are the only thing stopping Sales from promising a "Ti
 
 # Source: manager-to-director/module-8/index.md
 
-
 ---
 id: module-8-culture
 title: "Module 8: Culture as an OS (Shadow of the Leader)"
 ---
-
 # Module 8: Culture as an OS (Shadow of the Leader)
 
 **Culture is what happens when you leave the room.**
@@ -1512,7 +1488,6 @@ Welcome to the Executive level. It’s lonely, stressful, and impactful.
 id: module-1-rewire
 title: "Module 1: The Rewire (Identity Shift)"
 ---
-
 # Module 1: The Rewire (Identity Shift)
 
 **Stop coding. Start leading.**
@@ -1622,7 +1597,6 @@ Welcome to management. The code you write now is people.
 id: module-2-psychology
 title: "Module 2: High-Performance Psychology (People)"
 ---
-
 # Module 2: High-Performance Psychology (People)
 
 **Debug the human element.**
@@ -1742,7 +1716,6 @@ People are the hardest algorithm you'll ever debug.
 id: module-3-process
 title: "Module 3: Operational Excellence (Process)"
 ---
-
 # Module 3: Operational Excellence (Process)
 
 **Build the machine that builds the product.**
@@ -1870,7 +1843,6 @@ Process is not bureaucracy. It's the operating system for your team.
 id: module-4-strategy
 title: "Module 4: Managing Up & Out (Business Strategy)"
 ---
-
 # Module 4: Managing Up & Out (Business Strategy)
 
 **The skill gap that separates career Managers from Directors.**
@@ -1997,7 +1969,6 @@ Business strategy is the new technical skill.
 id: module-5-modern-leadership
 title: "Module 5: Modern Tech Leadership (The 2025 Manager)"
 ---
-
 # Module 5: Modern Tech Leadership (The 2025 Manager)
 
 **Specific challenges for the current era of software.**
@@ -2103,7 +2074,6 @@ The playbook from 2019 is dead. Adapt or die.
 id: module-6-director-path
 title: "Module 6: The Director Path (Future Outlook)"
 ---
-
 # Module 6: The Director Path (Future Outlook)
 
 **Plant the seeds for the next promotion.**
@@ -2183,7 +2153,6 @@ The Director path is about systems, not individuals.
 id: module-7-calibration
 title: "Module 7: The Calibration Room (Career Mechanics)"
 ---
-
 # Module 7: The Calibration Room (Career Mechanics)
 
 **The dark arts of the corporation. The administrative machinery most new managers fear.**
@@ -2280,7 +2249,6 @@ Calibration is where careers are made or broken.
 id: module-8-team-os
 title: "Module 8: The Team Operating System (Group Dynamics)"
 ---
-
 # Module 8: The Team Operating System (Group Dynamics)
 
 **You manage individuals, but you lead a Team. Designing the collective brain.**
@@ -2383,7 +2351,6 @@ You manage individuals, but you lead a team.
 id: module-1-scope
 title: "Module 1: The Scope Shift (Solves-via-Others)"
 ---
-
 # Module 1: The Scope Shift (Solves-via-Others)
 
 **You are no longer a code machine. You are a force multiplier.**
@@ -2468,7 +2435,6 @@ If your changes only affect your immediate team, you are still a Senior. Staff i
 id: module-2-writing
 title: "Module 2: Writing is Engineering (The RFC)"
 ---
-
 # Module 2: Writing is Engineering (The RFC)
 
 **The compiler for Staff Engineers is Google Docs.**
@@ -2545,7 +2511,6 @@ Staff Engineers write **Architecture Decision Records (ADRs)**.
 id: module-3-strategy
 title: "Module 3: Technical Strategy (The Long Game)"
 ---
-
 # Module 3: Technical Strategy (The Long Game)
 
 **Code is tactical. Strategy is logistical.**
@@ -2605,7 +2570,6 @@ You need to know the constraints of your org better than anyone.
 id: module-4-architecture
 title: "Module 4: Architectural Thinking (The 'Buy' Button)"
 ---
-
 # Module 4: Architectural Thinking (The "Buy" Button)
 
 **Building less to achieve more.**
@@ -2688,7 +2652,6 @@ Staff Engineers obsess over NFRs: Latency, Throughput, Cost, Security, Complianc
 id: module-5-influence
 title: "Module 5: Influence & Politics (Herding Cats)"
 ---
-
 # Module 5: Influence & Politics (Herding Cats)
 
 **Getting people to do what you want when you can't fire them.**
@@ -2748,7 +2711,6 @@ Staff Engineers push for "Consent," not "Consensus."
 id: module-6-ops
 title: "Module 6: Operational Maturity (Sleeping at Night)"
 ---
-
 # Module 6: Operational Maturity (Sleeping at Night)
 
 **It doesn't matter if the code is clean if the site is down.**
@@ -2806,7 +2768,6 @@ Your job is not to fix the bug. Your job is to coordinate the people fixing the 
 id: module-7-glue
 title: "Module 7: Glue Work (The Janitor)"
 ---
-
 # Module 7: Glue Work (The Janitor)
 
 **Doing the unglamorous work that keeps the ship afloat.**
@@ -2865,7 +2826,6 @@ Staff Engineers treat "Other Engineers" as their customers.
 id: module-8-promotion
 title: "Module 8: The Staff-Level Gap (Career Game)"
 ---
-
 # Module 8: The Staff-Level Gap (Career Game)
 
 **The hardest promotion in tech.**

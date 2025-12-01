@@ -2,7 +2,6 @@
 id: module-5-influence
 title: "Module 5: Influence & Politics (Herding Cats)"
 ---
-
 # Module 5: Influence & Politics (Herding Cats)
 
 **Getting people to do what you want when you can't fire them.**

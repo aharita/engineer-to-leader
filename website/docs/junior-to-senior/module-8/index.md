@@ -2,7 +2,6 @@
 id: module-8-career
 title: "Module 8: Career Navigation (The Promotion Game)"
 ---
-
 # Module 8: Career Navigation (The Promotion Game)
 
 **Hope is not a strategy.**

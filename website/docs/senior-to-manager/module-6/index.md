@@ -2,7 +2,6 @@
 id: module-6-director-path
 title: "Module 6: The Director Path (Future Outlook)"
 ---
-
 # Module 6: The Director Path (Future Outlook)
 
 **Plant the seeds for the next promotion.**
