@@ -86,3 +86,13 @@ In the old days, you bought a server and that was it. Now, you pay by the millis
     *   *The Fix:* Sampling. You don't need 100% of the logs for successful 200 OK requests.
 *   **The Unit Economics:** You spend $5 in server costs to support a free-tier user who pays $0.
     *   *The Strategy:* You are bleeding money. You need to re-architect or kill the free tier. This is an engineering problem, not just a finance one.
+
+---
+
+## 5. Summary
+*   **AI amplifies bad code.** Mandate explanation sessions for generated code.
+*   **Build remote culture intentionally.** Buddy systems and social APIs are not optional.
+*   **Detect burnout early.** Watch for camera-off, late-night slacks, and cynicism.
+*   **Cloud bills are now your problem.** Cost is a feature.
+
+The playbook from 2019 is dead. Adapt or die.

@@ -79,3 +79,12 @@ Many new managers think a "good team" is one that never fights. Wrong. A team th
     *   *The Fix:* "Mining for Conflict." In the meeting, say: "I see a lot of nodding, but this is a risky plan. Who is going to play Devil's Advocate? Sarah, tell me why this plan will fail." Force the dissent into the open.
 *   **The "Rockstar" Bully:** High performer, but makes people cry in code reviews.
     *   *The Intervention:* "Your code is A+. Your behavior is F. The average is C. You are failing." You cannot let technical brilliance excuse social terrorism. It poisons the group dynamic faster than any bad code could.
+---
+
+## 5. Summary
+*   **Kill hero culture.** Cross-train to eliminate single points of failure.
+*   **Structure for flow.** Embed experts in feature teams, not silos.
+*   **Build psychological safety.** Celebrate finding bugs, ask stupid questions.
+*   **Healthy conflict is good.** Task conflict drives improvement, relationship conflict destroys teams.
+
+You manage individuals, but you lead a team.

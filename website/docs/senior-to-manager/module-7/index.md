@@ -80,3 +80,12 @@ If you put someone on a PIP just to create a paper trail for firing them, the te
     *   *The Trap:* They will argue. "But I did X!" Do not argue. "The decision is made." Arguments open legal liability. Be kind, be firm, be brief.
 *   **The Aftermath:** The team will be scared. "Am I next?"
     *   *The Message:* "Bob is no longer with the company. We wish him the best. This was a specific performance issue we had been working on for a while. It does not affect anyone else's standing." Reassure the herd.
+---
+
+## 5. Summary
+*   **Promotions require evidence.** Write legal briefs, not love letters.
+*   **Own the compensation decision.** Don't blame HR.
+*   **Fight in calibration.** Bring data, be honest, defend your top performers.
+*   **Fire gracefully.** Never surprise them, and reassure the team afterward.
+
+Calibration is where careers are made or broken.

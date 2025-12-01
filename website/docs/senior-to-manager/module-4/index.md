@@ -100,3 +100,14 @@ Engineers suffer from "Not Invented Here" (NIH) syndrome. They think they can bu
     *   *The Concept:* Companies love Capital Expenses (CapEx - building assets, depreciable) and hate Operating Expenses (OpEx - monthly bills, hurts EBITDA).
     *   *The Hack:* You want to buy a $50k SaaS tool (OpEx) to save time. Finance says no. You hire a $100k Contractor (CapEx) to build a worse version of it. Finance says yes.
     *   *The Lesson:* Learn to frame SaaS purchases not as "costs" but as "Headcount Avoidance."
+
+---
+
+## 6. Summary
+*   **Translate to money.** Speak in revenue, cost, and risk, not tech jargon.
+*   **Build political capital.** Do favors to earn trust for when you need to say no.
+*   **Manage up.** No surprises. Bring solutions, not just problems.
+*   **Lead through crisis.** Be calm, be transparent, be decisive.
+*   **Buy, don't build.** Unless it's your core competency, use SaaS.
+
+Business strategy is the new technical skill.

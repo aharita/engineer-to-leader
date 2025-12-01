@@ -91,3 +91,14 @@ If the battery is empty, everything you say is viewed with suspicion. If it’s 
 *   **Taking the Blame:** The team broke production.
     *   *Charging:* You stand in front of the VP and say, "This was a process failure, and I own the process."
     *   *Draining:* You say, "Well, Kevin pushed the bad commit." (Kevin will never forgive you).
+
+---
+
+## 6. Summary
+*   **Be a multiplier.** Your value is your team's output, not yours.
+*   **Embrace the chaos.** Empty calendars and ambiguous work are the job now.
+*   **Delegate imperfectly.** 85% done by them beats 100% done by you.
+*   **Shield your team.** Filter the noise from leadership.
+*   **Charge the battery.** Every interaction builds or drains trust.
+
+Welcome to management. The code you write now is people.

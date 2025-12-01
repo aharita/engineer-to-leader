@@ -58,10 +58,17 @@ Managing ICs is checkers. Managing Managers is 3D Chess. You are now one layer r
 **Real-world scenarios:**
 *   **The "Super-IC" Manager:** One of your new managers is still writing code at night and micromanaging their team during the day.
     *   *The Coaching:* You have to strip their admin access. "If you merge a PR, you have failed." Force them to learn delegation by removing their crutches.
-*   **The Shielding Problem:** A manager protects their team *too* much. They never tell you the bad news.
+*    *   *The Shielding Problem:* A manager protects their team *too* much. They never tell you the bad news.
     *   *The Risk:* You think everything is green until the project explodes.
     *   *The Fix:* Skip-level 1:1s. You meet with their direct reports not to spy, but to "sense check" the vibe. "Is the roadmap clear? Do you feel supported?"
 *   **The Standardizing API:** Manager A runs agile perfectly. Manager B runs a chaotic anarchy.
     *   *The Director Move:* You don't need them to be identical, but you need a "Common Interface." "I don't care how you run your sprint, but every Friday at 4 PM, your metrics must be updated in this specific dashboard."
 
 ---
+
+## 4. Summary
+*   **Design the org chart.** Your org structure is your architecture.
+*   **Think in years, not sprints.** Strategic bets over tactical wins.
+*   **Manage managers.** You debug people who debug people.
+
+The Director path is about systems, not individuals.

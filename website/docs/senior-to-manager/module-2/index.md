@@ -101,3 +101,14 @@ You have a Senior Staff Engineer. They have been there 6 years. They own all the
     *   *Action:* Make "Documentation" a requirement for their next performance review. Force them to teach.
 *   **The "Space Force":** Give them a "Special Ops" mission.
     *   *Action:* "We need to investigate moving to Kubernetes" or "We need a 3-year tech vision." Give them a hard, ambiguous problem that doesn't block the rest of the team's daily shipping cadence.
+
+---
+
+## 6. Summary
+*   **1:1s are not status updates.** They're for emotions, growth, and trust.
+*   **Give feedback immediately.** Silence is not kindness; it's neglect.
+*   **Debug the human.** Underperformance is usually environment or capability, not laziness.
+*   **Hire for culture add.** Not culture fit. Diversity makes better decisions.
+*   **Channel boredom.** Give high-performers hard problems, not resume padding projects.
+
+People are the hardest algorithm you'll ever debug.

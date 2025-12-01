@@ -108,3 +108,15 @@ Engineers love shiny new toys. They will try to convince you that your simple CR
 *   **The Rewrite Fetish:** "This code is old. Let's rewrite it in [Trendy Language]."
     *   *The Truth:* Old code is battle-tested. New code has new bugs.
     *   *The Response:* "No." (Unless the old language is literally dead, like ColdFusion. Then maybe).
+
+---
+
+## 7. Summary
+*   **Meetings are APIs.** Require agenda, attendees, and action items.
+*   **Measure pain, not points.** Focus on deployment frequency and cycle time.
+*   **Lead through incidents.** Coordinate, don't code.
+*   **Speak the language of money.** Technical debt is financial debt.
+*   **Clear the RAM.** Reduce cognitive load so your team can think.
+*   **Block resume-driven development.** Choose boring tech that solves real problems.
+
+Process is not bureaucracy. It's the operating system for your team.
