@@ -70,17 +70,17 @@ Don't just look for bugs. Look for opportunities to teach and learn. If you see 
 ## 3. Testing: The Safety Net
 *Tests are documentation that doesn't lie.*
 
-If you don't write tests, you don't care about your code. You are essentially saying, "I hope this works, good luck future me."
+If you don't write tests, you don't care about your code. But be careful: **Code Coverage is a vanity metric.** You can have 100% coverage and 0% confidence if your tests don't assert anything meaningful.
 
 Tests give you the confidence to refactor. They document how the code is *supposed* to behave.
 
 **Real-world scenarios:**
-*   **The "I'll test it later":**
-    *   *Junior:* Writes the feature. Manually clicks around to verify. "Done."
-    *   *Senior:* Writes the test case *first* (TDD), or immediately after. Knows that manual testing is slow and error-prone.
-*   **The Regression:** You fix a bug in the cart, but break the checkout.
-    *   *Junior:* "I didn't touch the checkout code!"
-    *   *Senior:* "The integration tests caught the regression. I must have broken a shared utility function."
+*   **The Vanity Metric:**
+    *   *Junior:* "I hit 100% test coverage!" (By writing tests that just run the function and check `expect(true).toBe(true)`).
+    *   *Senior:* "I don't care about the percentage. I care about the *critical path*. Does the payment actually charge the card? Test that. Ignore the getters and setters."
+*   **The Tautology Test:**
+    *   *Junior:* Mocks the database, mocks the network, mocks the file system. The test checks if the mock was called.
+    *   *Senior:* "You are testing your mocks, not your code. You need an integration test that actually hits a real database (in Docker) to know if your SQL is valid."
 *   **The Refactor Fear:** You need to upgrade a library.
     *   *Junior:* Terrified to touch anything because they don't know what will break.
     *   *Senior:* Bumps the version, runs the test suite. Green? Ship it. Red? Fix it. Confidence.

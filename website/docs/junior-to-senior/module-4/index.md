@@ -58,24 +58,30 @@ If you answer a system design question without saying "It depends," you are wron
 ---
 
 ## 3. Database Basics: The Heart of the System
-*Data has gravity.*
+*Data has gravity. Code is ephemeral.*
 
-You can change code easily. Changing the database schema after you have 1TB of data is a nightmare. Get the data model right (or mostly right) early on.
+You can redeploy code in 5 minutes. Moving 10TB of data takes days and gray hairs. Juniors treat the Database like a magic black box that accepts infinite requests. Seniors treat the Database like a fragile egg that everyone is trying to smash.
 
 *   **Normalization:** Don't duplicate data unless you have a good reason (read performance).
-*   **Indexing:** If your query is slow, you probably missed an index.
-*   **Transactions:** If money is involved, you need ACID transactions.
+*   **Indexing:** If you didn't add an index, you built a ticking time bomb.
+
+:::tip Pro Tip
+**The ORM Lie.**
+ORMs (TypeORM, Prisma, Hibernate) lie to you. They make database calls look like simple function calls. They are not.
+*   *Junior:* `users.map(u => u.getProfile())` looks clean.
+*   *Senior:* Knows that line just triggered 10,000 SQL queries and alerts the DBA. Always look at the raw SQL.
+:::
 
 **Real-world scenarios:**
 *   **The Missing Index:**
-    *   *Junior:* "The dashboard is loading in 10 seconds."
-    *   *Senior:* Runs `EXPLAIN ANALYZE`. Adds an index on the `created_at` column. Dashboard loads in 100ms.
-*   **The Bad Migration:**
-    *   *Junior:* Renames a column in a migration script.
-    *   *Senior:* "This will lock the table for 10 minutes and cause downtime. We need to add the new column, backfill data, switch code to use new column, then drop the old one."
-*   **The Data Integrity:**
-    *   *Junior:* Deletes a user but forgets to delete their posts.
-    *   *Senior:* Uses Foreign Keys with `ON DELETE CASCADE` (or soft deletes) to ensure data consistency.
+    *   *Junior:* "The dashboard is loading in 10 seconds. I'll add a loading spinner."
+    *   *Senior:* "The dashboard is loading in 10 seconds. I ran `EXPLAIN ANALYZE`, found a sequential scan, added a composite index, and now it loads in 50ms."
+*   **The Migration Nightmare:**
+    *   *Junior:* Writes a migration to rename a column on a table with 100M rows.
+    *   *Senior:* "This will lock the table for 4 hours and take the site down. I'll create the new column, dual-write to both, backfill lazily, and then deprecate the old one."
+*   **The "Soft" Delete:**
+    *   *Junior:* `DELETE FROM users WHERE id = 1;`
+    *   *Senior:* "Never delete data. Set `deleted_at` timestamp. You will thank me when the CEO asks to restore that account next week."
 
 ---
 

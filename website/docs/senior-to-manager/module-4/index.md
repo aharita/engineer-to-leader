@@ -36,12 +36,20 @@ The CEO does not care about your Kubernetes migration. The CFO does not care abo
 
 Think of Political Capital as a currency. You earn it by delivering features, fixing bugs for the VP of Sales, and being pleasant to work with. You spend it when you need to say "No" to a bad idea, defend a team member, or ask for more headcount. If you have no capital, you have no voice.
 
+:::tip Pro Tip
+**The "Elevator Pitch" is a Lie.**
+Nobody is going to listen to your pitch in an elevator. The real "pitch" happens in the 5 minutes before the Zoom meeting starts while people are waiting for the host.
+*   **Bad:** awkwardly staring at the camera.
+*   **Good:** "Hey Sarah (VP), I saw that Sales closed the Delta deal. My team just shipped the API that supports that. Let me know if you need any data on it."
+You just bought yourself an ally.
+:::
+
 **Real-world scenarios:**
 *   **The Favor:** The VP of Support needs a button fixed. It’s not on your roadmap.
     *   *The Move:* You fix it anyway (takes 1 hour).
     *   *The Payoff:* Three months later, when you need a favor from Support, that VP has your back.
 *   **The "No":** Product wants a feature that will destroy the architecture.
-    *   *Low Capital:* You say No, they escalation to your boss, you get overruled.
+    *   *Low Capital:* You say No, they escalate to your boss, you get overruled.
     *   *High Capital:* You say No, and because you saved the Q4 launch last year, they trust your judgment.
 *   **The Cross-Functional Ally:** You make friends with the Legal team.
     *   *The Win:* When your engineers want to use a weird open-source license, Legal fast-tracks the approval because they know you aren't an idiot.

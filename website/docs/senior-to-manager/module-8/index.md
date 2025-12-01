@@ -67,18 +67,25 @@ Google spent millions studying this (Project Aristotle). The #1 predictor of a h
 
 ---
 
-## 4. Conflict as a Feature
-*Moving from "Peacekeeper" to "Mediator" during technical disagreements.*
+## 4. Parkinson’s Law of Triviality (Bike-shedding)
+*Why we argue about linting rules while the server burns.*
 
-Many new managers think a "good team" is one that never fights. Wrong. A team that never fights is a team that doesn't care (artificial harmony). You want "Task Conflict" (arguing about the code), not "Relationship Conflict" (arguing about the person).
+If you ask the team to approve a nuclear power plant design, they will say "Sure." It's too complex to argue about.
+If you ask the team to design a bike shed, they will argue for 4 hours about the color of the paint. Everyone has an opinion on paint.
+
+As a manager, your job is to identify when the team is bike-shedding (arguing about trivial things because they are easy to grasp) and kill the discussion.
 
 **Real-world scenarios:**
-*   **The "Tabs vs Spaces" War:** Two seniors are arguing for 3 days about a linter rule.
+*   **The "Tabs vs Spaces" War:**
+    *   *The Trap:* Two seniors argue for 3 days about trailing commas or line width.
     *   *The Manager:* "I am flipping a coin. It’s Spaces. We are moving on. Commit and disagree." End the trivial wars instantly.
-*   **The Silent Resentment:** In the meeting, everyone nods "Yes." In the hallway (or DM), everyone says "This idea is stupid."
+*   **The Naming Convention:**
+    *   *The Trap:* A PR review has 50 comments debating `userId` vs `user_id`.
+    *   *The Manager:* "Install a Linter. The Linter decides. Humans should not be discussing this."
+*   **The Silent Resentment (Artificial Harmony):**
+    *   *The Trap:* In the meeting, everyone nods "Yes." In the hallway, everyone says "This idea is stupid."
     *   *The Fix:* "Mining for Conflict." In the meeting, say: "I see a lot of nodding, but this is a risky plan. Who is going to play Devil's Advocate? Sarah, tell me why this plan will fail." Force the dissent into the open.
-*   **The "Rockstar" Bully:** High performer, but makes people cry in code reviews.
-    *   *The Intervention:* "Your code is A+. Your behavior is F. The average is C. You are failing." You cannot let technical brilliance excuse social terrorism. It poisons the group dynamic faster than any bad code could.
+
 ---
 
 ## 5. Summary

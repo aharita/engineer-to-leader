@@ -129,10 +129,22 @@ export default function Home() {
                 link="/engineer-to-leader/docs/senior-to-manager/module-1/"
               />
               <PathCard
+                icon="👔"
+                title="Manager → Director"
+                description="Scale from managing engineers to managing managers. Navigate P&L budgets, org design, hiring machines, and executive presence at the leadership table."
+                link="/engineer-to-leader/docs/manager-to-director/module-1/"
+              />
+              <PathCard
                 icon="📚"
                 title="Junior → Senior Engineer"
                 description="Level up from junior to senior IC. Deep dive into technical depth, system design, code review mastery, and establishing yourself as a trusted expert."
                 link="/engineer-to-leader/docs/junior-to-senior/module-1/"
+              />
+              <PathCard
+                icon="⚡"
+                title="Senior → Staff Engineer"
+                description="Advance to Staff level as an IC. Master organizational influence, technical strategy, architecture thinking, and cross-team impact without management authority."
+                link="/engineer-to-leader/docs/senior-to-staff/module-1/"
               />
             </div>
           </div>

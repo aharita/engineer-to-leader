@@ -33,9 +33,9 @@ If you can't answer these questions, you are just typing characters into a text 
 *   **The Feature Factory:** Product asks for a "Social Login" feature.
     *   *Junior:* Spends 2 weeks implementing OAuth for Facebook, Twitter, GitHub, and LinkedIn.
     *   *Senior:* Asks, "Do our users actually want this?" Checks analytics. Realizes 99% of users are Enterprise clients who only use SSO. Implements SAML instead. Saves 2 weeks of wasted work.
-*   **The Refactor Rabbit Hole:** You see some ugly code.
-    *   *Junior:* "I'm going to rewrite this whole module to use the Strategy Pattern!" (Breaks everything, delays the sprint).
-    *   *Senior:* "This code is ugly, but it works and we never touch it. I'll leave a comment and move on."
+*   **The Refactor Rabbit Hole:** You see some ugly code in the billing module.
+    *   *Junior:* "This is disgusting! I'm going to rewrite it to use the Strategy Pattern!" (Breaks billing, delays the sprint, introduces 3 new bugs).
+    *   *Senior:* "This code is ugly, but it has processed $10M without error for 3 years. I will treat it like nuclear waste: I will not touch it unless absolutely necessary."
 *   **The Performance Optimization:** A query takes 200ms.
     *   *Junior:* "I can get this down to 50ms if I rewrite the ORM layer in raw SQL and add a Redis cache." (Adds complexity, introduces bugs).
     *   *Senior:* "Is 200ms hurting the user? No? Then I'm not touching it. We have more important things to build."

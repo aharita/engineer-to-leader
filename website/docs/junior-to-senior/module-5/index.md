@@ -84,25 +84,23 @@ The first time, answer it. The second time, write it in a Notion doc/Wiki and se
 
 ---
 
-## 4. Meeting Participation
-*Don't be a potted plant.*
+## 4. Async Etiquette (The "No Hello" Rule)
+*Stop holding my attention hostage.*
 
-If you are in a meeting, contribute. If you have nothing to contribute, ask why you are in the meeting.
+There is a special place in hell for people who DM you "Hi" and then wait for you to reply before typing their actual question. This is a synchronous interrupt in an asynchronous world.
 
-*   **Ask questions:** "What is the goal of this feature?"
-*   **Clarify requirements:** "Does this include mobile support?"
-*   **Take notes:** Be the person who sends the summary email. It gives you immense power and visibility.
+**The Rule:** Your first message must contain the **entire** context. "Hi, I'm stuck on the payment API, here is the error log, do you have 5 mins?" allows me to answer you when I'm free. "Hi" forces me to stop working just to acknowledge your existence.
 
 **Real-world scenarios:**
-*   **The Silent Observer:**
-    *   *Junior:* Sits in the back, checks phone, says nothing.
-    *   *Senior:* "I have a concern about the timeline. Have we considered the dependency on the mobile team?"
-*   **The Hijacker:**
-    *   *Junior:* Derails the meeting to talk about a specific bug they found.
-    *   *Senior:* "That's a good point, let's take that offline so we don't hold up the meeting."
-*   **The Note Taker:**
-    *   *Junior:* Relies on memory.
-    *   *Senior:* "I'll send out a recap with action items." (Becomes the de-facto leader of the project).
+*   **The Cliffhanger:**
+    *   *Junior:* "Hey, are you there?" (Waits 10 mins). "Can I ask a question?" (Waits 5 mins). "I broke the build."
+    *   *Senior:* (Has now lost 15 minutes of flow state). "Just say you broke the build so I can fix it."
+*   **The "Urgent" DM:**
+    *   *Junior:* DMs 4 people the same question to see who answers first.
+    *   *Senior:* "Don't broadcast. Post it in the public team channel. That way, when one person answers, everyone else sees it and doesn't waste time researching the same thing."
+*   **The Meeting Plant:**
+    *   *Junior:* Sits in the back of the Zoom call, camera off, checks phone.
+    *   *Senior:* "If I have nothing to contribute, I decline the invite. If I attend, I take notes and send the recap."
 
 ---
 

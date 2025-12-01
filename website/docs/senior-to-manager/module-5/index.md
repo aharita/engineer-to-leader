@@ -19,18 +19,20 @@ If you are managing like it's 2015, you are managing a team that no longer exist
 Generative AI (Copilot, ChatGPT, Claude) has made writing code essentially free. This sounds great until you realize that *reading* and *debugging* code is harder than writing it. We have entered the era of "Spam Code." Your juniors can now produce Senior-level complexity with Junior-level understanding.
 
 **Real-world scenarios:**
-*   **The "70% Trap":** An engineer uses AI to generate a feature in 1 hour. It looks like it works.
-    *   *The Reality:* It handles the happy path perfectly but fails on every edge case, security vulnerability, and weird input. The last 30% of the work (making it production-ready) now takes 2x as long because they didn't write the logic themselves.
-    *   *The Fix:* Mandate "Explanation Sessions." "Walk me through how this generated code handles a null pointer." If they can't explain it, they can't merge it.
-*   **The PR Flood:** Your team is opening 3x more Pull Requests because they type faster.
-    *   *The Bottleneck:* Your Senior Engineers are drowning in reviews.
-    *   *The Fix:* Use AI to review AI. Implement automated PR agents for style/linting, so humans only review logic.
-*   **The Skill Atrophy:** Juniors aren't learning the basics because the AI does it.
+*   **The "Context Window" Amnesia:**
+    *   *The Trap:* Junior pastes a file into ChatGPT and asks for a refactor. ChatGPT refactors it beautifully but deletes the specific import required by a completely different file it couldn't see.
+    *   *The Result:* Production build fails. Junior is confused because "The code looks right."
+    *   *The Fix:* Mandate that AI-generated code must be manually walked through. "If you can't explain *why* it works, you can't merge it."
+*   **The "Library Hallucination":**
+    *   *The Trap:* Dev uses a library method that doesn't exist because the AI hallucinated it based on an API from 2019.
+    *   *The Fix:* IntelliSense is the source of truth, not the LLM.
+*   **The Skill Atrophy:**
     *   *The Risk:* In 2 years, you have "Seniors" who can't debug a loop without a prompt.
-    *   *The Fix:* "No-AI Fridays" or specific tasks where they must hand-roll the solution to prove they understand the metal.
-*   **Shadow AI & The IP Leak:** Engineers are pasting your proprietary code into public chatbots to fix bugs.
-    *   *The Risk:* You are training the competitor's model on your IP. Samsung learned this the hard way.
-    *   *The Fix:* Don't ban AI (they'll use it anyway via their phone). Sanction it. Buy the Enterprise license (ChatGPT Team/Claude Enterprise) that guarantees data privacy. If you don't provide the safe tool, they will use the unsafe one.
+    *   *The Strategy:* "No-AI Fridays" or specific tasks where they must hand-roll the solution to prove they understand the metal.
+*   **Shadow AI & The IP Leak:** Engineers are pasting your proprietary code into public chatbots.
+    *   *The Risk:* You are training the competitor's model on your IP.
+    *   *The Fix:* Don't ban AI. Buy the Enterprise license that guarantees data privacy. If you don't provide the safe tool, they will use the unsafe one.
+
 ---
 
 ## 2. Remote/Hybrid Culture Building

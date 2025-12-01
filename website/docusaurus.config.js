@@ -81,9 +81,21 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'directorSidebar',
+            position: 'left',
+            label: 'Manager → Director',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'juniorSidebar',
             position: 'left',
             label: 'Junior → Senior',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'staffSidebar',
+            position: 'left',
+            label: 'Senior → Staff',
           },
           {
             href: 'https://github.com/aharita/engineer-to-leader',
@@ -105,11 +117,29 @@ const config = {
             ],
           },
           {
+            title: 'Manager → Director',
+            items: [
+              {
+                label: 'Module 1: Meta-Management',
+                to: '/docs/manager-to-director/module-1',
+              },
+            ],
+          },
+          {
             title: 'Junior → Senior',
             items: [
               {
                 label: 'Module 1: The Ascent',
                 to: '/docs/junior-to-senior/module-1',
+              },
+            ],
+          },
+          {
+            title: 'Senior → Staff',
+            items: [
+              {
+                label: 'Module 1: The Scope Shift',
+                to: '/docs/senior-to-staff/module-1',
               },
             ],
           },
