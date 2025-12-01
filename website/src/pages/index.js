@@ -37,25 +37,25 @@ function HomepageFeatures() {
         <div className="row">
           <div className="col col--4">
             <div className="text--center padding-horiz--md">
-              <h3>🎯 Stop Coding. Start Leading.</h3>
+              <h3>🎯 Identity to Impact</h3>
               <p>
-                Learn to let go of individual contribution and embrace your role as a force multiplier.
+                Master the transition from Individual Contributor to Engineering Leader. 8 modules covering everything from delegation to team dynamics.
               </p>
             </div>
           </div>
           <div className="col col--4">
             <div className="text--center padding-horiz--md">
-              <h3>📈 Actionable Frameworks</h3>
+              <h3>📈 Real-World Frameworks</h3>
               <p>
-                Real-world tactics, scripts, and challenges you can apply immediately in your role.
+                From 1-on-1s to calibration politics, from technical debt to psychological safety—actionable scripts you can use tomorrow.
               </p>
             </div>
           </div>
           <div className="col col--4">
             <div className="text--center padding-horiz--md">
-              <h3>⚡ Built for Doers</h3>
+              <h3>⚡ Career Mechanics Unlocked</h3>
               <p>
-                No theory. No fluff. Just practical guidance for engineers transitioning to leadership.
+                Learn the dark arts: writing promotion packets, navigating compensation talks, and architecting high-performing teams.
               </p>
             </div>
           </div>

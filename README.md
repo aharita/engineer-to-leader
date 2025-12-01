@@ -48,6 +48,20 @@ Plant the seeds for the next promotion.
 - Strategy > Tactics
 - Managing Managers (Meta-Management)
 
+### Module 7: The Calibration Room (Career Mechanics)
+The dark arts of the corporation. Navigating performance reviews, promotions, and compensation.
+- The Invisible Bar (Writing Promotion Packets)
+- The Money Talk (Compensation Conversations)
+- Surviving Calibration (Rating Curves & Politics)
+- Managing Out (The Firing Process)
+
+### Module 8: The Team Operating System (Group Dynamics)
+You manage individuals, but you lead a Team. Architecting the collective brain.
+- The "Bus Factor" Audit (Eliminating Hero Culture)
+- Team Topologies (Structuring for Flow)
+- Psychological Safety (Project Aristotle)
+- Conflict as a Feature (Managing Technical Disagreements)
+
 ---
 
 ## Access the Course
