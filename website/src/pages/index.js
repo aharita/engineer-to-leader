@@ -15,53 +15,91 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            to="/docs/module-1">
-            Start Senior → Manager Guide →
-          </Link>
-        </div>
-        <div style={{ marginTop: '2rem', color: 'var(--ifm-color-content-secondary)' }}>
-          <p style={{ fontSize: '1.2rem', fontWeight: '500' }}>Senior Engineer → Engineering Manager</p>
-          <p style={{ marginTop: '0.5rem' }}>8 modules covering the complete transition from code to leadership</p>
-          <p style={{ marginTop: '1rem', fontSize: '0.9rem', fontStyle: 'italic' }}>Coming soon: Junior → Senior Engineer guide</p>
-        </div>
+        <p
+          style={{
+            fontSize: '1.1rem',
+            marginTop: '1rem',
+            maxWidth: '600px',
+            margin: '1rem auto',
+          }}>
+          Choose your path. Master the transition.
+        </p>
       </div>
     </header>
   );
 }
 
-function HomepageFeatures() {
+function PathCard({ title, description, icon, link }) {
   return (
-    <section className={styles.features}>
+    <div className="col col--6" style={{ marginBottom: '2rem' }}>
+      <div
+        className="card"
+        style={{
+          height: '100%',
+          padding: '2rem',
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          display: 'flex',
+          flexDirection: 'column',
+        }}>
+        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>
+          {icon}
+        </div>
+        <Heading as="h3">{title}</Heading>
+        <p style={{ flex: 1, color: 'var(--ifm-color-content-secondary)' }}>
+          {description}
+        </p>
+        <Link className="button button--primary button--lg" to={link}>
+          Start Now →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function FeatureHighlight() {
+  const features = [
+    {
+      title: '🎯 Real Frameworks',
+      description:
+        '1-on-1 scripts, calibration tactics, and team dynamics strategies',
+    },
+    {
+      title: '📈 Actionable Content',
+      description:
+        'Promotion packets, compensation negotiation, and leadership mechanics',
+    },
+    {
+      title: '⚡ Career Acceleration',
+      description: 'Skip years of trial-and-error with battle-tested playbooks',
+    },
+    {
+      title: '🔧 Dark Arts Unlocked',
+      description: 'Navigate politics, build psychological safety, architect teams',
+    },
+  ];
+
+  return (
+    <section
+      style={{
+        backgroundColor: 'var(--ifm-background-surface-secondary)',
+        padding: '3rem 0',
+      }}>
       <div className="container">
-        <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Senior → Manager: Your Complete Transition Guide</h2>
+        <Heading
+          as="h2"
+          style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          What You'll Master
+        </Heading>
         <div className="row">
-          <div className="col col--4">
-            <div className="text--center padding-horiz--md">
-              <h3>🎯 Identity to Impact</h3>
-              <p>
-                Master the transition from Senior Engineer to Engineering Manager. 8 modules covering everything from delegation to team dynamics.
+          {features.map((feature, idx) => (
+            <div key={idx} className="col col--6" style={{ marginBottom: '2rem' }}>
+              <h3>{feature.title}</h3>
+              <p style={{ color: 'var(--ifm-color-content-secondary)' }}>
+                {feature.description}
               </p>
             </div>
-          </div>
-          <div className="col col--4">
-            <div className="text--center padding-horiz--md">
-              <h3>📈 Real-World Frameworks</h3>
-              <p>
-                From 1-on-1s to calibration politics, from technical debt to psychological safety—actionable scripts you can use tomorrow.
-              </p>
-            </div>
-          </div>
-          <div className="col col--4">
-            <div className="text--center padding-horiz--md">
-              <h3>⚡ Career Mechanics Unlocked</h3>
-              <p>
-                Learn the dark arts: writing promotion packets, navigating compensation talks, and architecting high-performing teams.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -76,7 +114,30 @@ export default function Home() {
       description="Transform from Individual Contributor to Engineering Leader. Learn the frameworks, scripts, and tactics to succeed as an engineering manager.">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <section style={{ padding: '3rem 0' }}>
+          <div className="container">
+            <Heading
+              as="h2"
+              style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              Choose Your Career Path
+            </Heading>
+            <div className="row">
+              <PathCard
+                icon="🚀"
+                title="Senior Engineer → Manager"
+                description="Master the transition from code to leadership. 8 modules covering delegation, team dynamics, compensation, and navigating organizational politics."
+                link="/engineer-to-leader/docs/senior-to-manager/module-1/"
+              />
+              <PathCard
+                icon="📚"
+                title="Junior → Senior Engineer"
+                description="Level up from junior to senior IC. Deep dive into technical depth, system design, code review mastery, and establishing yourself as a trusted expert."
+                link="/engineer-to-leader/docs/junior-to-senior/module-1/"
+              />
+            </div>
+          </div>
+        </section>
+        <FeatureHighlight />
       </main>
     </Layout>
   );
