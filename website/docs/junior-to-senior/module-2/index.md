@@ -8,40 +8,44 @@ title: "Module 2: Technical Independence (The 'Unstuck' Framework)"
 
 The biggest difference between a Junior and a Senior engineer is what happens when they get stuck.
 
-*   **Junior:** "I'm stuck. Hey Senior Dev, can you help me?" (Immediately)
-*   **Senior:** "I'm stuck. I'm going to read the error message, check the docs, grep the codebase, check StackOverflow, and if I'm still stuck in 30 minutes, I'll ask for help with a specific question."
+* **Junior:** "I'm stuck. Hey Senior Dev, can you help me?" (Immediately)
+* **Senior:** "I'm stuck. I'm going to read the error message, check the docs, grep the codebase, check StackOverflow, and if I'm still stuck in 30 minutes, I'll ask for help with a specific question."
 
 Your goal is to become *autonomous*. You should be able to take a vague requirement and turn it into shipped code with minimal supervision.
 
 ---
 
 ## 1. The 15-Minute Rule
+
 *The golden ratio of struggle vs. collaboration.*
 
 Don't spin your wheels for 3 days. But don't ask for help after 30 seconds.
 
 **The Rule:** When you get stuck, you must try to solve it yourself for **15 minutes**.
-*   Read the error message (actually read it).
-*   Google it.
-*   Check the documentation.
-*   Look at the source code.
+
+* Read the error message (actually read it).
+* Google it.
+* Check the documentation.
+* Look at the source code.
 
 If you haven't made progress after 15 minutes, **then** you ask for help. But you must be able to say: "I tried X, Y, and Z, and I'm still seeing error W."
 
 **Real-world scenarios:**
-*   **The Lazy Ask:**
-    *   *Junior:* "Hey, how do I parse a date in Java?"
-    *   *Senior:* (Sends link to "Let Me Google That For You")
-*   **The Good Ask:**
-    *   *Junior:* "I'm trying to parse this date. I tried `SimpleDateFormat` but it's not thread-safe. I looked at `java.time` but I'm not sure which class to use for this specific format. Here is my code snippet."
-    *   *Senior:* "Use `LocalDateTime`. Here's why..."
-*   **The Error Message:** You get a cryptic stack trace.
-    *   *Junior:* Pastes the whole thing into Slack: "Anyone seen this?"
-    *   *Senior:* Googles the specific error code, finds a GitHub issue from 2018, realizes it's a version mismatch, and upgrades the package.
+
+* **The Lazy Ask:**
+  * *Junior:* "Hey, how do I parse a date in Java?"
+  * *Senior:* (Sends link to "Let Me Google That For You")
+* **The Good Ask:**
+  * *Junior:* "I'm trying to parse this date. I tried `SimpleDateFormat` but it's not thread-safe. I looked at `java.time` but I'm not sure which class to use for this specific format. Here is my code snippet."
+  * *Senior:* "Use `LocalDateTime`. Here's why..."
+* **The Error Message:** You get a cryptic stack trace.
+  * *Junior:* Pastes the whole thing into Slack: "Anyone seen this?"
+  * *Senior:* Googles the specific error code, finds a GitHub issue from 2018, realizes it's a version mismatch, and upgrades the package.
 
 ---
 
 ## 2. Reading the Manual (RTFM)
+
 *Documentation is not optional reading.*
 
 Most "impossible" bugs are just you not reading the documentation. You are guessing. You are copy-pasting from StackOverflow and hoping it works. This is "Voodoo Coding."
@@ -54,43 +58,48 @@ Documentation can be outdated. StackOverflow can be wrong. The source code is th
 :::
 
 **Real-world scenarios:**
-*   **The Library update:** A library update breaks your build.
-    *   *Junior:* Downgrades the library and ignores it.
-    *   *Senior:* Reads the CHANGELOG. Finds the breaking change. Fixes the code.
-*   **The Deprecated Method:** Your IDE strikes through a method name.
-    *   *Junior:* Ignores it. "It still compiles."
-    *   *Senior:* Checks the docs to see *why* it's deprecated and what the replacement is. Updates it before it's removed in the next major version.
-*   **The Configuration Option:** You need to change the default behavior of a widget.
-    *   *Junior:* Writes 50 lines of custom CSS and JS to hack the behavior.
-    *   *Senior:* Reads the "Options" section of the docs. Finds `enableCustomBehavior: true`. Deletes the 50 lines of hacky code.
+
+* **The Library update:** A library update breaks your build.
+  * *Junior:* Downgrades the library and ignores it.
+  * *Senior:* Reads the CHANGELOG. Finds the breaking change. Fixes the code.
+* **The Deprecated Method:** Your IDE strikes through a method name.
+  * *Junior:* Ignores it. "It still compiles."
+  * *Senior:* Checks the docs to see *why* it's deprecated and what the replacement is. Updates it before it's removed in the next major version.
+* **The Configuration Option:** You need to change the default behavior of a widget.
+  * *Junior:* Writes 50 lines of custom CSS and JS to hack the behavior.
+  * *Senior:* Reads the "Options" section of the docs. Finds `enableCustomBehavior: true`. Deletes the 50 lines of hacky code.
 
 ---
 
 ## 3. Debugging Like a Detective
+
 *Console.log is fine, but have you tried thinking?*
 
 Debugging is the scientific method.
-1.  **Observation:** "The user can't login."
-2.  **Hypothesis:** "Maybe the auth token is expired."
-3.  **Experiment:** "I will check the local storage and the network tab."
-4.  **Conclusion:** "The token is missing. Why?"
+
+1. **Observation:** "The user can't login."
+2. **Hypothesis:** "Maybe the auth token is expired."
+3. **Experiment:** "I will check the local storage and the network tab."
+4. **Conclusion:** "The token is missing. Why?"
 
 Don't just change random lines of code until it works. Isolate variables. Reproduce the issue consistently.
 
 **Real-world scenarios:**
-*   **The "It's Magic" Fix:**
-    *   *Junior:* "I restarted the server and it works now. I don't know why." (The bug will come back).
-    *   *Senior:* "The server was OOM. We have a memory leak in the image processing job. Here is the heap dump."
-*   **The Race Condition:** A bug only happens 10% of the time.
-    *   *Junior:* "I can't reproduce it, so I'm closing the ticket."
-    *   *Senior:* "This smells like a race condition. I'll add logging to the async steps and run a script to hit the endpoint 1000 times to force the failure."
-*   **The Third-Party API:** An external service is returning 500s.
-    *   *Junior:* "Our app is broken!" (Panics).
-    *   *Senior:* Checks the status page of the external service. "Their API is down. I'll implement a retry mechanism with exponential backoff so our app recovers when they come back up."
+
+* **The "It's Magic" Fix:**
+  * *Junior:* "I restarted the server and it works now. I don't know why." (The bug will come back).
+  * *Senior:* "The server was OOM. We have a memory leak in the image processing job. Here is the heap dump."
+* **The Race Condition:** A bug only happens 10% of the time.
+  * *Junior:* "I can't reproduce it, so I'm closing the ticket."
+  * *Senior:* "This smells like a race condition. I'll add logging to the async steps and run a script to hit the endpoint 1000 times to force the failure."
+* **The Third-Party API:** An external service is returning 500s.
+  * *Junior:* "Our app is broken!" (Panics).
+  * *Senior:* Checks the status page of the external service. "Their API is down. I'll implement a retry mechanism with exponential backoff so our app recovers when they come back up."
 
 ---
 
 ## 4. Knowing When to Quit (Timeboxing)
+
 *Don't go down the rabbit hole.*
 
 Sometimes, you are just banging your head against a wall. You need to know when to stop and pivot. If you estimated a task would take 2 hours and you are on hour 10, **stop**. Raise a flag. Tell your manager.
@@ -98,22 +107,24 @@ Sometimes, you are just banging your head against a wall. You need to know when 
 Hiding your struggle is the worst thing you can do. It leads to missed deadlines and surprises.
 
 **Real-world scenarios:**
-*   **The Silent Fail:**
-    *   *Junior:* Struggles for 3 days. Says nothing in standup. Friday comes: "I'm not done."
-    *   *Senior:* Struggles for 4 hours. Updates ticket: "Blocked on API issue. Reaching out to backend team. Risk to timeline: High."
-*   **The Rabbit Hole:** You are trying to fix a bug in a dependency.
-    *   *Junior:* Spends 2 days trying to patch the library locally.
-    *   *Senior:* "This library is abandoned. I'm going to swap it out for a better maintained alternative. It will take 4 hours."
-*   **The Wrong Path:** You realize your approach won't scale.
-    *   *Junior:* "I've already written 500 lines, I have to keep going." (Sunk Cost Fallacy).
-    *   *Senior:* "I made a mistake in the design. I'm going to scrap this branch and start over with the new approach. It's faster than trying to salvage this."
+
+* **The Silent Fail:**
+  * *Junior:* Struggles for 3 days. Says nothing in standup. Friday comes: "I'm not done."
+  * *Senior:* Struggles for 4 hours. Updates ticket: "Blocked on API issue. Reaching out to backend team. Risk to timeline: High."
+* **The Rabbit Hole:** You are trying to fix a bug in a dependency.
+  * *Junior:* Spends 2 days trying to patch the library locally.
+  * *Senior:* "This library is abandoned. I'm going to swap it out for a better maintained alternative. It will take 4 hours."
+* **The Wrong Path:** You realize your approach won't scale.
+  * *Junior:* "I've already written 500 lines, I have to keep going." (Sunk Cost Fallacy).
+  * *Senior:* "I made a mistake in the design. I'm going to scrap this branch and start over with the new approach. It's faster than trying to salvage this."
 
 ---
 
 ## 5. Summary
-*   **Try for 15 minutes.** Then ask.
-*   **Show your work.** "I tried X, Y, Z."
-*   **Read the docs.** Don't guess.
-*   **Timebox your struggles.** Don't hide in a hole.
+
+* **Try for 15 minutes.** Then ask.
+* **Show your work.** "I tried X, Y, Z."
+* **Read the docs.** Don't guess.
+* **Timebox your struggles.** Don't hide in a hole.
 
 Independence is earned by proving you can handle the unknown.
