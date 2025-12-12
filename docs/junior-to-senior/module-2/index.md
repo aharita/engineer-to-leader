@@ -23,8 +23,8 @@ Don't spin your wheels for 3 days. But don't ask for help after 30 seconds.
 
 **The Rule:** When you get stuck, you must try to solve it yourself for **15 minutes**.
 
-* Read the error message (actually read it).
-* Google it.
+* Read the error message (yes, the whole thing, even the parts that look like scary Latin).
+* Google it. (Actually look at the results, don't just click the first purple link).
 * Check the documentation.
 * Look at the source code.
 
@@ -48,7 +48,7 @@ If you haven't made progress after 15 minutes, **then** you ask for help. But yo
 
 *Documentation is not optional reading.*
 
-Most "impossible" bugs are just you not reading the documentation. You are guessing. You are copy-pasting from StackOverflow and hoping it works. This is "Voodoo Coding."
+Most "impossible" bugs are just you not reading the documentation. You are guessing. You are copy-pasting from StackOverflow and hoping it works. This is "Voodoo Coding." You are shaking chicken bones over your keyboard and praying to the compiler gods.
 
 Stop guessing. Read the API docs. Read the library source code. Understand *how* it works, not just *that* it works.
 

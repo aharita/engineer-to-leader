@@ -45,7 +45,7 @@ When review time comes, you just copy-paste.
 
 They care about the result.
 
-* **Bad:** "I rewrote the backend in Rust." (So what?)
+* **Bad:** "I rewrote the backend in Rust." (So what? You just made it harder to hire people).
 * **Good:** "I reduced server costs by 50% and improved latency by 200ms by rewriting the backend." (Promote this person).
 
 Always tie your work to business metrics. Revenue, User Growth, Cost Savings, Velocity.
@@ -117,8 +117,8 @@ If you don't ask, the answer is always no.
   * *Junior:* Works quietly.
   * *Senior:* Volunteers to give a tech talk at the company All-Hands. "Here is how we scaled the database."
 * **The External Presence:**
-  * *Junior:* No LinkedIn, no GitHub, no blog.
-  * *Senior:* Writes a blog post about a bug they solved. It trends on Hacker News. Recruiters start reaching out.
+  * *Junior:* No LinkedIn, no GitHub, no blog. "I just want to code."
+  * *Senior:* Writes a blog post about a bug they solved. It trends on Hacker News. Recruiters start reaching out. Becomes a "Thought Leader" (shudder).
 
 ---
 

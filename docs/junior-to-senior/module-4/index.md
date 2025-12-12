@@ -17,7 +17,7 @@ You need to understand how your code fits into the bigger picture. How does the 
 
 *Your machine is not production.*
 
-Your laptop has 1 user (you). Production has 100,000. Things break at scale.
+Your laptop has 1 user (you). Production has 100,000 users who all decide to click "Buy" at the exact same second. Your laptop is a lie. It is a controlled environment where everything is perfect. Production is a war zone.
 
 * **Latency:** That API call takes 10ms locally. It takes 500ms over 3G in a tunnel.
 * **Concurrency:** Two users try to buy the last ticket at the exact same millisecond. Who wins?
@@ -66,7 +66,7 @@ If you answer a system design question without saying "It depends," you are wron
 
 *Data has gravity. Code is ephemeral.*
 
-You can redeploy code in 5 minutes. Moving 10TB of data takes days and gray hairs. Juniors treat the Database like a magic black box that accepts infinite requests. Seniors treat the Database like a fragile egg that everyone is trying to smash.
+You can redeploy code in 5 minutes. Moving 10TB of data takes days and gray hairs. Juniors treat the Database like a magic black box that accepts infinite requests. Seniors treat the Database like a fragile egg that everyone is trying to smash with a hammer.
 
 * **Normalization:** Don't duplicate data unless you have a good reason (read performance).
 * **Indexing:** If you didn't add an index, you built a ticking time bomb.
@@ -75,8 +75,8 @@ You can redeploy code in 5 minutes. Moving 10TB of data takes days and gray hair
 **The ORM Lie.**
 ORMs (TypeORM, Prisma, Hibernate) lie to you. They make database calls look like simple function calls. They are not.
 
-* *Junior:* `users.map(u => u.getProfile())` looks clean.
-* *Senior:* Knows that line just triggered 10,000 SQL queries and alerts the DBA. Always look at the raw SQL.
+* *Junior:* `users.map(u => u.getProfile())` looks clean. "Look ma, no SQL!"
+* *Senior:* Knows that line just triggered 10,000 SQL queries (N+1 problem) and just woke up the DBA. Always look at the raw SQL. If you don't know what generated SQL looks like, you are dangerous.
 :::
 
 **Real-world scenarios:**

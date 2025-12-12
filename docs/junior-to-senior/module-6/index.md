@@ -56,7 +56,7 @@ Production is down. The CEO is yelling. What do you do?
 **Real-world scenarios:**
 
 * **The Cowboy:**
-  * *Junior:* SSHs into the production server and edits files with Vim to "fix it fast."
+  * *Junior:* SSHs into the production server and edits files with Vim to "fix it fast." (Then forgets what they changed, and the server explodes 2 days later).
   * *Senior:* Follows the standard deployment process, even during an emergency, to ensure auditability and prevent regression.
 * **The Communicator:**
   * *Junior:* Fixes the issue silently but leaves everyone wondering what happened.
@@ -75,6 +75,7 @@ When things break, we don't look for *who* broke it. We look for *why* the syste
 
 * **Bad:** "Kevin pushed a bad config." (Fire Kevin).
 * **Good:** "The deployment script didn't validate the config before pushing. We need to add a validation step." (Fix the system).
+* **Realistic:** We don't fire Kevin, but we do take away his root access until he learns how to use a linter.
 
 If you break production, own it. "I broke it. Here is how I fixed it. Here is how I will prevent it from happening again." That is high-status behavior.
 

@@ -21,7 +21,7 @@ Mentoring is not "teaching people how to code." It is teaching them how to *thin
 When a new hire joins, they are useless. Your job is to make them useful as fast as possible.
 
 * **The "First Commit":** Help them ship something to production on Day 1 or Day 2. Even if it's just a text change. It builds confidence.
-* **The Context Download:** Don't just point them to the docs. Walk them through the architecture. Explain the "why" behind the weird decisions.
+* **The Context Download:** Don't just point them to the docs. We both know the docs are outdated. Walk them through the architecture. Explain the "why" behind the weird decisions that look like mistakes but are actually scar tissue.
 
 **Real-world scenarios:**
 
@@ -88,7 +88,7 @@ Mentorship is giving advice. Sponsorship is giving opportunity.
   * *Junior:* Writes 50 comments on a PR.
   * *Senior:* "There are a lot of structural comments here. Let's hop on a call to discuss the overall approach."
 * **The Nitpick:**
-  * *Junior:* "You missed a space here."
+  * *Junior:* "You missed a space here." (The linter would have caught this if you set it up correctly).
   * *Senior:* (Ignores formatting). "This logic seems to have a security vulnerability. Let's discuss."
 
 ---

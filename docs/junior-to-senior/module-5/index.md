@@ -26,8 +26,8 @@ Your manager is busy. They want to know 3 things:
 **Real-world scenarios:**
 
 * **The Rambler:**
-  * *Junior:* "Well, I tried to install the library but the version was wrong, so I looked at the docs..." (5 minutes later) "...so I'm still working on it."
-  * *Senior:* "I'm working on the Auth feature. Hit a snag with the library version, but I have a workaround. Expecting to finish by EOD. No blockers."
+  * *Junior:* "Well, I tried to install the library but the version was wrong, so I looked at the docs..." (Rambles for 5 minutes about their emotional journey).
+  * *Senior:* "I'm working on the Auth feature. Hit a snag with the library version, but I have a workaround. Expecting to finish by EOD. No blockers." (Boring, effective).
 * **The Wall of Text:**
   * *Junior:* Writes a 500-word daily standup message detailing every function they touched.
   * *Senior:* "Yesterday: Fixed Auth Bug. Today: API integration. Blockers: None."
@@ -102,7 +102,7 @@ There is a special place in hell for people who DM you "Hi" and then wait for yo
 
 * **The Cliffhanger:**
   * *Junior:* "Hey, are you there?" (Waits 10 mins). "Can I ask a question?" (Waits 5 mins). "I broke the build."
-  * *Senior:* (Has now lost 15 minutes of flow state). "Just say you broke the build so I can fix it."
+  * *Senior:* (Has now lost 15 minutes of flow state and wants to scream). "Just say you broke the build so I can fix it."
 * **The "Urgent" DM:**
   * *Junior:* DMs 4 people the same question to see who answers first.
   * *Senior:* "Don't broadcast. Post it in the public team channel. That way, when one person answers, everyone else sees it and doesn't waste time researching the same thing."

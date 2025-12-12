@@ -10,9 +10,9 @@ Congratulations. You’ve mastered the syntax. You know how to write a loop, how
 
 But here’s the hard truth: **Nobody pays you to write code.**
 
-They pay you to *solve business problems*. Code is just the tool. If you can solve a problem by deleting code, you are a genius. If you solve it by writing 10,000 lines of "elegant" Haskell that nobody else can read, you are a liability.
+They pay you to *solve business problems*. Code is just the expensive, buggy byproduct of solving those problems. If you can solve a problem by deleting code, you are a genius. If you solve it by writing 10,000 lines of "elegant" Haskell that nobody else can read, you are a liability. You are just practicing "Resume Driven Development" on the company's dime. Stop it.
 
-The shift from Junior to Senior is not about learning more frameworks. It’s about shifting your focus from the *implementation* (How do I build this?) to the *impact* (Why are we building this?).
+The shift from Junior to Senior is not about learning more frameworks. It’s about shifting your focus from the *implementation* (How do I build this shiny thing?) to the *impact* (Why are we burning money on this?).
 
 ---
 
@@ -32,8 +32,8 @@ If you can't answer these questions, you are just typing characters into a text 
 **Real-world scenarios:**
 
 * **The Feature Factory:** Product asks for a "Social Login" feature.
-  * *Junior:* Spends 2 weeks implementing OAuth for Facebook, Twitter, GitHub, and LinkedIn.
-  * *Senior:* Asks, "Do our users actually want this?" Checks analytics. Realizes 99% of users are Enterprise clients who only use SSO. Implements SAML instead. Saves 2 weeks of wasted work.
+  * *Junior:* Spends 2 weeks implementing OAuth for Facebook, Twitter, GitHub, and LinkedIn because "we might need it someday."
+  * *Senior:* Asks, "Do our users actually want this?" Checks analytics. Realizes 99% of users are Enterprise clients who are legally forbidden from using Facebook at work. Implements SAML instead. Saves 2 weeks of wasted work.
 * **The Refactor Rabbit Hole:** You see some ugly code in the billing module.
   * *Junior:* "This is disgusting! I'm going to rewrite it to use the Strategy Pattern!" (Breaks billing, delays the sprint, introduces 3 new bugs).
   * *Senior:* "This code is ugly, but it has processed $10M without error for 3 years. I will treat it like nuclear waste: I will not touch it unless absolutely necessary."
@@ -47,7 +47,7 @@ If you can't answer these questions, you are just typing characters into a text 
 
 *Perfect code that solves the wrong problem is worthless.*
 
-This hurts to hear, but it’s true. A messy, hacked-together script that saves the company $1M is better than a pristine, 100% test-covered application that nobody uses.
+This hurts to hear, but it’s true. A messy, hacked-together script that saves the company $1M is better than a pristine, 100% test-covered application that nobody uses. Your clean code trophy doesn't pay the server bills.
 
 Your job is to balance *speed* with *quality*. Sometimes, "good enough" is actually perfect. Sometimes, you need bulletproof engineering. Wisdom is knowing the difference.
 

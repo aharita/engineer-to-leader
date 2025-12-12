@@ -21,7 +21,7 @@ There is a temptation to show off how smart you are. You use one-liners, obscure
 
 You are not a wizard. You are an asshole.
 
-"Clever" code is hard to debug, hard to test, and hard to extend. **Boring code is good code.**
+"Clever" code is hard to debug, hard to test, and hard to extend. It's job security for you, but a nightmare for everyone else. **Boring code is good code.** If your code looks like it was written by a bored accountant, you are doing it right.
 
 **Real-world scenarios:**
 
@@ -29,7 +29,7 @@ You are not a wizard. You are an asshole.
   * *Junior:* Writes a 4-line nested ternary operator in JavaScript. `const status = isUser ? (isActive ? 'active' : 'inactive') : (isGuest ? ...`
   * *Senior:* Writes an `if/else` block. It takes 6 lines. It is readable.
 * **The Abstraction:**
-  * *Junior:* Creates a `BaseAbstractFactoryManager` to handle a simple button click.
+  * *Junior:* Creates a `BaseAbstractFactoryManagerDelegate` because they read a book on Design Patterns once and didn't really understand it.
   * *Senior:* Just writes a function called `handleClick`.
 * **The Regex Wizard:** You need to validate an email.
   * *Junior:* Writes a 50-character Regex that they found on a forum. It has a catastrophic backtracking bug.
