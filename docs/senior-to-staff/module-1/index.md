@@ -89,3 +89,40 @@ If your changes only affect your immediate team, you are still a Senior. Staff i
 *   **The Onboarding:**
     *   *Senior:* Helps the new hire set up their dev environment.
     *   *Staff:* Realizes the setup script is broken and takes 2 days. Rewrites the script to be idempotent and run in 15 minutes. Now every new hire for the next 3 years owes them a beer. They will never collect.
+
+---
+
+## 4. Mentoring at Scale (The Force Multiplier)
+
+*One-on-one mentoring is cute. System-wide mentoring is Staff.*
+
+As a Senior, you mentor 1-2 people directly. You pair, you review, you coach.
+As a Staff, you mentor the *org*. You build the systems that make everyone better: documentation, standards, templates, tech talks. You are not just teaching people to fish—you are building the fishing school.
+
+**Real-world scenarios:**
+
+*   **The Knowledge Monopoly:**
+    *   *Senior:* Knows the secret to fixing the flaky test. Tells people when they ask.
+    *   *Staff:* Writes a wiki page titled "How to Fix the Flaky E2E Tests (And Why They Exist In The First Place)." Links it in Slack every time someone asks. Now they don't have to ask. Time saved: ∞.
+*   **The Tech Talk:**
+    *   *Senior:* Attends tech talks. Plays on phone.
+    *   *Staff:* Organizes the tech talk series. Recruits speakers. Gives talks on hard problems. Records them for future humans. "I will outlive my employment here through these videos."
+*   **The Leveling Guide:**
+    *   *Senior:* Wonders what it takes to get promoted.
+    *   *Staff:* Writes the "What it takes to get to Staff" internal doc that everyone forwards to their friends. Becomes the de-facto career coach without the awkward 1:1s.
+*   **The Template:**
+    *   *Senior:* Writes an RFC. It's okay.
+    *   *Staff:* Creates the RFC template that the entire org uses. Every good RFC from now on has their fingerprints on it. Immortality through markdown.
+
+---
+
+## 5. Summary
+
+* **Thrive in ambiguity.** When there's no Jira ticket and the PM is crying, that's your time to shine.
+* **Code is the last resort.** Your job is to make others succeed. If you're in the IDE all day, you're probably avoiding harder problems.
+* **Expand your blast radius.** If your impact doesn't cross team boundaries, you're still a Senior in a Staff costume.
+* **Mentor the org, not the person.** Build systems that scale your knowledge beyond your calendar.
+* **Kill the hero.** Preferably with documentation.
+
+Welcome to Staff. Your keyboard time has been replaced with Google Docs time. Try not to cry.
+

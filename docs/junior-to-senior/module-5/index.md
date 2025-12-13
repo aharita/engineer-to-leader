@@ -112,11 +112,46 @@ There is a special place in hell for people who DM you "Hi" and then wait for yo
 
 ---
 
-## 5. Summary
+## 5. Cross-Team Collaboration (The Political Game You Hate But Must Play)
+
+*Other teams are not the enemy. They are NPCs with their own quest lines.*
+
+You cannot build anything meaningful alone. You need Design to make it pretty. You need Product to tell you what to build (and change their mind 47 times). You need DevOps to deploy it without crying. You need QA to find the bugs you swore weren't there.
+
+**The Rules:**
+
+* **Learn their language.** Product speaks in "user stories" and "customer value." Finance speaks in "ROI" and "COGS." If you only speak in "microservices" and "technical debt," you will be ignored.
+* **Empathy is strategic.** The PM is not changing requirements to annoy you. They are reacting to new information from the business. If you understand *why* the change happened, you can push back intelligently instead of just sulking.
+* **Build relationships before you need them.** Have coffee with the PM. Say hi to the Designer. When the incident happens at 2 AM, you'll be glad you have allies.
+
+**Real-world scenarios:**
+
+* **The "Not My Job" Silo:**
+  * *Junior:* "That's a product decision, not my problem." (The feature ships with a UX that makes users cry).
+  * *Senior:* "I think this user flow has a problem. Can we walk through it with Design before I build it?" (Prevents 2 weeks of rework).
+* **The Design Handoff:**
+  * *Junior:* "The Figma looks pretty but it's impossible to build. Whatever, I'll just make something up." (Designer is confused why it looks different).
+  * *Senior:* "Hey, this animation will add 3 days. Is it critical, or can we do a simpler version for MVP?"
+* **The DevOps Dance:**
+  * *Junior:* "I finished the feature. DevOps can figure out how to deploy it." (DevOps hates you now).
+  * *Senior:* "I'm adding a new service. I'll pair with DevOps to set up the pipeline and make sure monitoring is in place before we go live."
+* **The Blame Cycle:**
+  * *Junior:* "QA didn't catch the bug." / "Product gave bad requirements." / "Design was unclear."
+  * *Senior:* "We (the team) missed this. What process failed? How do we fix it?"
+
+:::tip Pro Tip
+**The Pre-Mortem.**
+Before starting a risky project, gather the team and ask: "Imagine it's 3 months from now and this project failed spectacularly. What went wrong?" You'll surface risks that nobody would admit in a normal planning meeting. Design will say, "We didn't have enough time for research." Product will say, "The requirements weren't clear." Engineering will say, "We underestimated the complexity." Now you can fix these issues *before* they kill the project.
+:::
+
+---
+
+## 6. Summary
 
 * **Be concise.** Respect people's time.
 * **Flag risks early.** No surprises.
 * **Write it down.** Docs > Talk.
 * **Speak up.** Your opinion matters.
+* **Play nice with others.** Product, Design, DevOps—they're not the enemy. Treat them like allies and you'll be amazed at how much easier your job gets.
 
-Communication is the API for your career.
+Communication is the API for your career. Don't let it timeout.

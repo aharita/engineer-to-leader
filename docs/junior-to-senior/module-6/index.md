@@ -4,12 +4,12 @@ title: "Module 6: Ownership & Accountability (The 'Bus Factor')"
 ---
 # Module 6: Ownership & Accountability (The "Bus Factor")
 
-**You built it. You run it. You fix it.**
+**You built it. You run it. You fix it. You cry about it at 3 AM.**
 
 Junior engineers think their job ends when the PR is merged.
-Senior engineers know that’s when the job *starts*.
+Senior engineers know that's when the job *starts*. And also when the anxiety dreams begin.
 
-Ownership means caring about the outcome, not just the output. It means you don't sleep well if you know there is a critical bug in production.
+Ownership means caring about the outcome, not just the output. It means you don't sleep well if you know there is a critical bug in production. (You're not being paranoid. The bug is real. It's always real.)
 
 ---
 
@@ -131,9 +131,9 @@ A Senior Engineer's goal is to make themselves unnecessary for the day-to-day op
 
 ## 5. Summary
 
-* **Own the outcome.** Not just the code.
-* **Stay calm.** Incidents happen.
-* **Fix the system.** Don't blame the person.
-* **Share the load.** Don't be a single point of failure.
+* **Own the outcome.** Not just the code. The code is the easy part. The users screaming in your inbox are the hard part.
+* **Stay calm.** Incidents happen. Panicking makes them worse. Coffee helps.
+* **Fix the system.** Don't blame the person. (Unless it's you. Then blame yourself quietly and fix it loudly.)
+* **Share the load.** Don't be a single point of failure. Your vacation depends on it.
 
-Ownership is the price of autonomy.
+Ownership is the price of autonomy. And also the price of interesting stories for your therapist.

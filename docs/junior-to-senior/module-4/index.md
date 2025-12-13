@@ -6,10 +6,10 @@ title: "Module 4: System Design Basics (Thinking in Boxes)"
 
 **Stop seeing lines of code. Start seeing boxes and arrows.**
 
-As a Junior, your world is a function. Maybe a class.
-As a Senior, your world is the System.
+As a Junior, your world is a function. Maybe a class if you're feeling fancy.
+As a Senior, your world is the System. The terrifying, distributed, constantly-on-fire System.
 
-You need to understand how your code fits into the bigger picture. How does the frontend talk to the backend? How does the backend talk to the database? What happens when 10,000 people hit that button at the same time?
+You need to understand how your code fits into the bigger picture. How does the frontend talk to the backend? How does the backend talk to the database? What happens when 10,000 people hit that button at the same time? (Spoiler: Usually, tears.)
 
 ---
 
@@ -124,9 +124,9 @@ Don't just dump your database schema as JSON. Your API should be designed around
 
 ## 5. Summary
 
-* **Think about scale.** Will this work with 1M users?
-* **Understand trade-offs.** There is no silver bullet.
-* **Respect the data.** Schema changes are hard.
-* **Honor the contract.** Don't break the API.
+* **Think about scale.** Will this work with 1M users? Will it work when they all click "Add to Cart" during Black Friday?
+* **Understand trade-offs.** There is no silver bullet. There are only tradeoffs you haven't discovered yet.
+* **Respect the data.** Schema changes are hard. Data migrations are where startups go to die.
+* **Honor the contract.** Don't break the API. Unless you want the mobile team to send you passive-aggressive Slack messages for 6 months.
 
-System design is the art of managing complexity.
+System design is the art of managing complexity. Also the art of knowing which complexity to ignore until it actually becomes a problem.

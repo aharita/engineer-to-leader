@@ -56,3 +56,43 @@ Staff Engineers push for "Consent," not "Consensus."
 *   **The "Bike-Shedding":**
     *   *Senior:* Argues about linter rules for 4 hours.
     *   *Staff:* "I am merging the linter config. If you don't like it, write a script to auto-fix your code. We are done talking about indentation."
+
+---
+
+## 3. Translating for Executives (The Interpreter)
+
+*They don't speak your language. You have to speak theirs.*
+
+Executives don't care about your microservices. They care about money, risk, and timelines. If you can't translate "We need to refactor the payment system" into "This will reduce fraud losses by $500k/year and cut development time by 30%," you will get a polite nod and zero budget.
+
+**Real-world scenarios:**
+
+*   **The Technical Monologue:**
+    *   *Senior:* "We need to migrate to Kubernetes because Docker Swarm has scalability limitations in orchestrating stateful workloads across availability zones." (CTO's eyes glaze over).
+    *   *Staff:* "Our current infrastructure can't handle Black Friday traffic. Kubernetes fixes that. Cost: $50k. Risk of doing nothing: $2M in lost sales. I've already talked to the team and we can have it done by October." (CTO nods and signs off).
+*   **The Risk Translation:**
+    *   *Senior:* "We have technical debt."
+    *   *Staff:* "We have a 40% chance of a major outage in the next 6 months if we don't address the payment system. Here's the probability breakdown and what we need to mitigate it."
+*   **The Time vs. Scope:**
+    *   *Senior:* "It'll be done when it's done."
+    *   *Staff:* "We have 3 options: Ship all features in 6 months, ship 80% of features in 3 months, or hire 2 contractors and ship everything in 4 months. Here are the costs and risks of each."
+*   **The Skip-Level:**
+    *   *Senior:* Gets nervous talking to the VP.
+    *   *Staff:* Books regular 1:1s with skip-level leadership. "If my manager gets hit by a bus, leadership should know who I am and what I'm working on. Also, my manager can't block my visibility."
+
+:::tip Pro Tip
+**The One-Pager.**
+Executives have the attention span of a caffeinated goldfish. Never send them a 10-page doc. Send a one-page summary with: Problem, Proposed Solution, Cost/Benefit, Timeline. Put the details in an appendix "for those who want to go deeper" (nobody will).
+:::
+
+---
+
+## 4. Summary
+
+* **Build social capital.** Every "No" withdraws from the trust bank. Balance it with deposits (unblocking people, fixing things, being useful).
+* **Consent over consensus.** You'll never get 10 engineers to agree. Get agreement that it's "safe enough to try" and move on.
+* **Speak executive.** Translate tech into money, risk, and timelines. Numbers beat opinions.
+* **Manage up.** Your skip-level should know your name and your work. Don't let your manager be your only advocate.
+* **Kill passive-aggression.** If someone is blocking silently, force it into the light. Politely. Then less politely.
+
+Politics is just influence with a bad reputation. Learn to play the game, or be played by it.

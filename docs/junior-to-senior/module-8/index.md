@@ -4,10 +4,11 @@ title: "Module 8: Career Navigation (The Promotion Game)"
 ---
 # Module 8: Career Navigation (The Promotion Game)
 
-**Hope is not a strategy.**
+**Hope is not a strategy. Neither is "working hard and waiting to be noticed."**
 
-You don't get promoted just because you worked hard. You get promoted because you delivered value and *people noticed*.
-Career growth is an engineering problem. You need a plan, metrics, and execution.
+You don't get promoted just because you worked hard. You get promoted because you delivered value and *people noticed*. The "noticed" part is not optional. If you're the silent hero who fixes everything but never tells anyone, congratulations: you're a well-kept secret. Secrets don't get promoted.
+
+Career growth is an engineering problem. You need a plan, metrics, and execution. Also, a Brag Doc. (We'll get to that.)
 
 ---
 
@@ -124,9 +125,11 @@ If you don't ask, the answer is always no.
 
 ## 5. Summary
 
-* **Track your wins.** Write the Brag Doc.
-* **Focus on impact.** Numbers speak louder than code.
-* **Ask for it.** Be clear about your goals.
-* **Build your brand.** Be visible.
+* **Track your wins.** Write the Brag Doc. Your memory is garbage. The doc is not.
+* **Focus on impact.** Numbers speak louder than code. "I deleted 10,000 lines" is a flex.
+* **Ask for it.** Be clear about your goals. Managers cannot read minds (despite what HR thinks).
+* **Build your brand.** Be visible. Volunteer for that tech talk. Write that blog post. Become a "Thought Leader" (I know, I know, but it works).
 
-You are the CEO of your own career. Good luck.
+You are the CEO of your own career. Good luck. You're going to need it.
+
+(Just kidding. You don't need luck. You need this guide. And maybe some coffee.)

@@ -54,3 +54,15 @@ Your job is not to fix the bug. Your job is to coordinate the people fixing the 
 *   **The "Root Cause" Fallacy:**
     *   *Senior:* "The root cause was human error. Dave messed up."
     *   *Staff:* "There is no such thing as human error. The system allowed Dave to mess up. The root cause is a bad system. Fix the system, don't blame Dave."
+
+---
+
+## 3. Summary
+
+* **Observability > Logging.** If you have to redeploy to understand a bug, you have hope, not observability.
+* **Alert on user pain, not CPU metrics.** SLOs over vanity alerts. Your sleep depends on it.
+* **Be the Incident Commander.** When things break, coordinate—don't just code. Keep the CEO off the engineers' backs.
+* **Fix the system, not the person.** "Human error" is a cop-out. The system allowed the error. Fix the system.
+* **Post-mortems are mandatory.** Not to assign blame, but to make sure this specific disaster never happens again. New disasters are fine.
+
+Ops maturity is the difference between "the site is down and everyone is panicking" and "the site is down and we're calmly following the runbook." Be the calm.

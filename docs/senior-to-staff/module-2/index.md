@@ -81,3 +81,14 @@ Staff Engineers write **Architecture Decision Records (ADRs)**.
 *   **The "It's Trendy" Choice:**
     *   *Senior:* "Let's use GraphQL because Facebook uses it!"
     *   *Staff:* Writes ADR 005: "We are sticking to REST because we don't have Facebook's problems, but we do have Facebook's deadline pressure."
+
+---
+
+## 4. Summary
+
+* **Write before you code.** Design Docs find bugs cheaper than production outages. Your marriage will thank you.
+* **Name things carefully.** If Marketing calls it "Credits" and Engineering calls it "Tokens," you have a Tower of Babel situation. Someone will get paid twice, or not at all.
+* **Document your decisions.** ADRs are not bureaucracy—they're insurance against future you forgetting why past you made that choice.
+* **Kill meetings with docs.** The best meeting is the one that ends in 15 minutes because everyone read the doc first. (They didn't read it, but the doc is there so you can say "as stated in the doc...")
+
+You are now a Technical Writer who happens to know Kubernetes. Embrace it.

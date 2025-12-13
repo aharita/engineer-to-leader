@@ -56,3 +56,15 @@ Staff Engineers treat "Other Engineers" as their customers. And their customers 
 *   **The Linter Wars:**
     *   *Senior:* Argues about semicolons in code review.
     *   *Staff:* Adds Prettier to the pre-commit hook. "The machine decides now. Argue with the robot."
+
+---
+
+## 3. Summary
+
+* **Embrace the brownfield.** Greenfield is sexy. Brownfield pays the bills. The legacy code is where the real money is made.
+* **Archaeology before demolition.** Before you delete "stupid" code, understand why it exists. That Perl script might be printing money.
+* **Be the DevEx champion.** Slow builds = slow teams. If the CI takes 20 minutes, you're burning thousands of dollars in engineer time every day.
+* **Automate the arguments.** Linters, formatters, pre-commit hooks. Machines should make style decisions so humans can argue about things that matter.
+* **Reduce the Bus Factor.** Learn the scary systems. Document them. Make yourself the safety net so Dave can finally take a vacation.
+
+Glue work is invisible but essential. It's the difference between a team that ships and a team that's stuck debugging environment issues for 3 days. Be the janitor. Own the broom.

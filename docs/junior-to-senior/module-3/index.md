@@ -116,11 +116,45 @@ Technical debt is fine if you take it on *consciously*. "We need to ship for the
 
 ---
 
-## 5. Summary
+## 5. Security: You Are the Last Line of Defense
+
+*If you don't think about security, hackers will think about it for you.*
+
+Juniors build features. Seniors build features that don't end up on "Have I Been Pwned." Your job is not just to make it work—it's to make it work without leaking 10 million passwords to a teenager in a basement.
+
+**The Basics (That Everyone Ignores):**
+
+* **Never trust user input.** Ever. That form field is not a text box. It is a portal through which demons (SQL injections, XSS, and worse) enter your kingdom.
+* **Secrets are not code.** If your API key is in your GitHub repo, congratulations, you just gave the internet free access to your AWS account. Use environment variables. Use a secrets manager. Use *anything* except hardcoding.
+* **Least privilege.** Your app should have the minimum permissions it needs. If your web server has `root` access to the database, you deserve what's coming.
+
+**Real-world scenarios:**
+
+* **The SQL Injection:**
+  * *Junior:* `"SELECT * FROM users WHERE name = '" + userName + "'"` (Little Bobby Tables drops your entire database).
+  * *Senior:* Uses parameterized queries. Always. No exceptions. "But it's just an internal tool!" The intern will accidentally make it public. Use parameterized queries.
+* **The Leaked Secret:**
+  * *Junior:* Commits `.env` file to Git. Posts about it on Blind a year later: "I got fired for something stupid."
+  * *Senior:* Has a `.gitignore` that blocks `.env`. Rotates API keys regularly. Sleeps soundly.
+* **The Direct Object Reference:**
+  * *Junior:* `/api/invoice/123` shows invoice 123. Change it to `/api/invoice/124` and see someone else's invoice. Oops.
+  * *Senior:* Always checks: "Does the current user have permission to view this resource?" before returning it. Every. Single. Time.
+
+:::tip Pro Tip
+**The Attacker Mindset.**
+Before you ship, spend 5 minutes thinking like a hacker. "If I wanted to break this, how would I do it?" Can I bypass the login by hitting the API directly? Can I upload a malicious file? Can I change the price in the cart from $100 to $1 by editing the request?
+
+If you can think of the attack, someone else will too. Fix it before they find it.
+:::
+
+---
+
+## 6. Summary
 
 * **Write for humans.** Be boring.
 * **Small PRs.** Context is key.
 * **Don't be defensive.** Feedback makes you better.
 * **Test your code.** Don't rely on hope.
+* **Think like a hacker.** If you don't try to break your code, someone else will. They won't be as nice about it.
 
-Quality is what happens when you care.
+Quality is what happens when you care. Also when you're terrified of ending up on the news.

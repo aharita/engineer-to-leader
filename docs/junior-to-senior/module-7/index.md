@@ -4,13 +4,13 @@ title: "Module 7: Mentoring & Onboarding (The Multiplier Effect)"
 ---
 # Module 7: Mentoring & Onboarding (The Multiplier Effect)
 
-**A Senior Engineer is a force multiplier.**
+**A Senior Engineer is a force multiplier. A selfish Senior is just a lonely expert waiting to burn out.**
 
 If you write 10x code, you are a 10x engineer.
 If you help 5 people write 2x code, you are a 10x engineer.
-The second one is scalable. The first one burns you out.
+The second one is scalable. The first one means you can never take a vacation because the whole codebase lives in your head.
 
-Mentoring is not "teaching people how to code." It is teaching them how to *think* and how to *navigate the system*.
+Mentoring is not "teaching people how to code." It is teaching them how to *think*, how to *navigate the system*, and how to not repeat the same dumb mistakes you made. (Learn from my pain so I didn't suffer for nothing.)
 
 ---
 
@@ -118,9 +118,9 @@ If a Junior is afraid to ask questions, they will hide their mistakes. You need 
 
 ## 5. Summary
 
-* **Onboard fast.** Get them shipping.
-* **Pair often.** Transfer your brain.
-* **Ask questions.** Make them think.
-* **Be human.** Create safety.
+* **Onboard fast.** Get them shipping. A productive newbie is a happy newbie.
+* **Pair often.** Transfer your brain. Yes, it takes time. Yes, it's worth it.
+* **Ask questions.** Make them think. Don't just hand them answers like a human StackOverflow.
+* **Be human.** Create safety. Admit you don't know everything. (Because you don't. Nobody does.)
 
-You rise by lifting others.
+You rise by lifting others. Also by documenting things so you don't have to explain them for the 47th time.

@@ -84,3 +84,14 @@ Staff Engineers obsess over NFRs: Latency, Throughput, Cost, Security, Complianc
 *   **The Observability Gap:**
     *   *Senior:* "I added a `console.log`."
     *   *Staff:* "That goes to stdout and disappears. Add a structured log with a trace ID so I can actually find it in Datadog when the customer complains."
+
+---
+
+## 4. Summary
+
+* **Buy before you build.** You sell socks, not custom auth systems. Use Auth0, use Stripe, use whatever lets you ship faster.
+* **Know your doors.** Two-way doors (reversible): move fast. One-way doors (databases, languages, face tattoos): move slow.
+* **Obsess over NFRs.** The feature "works" until 100,000 users hit it at once and it costs $5 per click. Latency, cost, security—these are the silent killers.
+* **Have an exit strategy.** Never adopt a technology unless you can imagine how to migrate off of it. If you can't delete it, don't create it.
+
+Architecture is the art of making decisions you'll regret slightly less than the alternatives. Choose wisely, and document why.

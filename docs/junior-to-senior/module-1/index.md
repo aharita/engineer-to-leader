@@ -121,11 +121,43 @@ If the button looks bad, fix it. If the build is broken, fix it. If the user is 
 
 ---
 
-## 5. Summary
+## 5. Estimation: The Art of Lying with Numbers
+
+*You will be wrong. Be productively wrong.*
+
+Every manager will ask: "How long will this take?" This is a trap. If you say 2 days and it takes 5, you are "slow." If you say 10 days and it takes 5, you "padded your estimate." There is no winning. Only surviving.
+
+**The Rules:**
+
+* **Double your gut estimate.** Your gut is optimistic and dumb. It forgets about meetings, code review, testing, and the 3 hours you'll spend debugging a typo.
+* **Break it down.** "This will take 2 weeks" is a guess. "This is 5 tasks, each will take 2-3 days" is an estimate. One of these gets you fired. The other gets you promoted.
+* **Scope is your enemy.** The task will grow. The PM will add "just one more thing." Protect your estimate like it owes you money.
+
+**Real-world scenarios:**
+
+* **The Optimist:**
+  * *Junior:* "I can do it in 2 days!" (Takes 2 weeks. Gets a reputation for being unreliable).
+  * *Senior:* "It looks like 2-3 days, but I want to account for testing and edge cases. Let's say 5 days to be safe." (Finishes in 4 days. Looks like a hero).
+* **The Scope Creep:**
+  * *Junior:* PM asks for "one small change" mid-sprint. Junior says "Sure!" without adjusting the timeline. Misses the deadline.
+  * *Senior:* "I can add that, but it will add 2 days to the timeline. Which feature do you want to cut, or do we push the deadline?"
+* **The Black Box:**
+  * *Junior:* "It's 3 weeks." (No breakdown. No confidence).
+  * *Senior:* "Here's the breakdown: 3 days for the API, 2 days for the DB schema, 4 days for the frontend, 2 days for testing, 1 day buffer for 'things will go wrong'. Total: 12 days."
+
+:::tip Pro Tip
+**The "Unknown Unknowns" Buffer.**
+For tasks in unfamiliar territory, add 50% buffer. If you've never worked with the payment API before, your estimate is a fantasy. Admit it. "I've never done this before, so my estimate has high uncertainty. I'll know more after 2 days of investigation."
+:::
+
+---
+
+## 6. Summary
 
 * **Code is a liability.** Write less of it.
 * **Focus on value.** Solve the user's problem, not your own intellectual curiosity.
 * **Be autonomous.** Don't wait to be told what to do.
 * **Own the whole stack.** Don't hide behind your job title.
+* **Estimate honestly.** Double your gut. Add buffer. Protect your timeline like it's your reputation (because it is).
 
-Welcome to the big leagues.
+Welcome to the big leagues. Nobody said it was going to be fun. They lied.

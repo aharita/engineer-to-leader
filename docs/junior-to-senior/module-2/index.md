@@ -120,11 +120,45 @@ Hiding your struggle is the worst thing you can do. It leads to missed deadlines
 
 ---
 
-## 5. Summary
+## 5. Working with Legacy Code (The Archaeological Dig)
+
+*That code is ugly because it survived.*
+
+Every developer looks at old code and thinks, "Who wrote this garbage?" Then `git blame` reveals it was themselves, 6 months ago. Humbling.
+
+Legacy code is not a failure. It is *battle-tested* code that has been processing real transactions while you were debating tabs vs. spaces. Treat it with fear and respect, like a sleeping dragon guarding treasure.
+
+**The Rules:**
+
+* **Don't rewrite it.** Your "clean" rewrite will have new bugs. The legacy code's bugs are *known* bugs. Known bugs are features.
+* **Add tests first.** Before changing anything, write a test that proves the current behavior. Now you have a safety net. Now you can touch it.
+* **Small, surgical changes.** Don't refactor the whole file. Change the one line you need. Get out before you wake the dragon.
+
+**Real-world scenarios:**
+
+* **The Rewrite Fantasy:**
+  * *Junior:* "This code is spaghetti! I'll rewrite it in TypeScript with proper patterns." (3 months later, the rewrite is half-done and has twice as many bugs as the original).
+  * *Senior:* "This code is spaghetti, but it works. I will add a thin wrapper around it and slowly strangle it over time." (The Strangler Fig pattern. Look it up).
+* **The Archaeology:**
+  * *Junior:* "I have no idea what this function does." (Deletes it. Production explodes).
+  * *Senior:* "I have no idea what this function does. Let me write a test that calls it with known inputs, see what it returns, and then I'll understand it."
+* **The Blame Game:**
+  * *Junior:* "This code is terrible because developers 5 years ago were stupid."
+  * *Senior:* "This code looks terrible because I don't have the context. In 2018, they probably had 3 weeks to ship this or the company would die. They made trade-offs. It worked. Respect."
+
+:::tip Pro Tip
+**The Chesterton's Fence Rule.**
+Before you remove code that looks useless, ask: "Why was this put here in the first place?" There's a fence in the middle of a field. A fool removes it because it looks pointless. A wise person asks, "Who built this fence, and what were they keeping out?" That `// DO NOT DELETE` comment exists for a reason. Find the reason before you delete.
+:::
+
+---
+
+## 6. Summary
 
 * **Try for 15 minutes.** Then ask.
 * **Show your work.** "I tried X, Y, Z."
 * **Read the docs.** Don't guess.
 * **Timebox your struggles.** Don't hide in a hole.
+* **Respect the legacy.** That ugly code paid for your salary. Add tests before you touch it.
 
-Independence is earned by proving you can handle the unknown.
+Independence is earned by proving you can handle the unknown. And by not deleting mystery functions in production.

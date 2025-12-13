@@ -53,14 +53,49 @@ This isn't bragging. It's "signaling alignment." If you don't tell the story, so
 
 ---
 
-## 3. Summary
+## 3. When Your Big Bet Fails (The Recovery)
 
-* **Scope:** Solve for the org, not the ticket.
-* **Write:** RFCs and Design Docs are your primary output. Code is secondary.
-* **Strategy:** Know the P&L and map tech to money.
-* **Architecture:** Buy over build. Thinking in NFRs. Don't reinvent the wheel.
-* **Ops:** MTTR over MTTF. Sleep at night. Delete alerts.
-* **Glue:** Fix the build, clean the legacy, unblock the team. Be the janitor.
-* **Career:** Propose your own work. Be visible. Play the game.
+*Failure at the Staff level is spectacular. And everyone is watching.*
 
-Welcome to the Staff level. The problems are harder, the code is scarcer, and you have never been more important. Now go write a doc.
+At the Senior level, you break a feature. At the Staff level, you break a strategy. You convinced leadership to invest 6 months and 5 engineers in a platform migration, and it failed. The old system is still running. The new system is a graveyard. Your credibility is on fire.
+
+This will happen. The question is: how do you recover?
+
+**Real-world scenarios:**
+
+*   **The Denial:**
+    *   *Failure:* Pretends it didn't fail. "We learned a lot." (Everyone knows you failed. They're just too polite to say it).
+    *   *Recovery:* Own it publicly. "The migration failed. Here's why: we underestimated the data complexity and didn't have a rollback plan. Here's what I'd do differently." (Credibility increases because you can admit failure).
+*   **The Blame Shift:**
+    *   *Failure:* "The Product team changed requirements." / "Engineering didn't execute."
+    *   *Recovery:* "I should have identified the requirement ambiguity earlier. I should have built in checkpoints. The failure is mine to own."
+*   **The Pivot:**
+    *   *Failure:* Goes silent for 3 months. Avoids the topic.
+    *   *Recovery:* Proposes a smaller, safer follow-up project. "The full migration failed, but we can salvage the data layer. Here's a 4-week project to extract that value."
+*   **The Long Game:**
+    *   *Failure:* Assumes career is over. Updates LinkedIn desperately.
+    *   *Recovery:* Keeps shipping wins. One failure doesn't define you. Consistency does. "Remember when I failed the platform migration? Here are the 5 things I shipped successfully since then."
+
+:::tip Pro Tip
+**The Failure Resume.**
+Keep a private doc of your biggest failures and what you learned. When you interview for your next role and they ask "Tell me about a time you failed," you'll have a genuine, thoughtful answer instead of the fake "I work too hard" nonsense.
+:::
+
+---
+
+## 4. Summary
+
+* **Scope for the org.** If your work only helps your team, you're still a Senior. Staff impact ripples across teams.
+* **Write is your weapon.** RFCs, Design Docs, ADRs—code is secondary. Docs are how you scale influence.
+* **Map tech to dollars.** Strategy is connecting the tech stack to the P&L. If you can't explain ROI, you're just playing.
+* **Buy over build.** Don't reinvent wheels. You sell socks, not message queues.
+* **Sleep at night.** Ops maturity means alerts that matter, runbooks that work, and post-mortems that prevent repeat disasters.
+* **Be the janitor.** Glue work is invisible but essential. Fix the build. Clean the legacy. Unblock the team.
+* **Own your failures.** Big bets sometimes fail. Own it, learn from it, and keep shipping wins.
+* **Play the game.** Visibility isn't vanity. Propose your own work. Build your brand. Be the CEO of your career.
+
+Welcome to Staff. The problems are harder, the code is scarcer, the meetings are longer, and somehow this is supposed to be a promotion. Congratulations?
+
+Now go write a doc. And then write another doc. And then maybe, just maybe, you can write some code.
+
+(Just kidding. There's another doc waiting.)

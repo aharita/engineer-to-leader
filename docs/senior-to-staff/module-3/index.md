@@ -59,3 +59,40 @@ You need to know the constraints of your org better than anyone.
 *   **The Hiring Freeze:**
     *   *Senior:* "We need to hire 3 more devs to finish this."
     *   *Staff:* "We are in a hiring freeze. You have to finish this with the 2 interns and a bag of coffee. Re-scope the project or die trying."
+
+---
+
+## 3. Technical Vision (The Multi-Year Bet)
+
+*Predicting the future is impossible. But you have to do it anyway.*
+
+A Senior plans for the sprint. A Staff plans for the year. A Principal plans for the decade (and is usually wrong, but impressively so).
+
+Your job is to create a "North Star"—a technical direction that gives the org confidence that you're not just reacting to fires but actually building toward something. This is part prophecy, part salesmanship, and part educated guessing.
+
+**Real-world scenarios:**
+
+*   **The Reactive Org:**
+    *   *Senior:* "What should I work on?" (Waits for tickets).
+    *   *Staff:* "In 2 years, our monolith won't scale. Here is a 6-quarter migration plan to a modular architecture. I've already socialized it with the VPs. We start next month." (Creates reality).
+*   **The Tech Radar:**
+    *   *Senior:* Tries a new framework because it looked cool on Hacker News.
+    *   *Staff:* Creates a "Tech Radar" document showing which technologies are Adopt, Trial, Assess, or Hold. "We are not adopting anything in 'Assess' without a business case and an exit strategy."
+*   **The Sunset Plan:**
+        *   *Senior:* Adds features to the legacy system forever.
+    *   *Staff:* "This system has 18 months left. I'm putting it in 'Maintenance Mode' and redirecting new features to the v2 platform. Every feature request for v1 gets a 'No' and a link to this doc."
+*   **The Crystal Ball:**
+    *   *Senior:* "I don't know what we'll need next year."
+    *   *Staff:* "I don't either. But I've outlined 3 possible futures and what we'd need for each. When strategy clarifies, we can move fast because we've already thought through the options. I call this 'planning for uncertainty' and I charge extra for it."
+
+---
+
+## 4. Summary
+
+* **Be the hype police.** Every shiny new tech has a switching cost. Ask "Why?" until they stop asking.
+* **Know your constraints.** People, budget, time—usually the bottleneck is people. And they're tired.
+* **Map tech to money.** If you can't explain how your refactor saves or makes money, you're just playing with expensive toys on company time.
+* **Create a North Star.** Even if you're wrong about the future, having a direction is better than reactive chaos.
+* **Plan for multiple futures.** Because the CEO will change strategy 3 times this year and you need to be ready.
+
+Strategy is just tactics with longer timelines and more PowerPoint. Welcome to the big picture.
