@@ -17,13 +17,13 @@ You will have high performers (Stars) and low performers (Detractors). You canno
 
 Manager A is "Nice." Manager B is "Strict."
 If you don't calibrate them, Manager A's team gets all the promotions (unfairly).
-You lock all managers in a room and make them fight.
+You lock all managers in a room and make them fight. This is called "calibration." It's Thunderdome for adults.
 
 **Real-world scenarios:**
 
 * **The Inflation:**
-  * *Manager:* Rates everyone "Exceeds Expectations."
-  * *Director:* "Statistically impossible. Force rank your team. Who is the bottom 10%? If you can't tell me, I will pick for you."
+  * *Manager:* Rates everyone "Exceeds Expectations." (Because they're conflict-averse and want to be the "cool manager.")
+  * *Director:* "Statistically impossible. Force rank your team. Who is the bottom 10%? If you can't tell me, I will pick for you. And I won't be as nice."
 * **The Hidden Gem:**
   * *Manager:* "Sarah is quiet, she's just 'Meets'."
   * *Director:* "Looking at the data, Sarah merged the most critical code. You are biasing towards loudness. I am bumping her to 'Exceeds'."

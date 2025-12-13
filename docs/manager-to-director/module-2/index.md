@@ -6,8 +6,8 @@ title: "Module 2: Org Design (Conway's Architect)"
 
 **The Org Chart is the Codebase.**
 
-If you ship a broken org chart, you will ship broken software. (Conway's Law).
-As a Director, your main architectural contribution is not classes and microservices; it is Teams and Squads.
+If you ship a broken org chart, you will ship broken software. (Conway's Law). This is not a suggestion; it's physics.
+As a Director, your main architectural contribution is not classes and microservices; it is Teams and Squads. You are now playing SimCity with humans. Try not to bulldoze anyone.
 
 ---
 
@@ -15,8 +15,8 @@ As a Director, your main architectural contribution is not classes and microserv
 
 *The Dunbar Number of Engineering.*
 
-Teams break when they get too big. Communication becomes exponential ($N^2$).
-**Rule:** A team is 4-8 people. At 10, it's a social club. At 12, it's a disaster.
+Teams break when they get too big. Communication becomes exponential ($N^2$). At some point, your "team" is just a support group.
+**Rule:** A team is 4-8 people. At 10, it's a social club. At 12, it's a disaster. At 14, it's a small country with internal politics.
 You must split teams *before* they break.
 
 **Real-world scenarios:**
@@ -26,7 +26,7 @@ You must split teams *before* they break.
   * *Director:* "You are failing them. You can't do career dev for 14 people. We are splitting into 'Core Product' and 'Platform'. You get two Tech Leads."
 * **The Reorg Pain:**
   * *Manager:* "The team hates reorgs."
-  * *Director:* "We are changing strategy. The structure must follow the strategy. We will rip the band-aid off quickly. One day of chaos is better than 6 months of misalignment."
+  * *Director:* "Everyone hates reorgs. We are changing strategy. The structure must follow the strategy. We will rip the band-aid off quickly. One day of chaos is better than 6 months of misalignment. Also, the org chart is just 'musical chairs for adults' — they'll get used to it."
 * **The "Bus Factor" Split:**
   * *Manager:* Keeps all the "Payment" experts on one team.
   * *Director:* "We are embedding a Payment expert into the Checkout team. We need to distribute the knowledge, not silo it."

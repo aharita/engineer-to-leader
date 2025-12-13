@@ -15,7 +15,7 @@ Directors build a "Always On" hiring engine. You are selling the company, not ju
 
 *Combating the "Desperation Hire".*
 
-When a team is overworked, they will hire *anyone* with a pulse.
+When a team is overworked, they will hire *anyone* with a pulse. "We just need a body" is the most dangerous phrase in hiring. A body with a pulse can still destroy your team.
 You must install a mechanism to stop this. The "Bar Raiser" is an interviewer from *another* team with veto power.
 
 **Real-world scenarios:**
@@ -44,8 +44,8 @@ You are competing with Google and OpenAI. You can't beat their salaries. You mus
   * *Manager:* Too busy to write.
   * *Director:* Mandates one tech blog post per quarter. "We solved X scale problem." This is bait for Senior engineers.
 * **The Job Description:**
-  * *Manager:* Pastes a generic "5 years Java experience" list.
-  * *Director:* Rewrites it. "Come build the engine that processes $1B in transactions. You will own the Architecture." Sell the *problem*, not the requirements.
+  * *Manager:* Pastes a generic "5+ years Java experience" list. (The framework is 3 years old.)
+  * *Director:* Rewrites it. "Come build the engine that processes $1B in transactions. You will own the Architecture." Sell the *problem*, not the requirements. Nobody dreams of having "5+ years experience."
 * **The Diversity Pipeline:**
   * *Manager:* "We only get male applicants."
   * *Director:* "That's because we only source from your frat buddies on LinkedIn. We are going to sponsor 'Women in Tech' conferences and change our sourcing partners."

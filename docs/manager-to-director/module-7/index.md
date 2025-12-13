@@ -17,9 +17,9 @@ If you talk about "Refactoring" or "Kubernetes" in this room, you will lose fund
 
 *Brief, bright, and gone.*
 
-Executives have the attention span of a gnat and the memory of an elephant.
-Do not show them Jira. Show them: **Red/Yellow/Green.**
-Never lie. They will find out.
+Executives have the attention span of a gnat and the memory of an elephant (for things that hurt them).
+Do not show them Jira. They will fall asleep. Show them: **Red/Yellow/Green.**
+Never lie. They will find out. And they will remember.
 
 **Real-world scenarios:**
 
@@ -39,8 +39,8 @@ Never lie. They will find out.
 
 *Sales vs. Engineering.*
 
-Sales wants to sell features that don't exist. Engineering wants to build features nobody buys.
-You are the diplomat. You are the only thing stopping Sales from promising a "Time Machine" feature to a client.
+Sales wants to sell features that don't exist. Engineering wants to build features nobody buys. This is the eternal dance.
+You are the diplomat. You are the only thing stopping Sales from promising a "Time Machine" feature to a client by Friday.
 
 **Real-world scenarios:**
 

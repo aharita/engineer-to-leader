@@ -6,8 +6,8 @@ title: "Module 6: Strategy & Vision (The North Star)"
 
 **Managers look at next week. Directors look at next year.**
 
-If your team is working hard but going in the wrong direction, it is your fault.
-You define "Winning."
+If your team is working hard but going in the wrong direction, it is your fault. You forgot to provide the direction.
+You define "Winning." If you don't define it, everyone invents their own definition.
 
 ---
 
@@ -15,15 +15,15 @@ You define "Winning."
 
 *Making goals that aren't useless.*
 
-Bad OKR: "Rewrite the backend." (Output)
-Good OKR: "Reduce checkout latency by 50% to increase conversion." (Outcome)
+Bad OKR: "Rewrite the backend." (Output. Also, why?)
+Good OKR: "Reduce checkout latency by 50% to increase conversion." (Outcome. Money talks.)
 You shift the org from "Feature Factory" to "Impact Factory."
 
 **Real-world scenarios:**
 
 * **The Laundry List:**
-  * *Manager:* Has 15 priorities.
-  * *Director:* "If you have 15 priorities, you have 0. Pick the Top 3. Everything else is a 'Nice to have' that we will probably cut."
+  * *Manager:* Has 15 priorities. And 5 "stretch goals." And a "moonshot."
+  * *Director:* "If you have 15 priorities, you have 0. Pick the Top 3. Everything else is a 'Nice to have' that we will probably cut. I don't care about your moonshot until we land the airplane."
 * **The Alignment:**
   * *Manager:* "We are building a Chat feature."
   * *Director:* "The Company Goal is 'Profitability'. How does Chat help Profitability? It doesn't? Kill it."

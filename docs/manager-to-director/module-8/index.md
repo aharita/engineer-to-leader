@@ -15,8 +15,8 @@ Your mood, your tolerance for errors, and your work ethic set the tone for 100 p
 
 *Weaponizing culture.*
 
-"Integrity" is a poster.
-"Don't ship broken code even if the CEO is yelling" is a Value.
+"Integrity" is a poster. It looks nice in the lobby. It means nothing.
+"Don't ship broken code even if the CEO is yelling" is a Value. That's something people actually remember when making decisions.
 You have to operationalize values into decision heuristics.
 
 **Real-world scenarios:**
@@ -68,4 +68,4 @@ As a Director, you control the pipeline and the promotion cycle.
 * **Politics:** Manage the Board. Defend the team.
 * **Culture:** You are the Operating System.
 
-Welcome to the Executive level. It’s lonely, stressful, and impactful.
+Welcome to the Executive level. It's lonely, stressful, and impactful. The coffee is worse, the meetings are longer, and everyone blames you when things go wrong. But occasionally, you get to build something that matters. Good luck.

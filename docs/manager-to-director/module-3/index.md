@@ -6,8 +6,8 @@ title: "Module 3: The P&L (Budgeting)"
 
 **Your code compiles to Money.**
 
-Engineers think resources are infinite. You know the truth. You have a budget. It is finite.
-You are playing a strategy game called "Resource Allocation." You can buy people (Headcount) or you can buy tools (Vendors). You usually can't afford both.
+Engineers think resources are infinite. You know the truth. You have a budget. It is finite. It is shrinking. And Finance is watching.
+You are playing a strategy game called "Resource Allocation." You can buy people (Headcount) or you can buy tools (Vendors). You usually can't afford both. Choose wisely, because Finance remembers every dollar.
 
 If you don't know your burn rate, you aren't a Director; you're just a glorified team lead with a credit card.
 
@@ -38,8 +38,8 @@ You don't just ask for "more people." You ask for "Revenue Capacity."
 
 *AWS is not a charity.*
 
-Your cloud bill is your second biggest expense after salaries.
-If you let it grow unchecked, you are burning the company's runway. AWS Sales Reps love sloppy Directors. Don't be their favorite customer.
+Your cloud bill is your second biggest expense after salaries. It haunts your dreams.
+If you let it grow unchecked, you are burning the company's runway. AWS Sales Reps love sloppy Directors. Don't be their favorite customer. They will send you a fruit basket while extracting your budget.
 
 **Real-world scenarios:**
 
