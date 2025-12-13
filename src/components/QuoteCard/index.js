@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import quotesData from '../../data/quotes.json';
 
-// Helper to separate data types
 const getScenarios = () => quotesData.filter(q => q.type === 'scenario_comparison');
 const getDescriptions = () => quotesData.filter(q => q.type !== 'scenario_comparison');
 
@@ -38,7 +37,6 @@ export default function QuoteCard() {
     return (
         <section className={styles.quoteContainer}>
             <div className="row">
-                {/* Description Section (Concept First) */}
                 <div className="col col--6">
                     <div className={clsx(styles.scenarioContainer, styles.fadeIn)}>
                         <div className={styles.scenarioTitle}>
@@ -55,7 +53,6 @@ export default function QuoteCard() {
                     </div>
                 </div>
 
-                {/* Scenario Section */}
                 <div className="col col--6">
                     <div className={clsx(styles.scenarioContainer, styles.fadeIn)}>
                         <div className={styles.scenarioTitle}>

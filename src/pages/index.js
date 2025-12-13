@@ -115,7 +115,6 @@ function HomepageHeader() {
   }, []);
 
   if (!heroData) {
-    // Server-side / Initial render text (SEO friendly default)
     return (
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
