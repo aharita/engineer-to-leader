@@ -205,7 +205,7 @@ function FeatureHighlight() {
   return (
     <section
       style={{
-        backgroundColor: 'var(--ifm-background-surface-secondary)',
+        backgroundColor: 'var(--ifm-color-emphasis-100)',
         padding: '3rem 0',
       }}>
       <div className="container">
@@ -241,7 +241,6 @@ export default function Home() {
         <div className="container">
           <QuoteCard />
         </div>
-        <div style={{ marginBottom: '4rem' }}></div>
         <FeatureHighlight />
       </main>
     </Layout>
