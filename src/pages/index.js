@@ -33,6 +33,76 @@ const HERO_TITLES = [
     title: "git push --force career",
     subtitle: "Sometimes you have to break things to move up.",
     quote: "\"Warning: This action cannot be undone. Are you sure you want to become a manager? [y/N]\""
+  },
+  {
+    title: "The Calendar Is The IDE",
+    subtitle: "Your new development environment has invites instead of imports.",
+    quote: "\"I coded for 15 minutes today. It was glorious.\""
+  },
+  {
+    title: "Legacy Code Archaeologist",
+    subtitle: "Digging through commits from 2018 to find out who hurt us.",
+    quote: "\"It's not a bug, it's a load-bearing undefined behavior.\""
+  },
+  {
+    title: "Staff Engineer? Maybe.",
+    subtitle: "The role description is just a shrug emoji.",
+    quote: "\"My job is to go to meetings so the team doesn't have to.\""
+  },
+  {
+    title: "Driven by Resume",
+    subtitle: "Implementing Kubernetes because it looks good on LinkedIn.",
+    quote: "\"We don't need microservices, but I need a raise.\""
+  },
+  {
+    title: "Works on My Machine",
+    subtitle: "But you're deploying to production, and production is on fire.",
+    quote: "\"Docker didn't solve the problem, it just containerized the chaos.\""
+  },
+  {
+    title: "The 10x Engineer Myth",
+    subtitle: "You're not 10x. You just broke the build 10x faster.",
+    quote: "\"Slow is smooth. Smooth is fast. Rushing is a SEV-1.\""
+  },
+  {
+    title: "Reply All: \"Please Remove Me\"",
+    subtitle: "Navigating corporate communication without losing your soul.",
+    quote: "\"This meeting could have been an email. This email could have been a slack message. This slack message could have been silence.\""
+  },
+  {
+    title: "Tech Debt Collector",
+    subtitle: "It's time to pay up for those shortcuts you took in Q1.",
+    quote: "\"We'll fix it later. (Narrator: They never fixed it later.)\""
+  },
+  {
+    title: "Promotion Packet Driven Development",
+    subtitle: "If it's not in the doc, it didn't happen.",
+    quote: "\"I spent more time writing about my code than writing code.\""
+  },
+  {
+    title: "Full Stack Overflow",
+    subtitle: "Copying code you don't understand to build systems you can't maintain.",
+    quote: "\"I have no idea why this works, but do not touch it.\""
+  },
+  {
+    title: "The Golden Handcuffs",
+    subtitle: "You hate the legacy stack, but you love the RSUs.",
+    quote: "\"I'm just here for the vesting schedule.\""
+  },
+  {
+    title: "Estimates are Lies",
+    subtitle: "It will be done when it's done. Or next quarter.",
+    quote: "\"T-Shirt sizing? Put me down for an XL headache.\""
+  },
+  {
+    title: "On-Call Survivor",
+    subtitle: "Sleep is for people with low availability requirements.",
+    quote: "\"The pager doesn't scare me. The silence does.\""
+  },
+  {
+    title: "Bike-Shedding Expert",
+    subtitle: "Spending 4 hours debating variable names.",
+    quote: "\"Actually, I think we should use a slightly different shade of blue for the button.\""
   }
 ];
 
@@ -113,22 +183,22 @@ function PathCard({ title, description, icon, link }) {
 function FeatureHighlight() {
   const features = [
     {
-      title: '🎯 Real Frameworks',
+      title: 'Weaponized Soft Skills',
       description:
-        '1-on-1 scripts, calibration tactics, and team dynamics strategies',
+        'How to say "No" without getting fired, and how to say "Yes" without actually doing the work.',
     },
     {
-      title: '📈 Actionable Content',
+      title: 'Performance Review Judo',
       description:
-        'Promotion packets, compensation negotiation, and leadership mechanics',
+        'Writing a promo packet that makes your 3 lines of CSS look like you re-architected the entire internet.',
     },
     {
-      title: '⚡ Career Acceleration',
-      description: 'Skip years of trial-and-error with battle-tested playbooks',
+      title: 'Strategic Incompetence',
+      description: 'Master the fine art of being "too busy" for glue work while taking credit for the high-visibility project.',
     },
     {
-      title: '🔧 Dark Arts Unlocked',
-      description: 'Navigate politics, build psychological safety, architect teams',
+      title: 'Surviving The Re-Org',
+      description: 'Navigate politics, manage up, and survive the restructuring that is definitely coming next quarter.',
     },
   ];
 
@@ -142,7 +212,7 @@ function FeatureHighlight() {
         <Heading
           as="h2"
           style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          What You'll Master
+          The Dark Arts of Corporate Survival
         </Heading>
         <div className="row">
           {features.map((feature, idx) => (
@@ -161,50 +231,17 @@ function FeatureHighlight() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title="Home"
-      description="Transform from Individual Contributor to Engineering Leader. Learn the frameworks, scripts, and tactics to succeed as an engineering manager.">
+      description="The Not-So-Boring Guide to Engineering Leadership.">
       <HomepageHeader />
       <main>
         <div className="container">
           <QuoteCard />
         </div>
-        <section style={{ padding: '3rem 0' }}>
-          <div className="container">
-            <Heading
-              as="h2"
-              style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              Choose Your Career Path
-            </Heading>
-            <div className="row">
-              <PathCard
-                icon="🚀"
-                title="Senior Engineer → Manager"
-                description="Master the transition from code to leadership. 8 modules covering delegation, team dynamics, compensation, and navigating organizational politics."
-                link="/engineer-to-leader/docs/senior-to-manager/module-1/"
-              />
-              <PathCard
-                icon="👔"
-                title="Manager → Director"
-                description="Scale from managing engineers to managing managers. Navigate P&L budgets, org design, hiring machines, and executive presence at the leadership table."
-                link="/engineer-to-leader/docs/manager-to-director/module-1/"
-              />
-              <PathCard
-                icon="📚"
-                title="Junior → Senior Engineer"
-                description="Level up from junior to senior IC. Deep dive into technical depth, system design, code review mastery, and establishing yourself as a trusted expert."
-                link="/engineer-to-leader/docs/junior-to-senior/module-1/"
-              />
-              <PathCard
-                icon="⚡"
-                title="Senior → Staff Engineer"
-                description="Advance to Staff level as an IC. Master organizational influence, technical strategy, architecture thinking, and cross-team impact without management authority."
-                link="/engineer-to-leader/docs/senior-to-staff/module-1/"
-              />
-            </div>
-          </div>
-        </section>
+        <div style={{ marginBottom: '4rem' }}></div>
         <FeatureHighlight />
       </main>
     </Layout>
