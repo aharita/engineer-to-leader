@@ -1,0 +1,190 @@
+.quoteContainer {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 2.5rem;
+  text-align: center;
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.quoteContainer:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.header {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Scenario Styles */
+.scenarioContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.scenarioTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.setupText {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.roleBlock {
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.juniorBlock {
+  border-left: 4px solid var(--ifm-color-danger);
+}
+
+.seniorBlock {
+  border-left: 4px solid var(--ifm-color-success);
+}
+
+.roleTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.juniorTitle {
+  color: var(--ifm-color-danger);
+}
+
+.seniorTitle {
+  color: var(--ifm-color-success);
+}
+
+.roleContent {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sourceInfo {
+  text-align: left;
+}
+
+.track {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.module {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.module:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.refreshButton {
+  background: none;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.refreshButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-color-primary);
+}
+
+.refreshButton:active {
+  transform: scale(0.96);
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -10,8 +10,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Engineer to Leader',
-  tagline: 'Transform from Individual Contributor to Engineering Leader',
+  title: 'The Not-So-Boring Guide',
+  tagline: 'The honest handbook for engineering careers.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -67,7 +67,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'Engineer to Leader',
+        title: 'The Not-So-Boring Guide',
         logo: {
           alt: 'Engineer to Leader Logo',
           src: 'img/logo.svg',

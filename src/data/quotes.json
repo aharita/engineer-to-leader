@@ -1,0 +1,3370 @@
+[
+  {
+    "text": "**Technical Debt is a Tool, not a Crime.**\nThink of it like financial debt. It's okay to take out a loan (write messy code) to buy a house (ship a feature fast). But if you never pay it back (refactor), the interest (bugs/slowness) will bankrupt you.",
+    "label": "Pro Tip",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "tip"
+  },
+  {
+    "text": "**The \"Unknown Unknowns\" Buffer.**\nFor tasks in unfamiliar territory, add 50% buffer. If you've never worked with the payment API before, your estimate is a fantasy. Admit it. \"I've never done this before, so my estimate has high uncertainty. I'll know more after 2 days of investigation.\"",
+    "label": "Pro Tip",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "tip"
+  },
+  {
+    "text": "But here’s the hard truth: **Nobody pays you to write code.**",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "The shift from Junior to Senior is not about learning more frameworks. It’s about shifting your focus from the *implementation* (How do I build this shiny thing?) to the *impact* (Why are we burning money on this?).",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "As a Junior, you get a ticket, and you start typing. As a Senior, you get a ticket, and you start interrogating.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "If you can't answer these questions, you are just typing characters into a text file. You are not engineering.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "This hurts to hear, but it’s true. A messy, hacked-together script that saves the company $1M is better than a pristine, 100% test-covered application that nobody uses. Your clean code trophy doesn't pay the server bills.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Your job is to balance *speed* with *quality*. Sometimes, \"good enough\" is actually perfect. Sometimes, you need bulletproof engineering. Wisdom is knowing the difference.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "I’ve met \"Seniors\" with 2 years of experience and \"Juniors\" with 10. Seniority is a behavior, not a tenure.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "\"I'm just a backend dev, I don't do CSS.\" \"I'm a dev, I don't do DevOps.\" \"I wrote the code, QA should test it.\"",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "If the button looks bad, fix it. If the build is broken, fix it. If the user is confused, fix it. Specialization is fine, but helplessness is not. A Senior Engineer is a *problem solver*, regardless of where the problem lives.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Every manager will ask: \"How long will this take?\" This is a trap. If you say 2 days and it takes 5, you are \"slow.\" If you say 10 days and it takes 5, you \"padded your estimate.\" There is no winning. Only surviving.",
+    "label": "From 'How' to 'Why'",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "statement"
+  },
+  {
+    "title": "The Feature Factory",
+    "setup": "Product asks for a \"Social Login\" feature.",
+    "junior": "Spends 2 weeks implementing OAuth for Facebook, Twitter, GitHub, and LinkedIn because \"we might need it someday.\"",
+    "senior": "Asks, \"Do our users actually want this?\" Checks analytics. Realizes 99% of users are Enterprise clients who are legally forbidden from using Facebook at work. Implements SAML instead. Saves 2 weeks of wasted work.",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Refactor Rabbit Hole",
+    "setup": "You see some ugly code in the billing module.",
+    "junior": "\"This is disgusting! I'm going to rewrite it to use the Strategy Pattern!\" (Breaks billing, delays the sprint, introduces 3 new bugs).",
+    "senior": "\"This code is ugly, but it has processed $10M without error for 3 years. I will treat it like nuclear waste: I will not touch it unless absolutely necessary.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Performance Optimization",
+    "setup": "A query takes 200ms.",
+    "junior": "\"I can get this down to 50ms if I rewrite the ORM layer in raw SQL and add a Redis cache.\" (Adds complexity, introduces bugs).",
+    "senior": "\"Is 200ms hurting the user? No? Then I'm not touching it. We have more important things to build.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The MVP",
+    "setup": "You're building a prototype to test a new market.",
+    "junior": "Sets up a Kubernetes cluster, configures a CI/CD pipeline, writes comprehensive unit tests. Takes 3 weeks.",
+    "senior": "Writes a monolithic script in a single file, deploys it to a $5 VPS. Takes 3 hours. The product fails, but you only wasted 3 hours, not 3 weeks.",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Tech Debt",
+    "setup": "",
+    "junior": "\"We can't ship this! The variable names are inconsistent!\"",
+    "senior": "\"Ship it. We'll fix the variable names if users actually pay us for this feature.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Manual Process",
+    "setup": "Operations team spends 5 hours a week copying data from Excel to the Admin Panel.",
+    "junior": "\"I'll build a full CSV import feature with validation and error reporting.\" (Takes 2 weeks).",
+    "senior": "\"I'll write a 20-line Python script they can run from their terminal.\" (Takes 1 hour).",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Outage",
+    "setup": "Production goes down at 2 AM.",
+    "junior": "Sleeps through the pager. Or wakes up and panics.",
+    "senior": "Jumps on the call, coordinates the response, communicates with stakeholders, and leads the post-mortem to ensure it never happens again.",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Onboarding",
+    "setup": "A new hire joins the team.",
+    "junior": "\"Here's the repo, good luck.\"",
+    "senior": "\"I've updated the README, here's a diagram of the architecture, and let's pair on your first ticket.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Architecture Dispute",
+    "setup": "Two devs are arguing about React vs. Vue.",
+    "junior": "Joins the argument with strong opinions based on a blog post they read.",
+    "senior": "\"What are the trade-offs? Which one does the team know better? Let's pick one and move on.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Broken Build",
+    "setup": "The CI pipeline is red.",
+    "junior": "\"Not my commit. I'll wait for someone else to fix it.\"",
+    "senior": "\"I can't deploy my code until this is green. I'll investigate and ping the person who broke it, or just revert it if it's blocking the release.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Production Bug",
+    "setup": "A customer reports an error.",
+    "junior": "\"Works on my machine.\"",
+    "senior": "\"Let me check the logs, reproduce it in staging, and find out why their environment is different.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Customer Support Ticket",
+    "setup": "A user is stuck and Support can't help.",
+    "junior": "\"That's a support issue.\"",
+    "senior": "\"I'll jump on a call with the user to see what's going on. Seeing them struggle is the best way to find UX bugs.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Optimist",
+    "setup": "",
+    "junior": "\"I can do it in 2 days!\" (Takes 2 weeks. Gets a reputation for being unreliable).",
+    "senior": "\"It looks like 2-3 days, but I want to account for testing and edge cases. Let's say 5 days to be safe.\" (Finishes in 4 days. Looks like a hero).",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Scope Creep",
+    "setup": "",
+    "junior": "PM asks for \"one small change\" mid-sprint. Junior says \"Sure!\" without adjusting the timeline. Misses the deadline.",
+    "senior": "\"I can add that, but it will add 2 days to the timeline. Which feature do you want to cut, or do we push the deadline?\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Black Box",
+    "setup": "",
+    "junior": "\"It's 3 weeks.\" (No breakdown. No confidence).",
+    "senior": "\"Here's the breakdown: 3 days for the API, 2 days for the DB schema, 4 days for the frontend, 2 days for testing, 1 day buffer for 'things will go wrong'. Total: 12 days.\"",
+    "source": "The Mindset Shift",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**Read the Source Code.**\nDocumentation can be outdated. StackOverflow can be wrong. The source code is the only source of truth. If you are using an open-source library and it's acting weird, `Cmd+Click` into the function definition. You might be surprised how readable it is.",
+    "label": "Pro Tip",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "tip"
+  },
+  {
+    "text": "**The Chesterton's Fence Rule.**\nBefore you remove code that looks useless, ask: \"Why was this put here in the first place?\" There's a fence in the middle of a field. A fool removes it because it looks pointless. A wise person asks, \"Who built this fence, and what were they keeping out?\" That `// DO NOT DELETE` comment exists for a reason. Find the reason before you delete.",
+    "label": "Pro Tip",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "tip"
+  },
+  {
+    "text": "The biggest difference between a Junior and a Senior engineer is what happens when they get stuck.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Your goal is to become *autonomous*. You should be able to take a vague requirement and turn it into shipped code with minimal supervision.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Don't spin your wheels for 3 days. But don't ask for help after 30 seconds.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "If you haven't made progress after 15 minutes, **then** you ask for help. But you must be able to say: \"I tried X, Y, and Z, and I'm still seeing error W.\"",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Most \"impossible\" bugs are just you not reading the documentation. You are guessing. You are copy-pasting from StackOverflow and hoping it works. This is \"Voodoo Coding.\" You are shaking chicken bones over your keyboard and praying to the compiler gods.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Stop guessing. Read the API docs. Read the library source code. Understand *how* it works, not just *that* it works.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "1. **Observation:** \"The user can't login.\"\n2. **Hypothesis:** \"Maybe the auth token is expired.\"\n3. **Experiment:** \"I will check the local storage and the network tab.\"\n4. **Conclusion:** \"The token is missing. Why?\"",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Don't just change random lines of code until it works. Isolate variables. Reproduce the issue consistently.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Sometimes, you are just banging your head against a wall. You need to know when to stop and pivot. If you estimated a task would take 2 hours and you are on hour 10, **stop**. Raise a flag. Tell your manager.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Hiding your struggle is the worst thing you can do. It leads to missed deadlines and surprises.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Every developer looks at old code and thinks, \"Who wrote this garbage?\" Then `git blame` reveals it was themselves, 6 months ago. Humbling.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Legacy code is not a failure. It is *battle-tested* code that has been processing real transactions while you were debating tabs vs. spaces. Treat it with fear and respect, like a sleeping dragon guarding treasure.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Independence is earned by proving you can handle the unknown. And by not deleting mystery functions in production.",
+    "label": "The 'Unstuck' Framework",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "statement"
+  },
+  {
+    "title": "The Lazy Ask",
+    "setup": "",
+    "junior": "\"Hey, how do I parse a date in Java?\"",
+    "senior": "(Sends link to \"Let Me Google That For You\")",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Good Ask",
+    "setup": "",
+    "junior": "\"I'm trying to parse this date. I tried `SimpleDateFormat` but it's not thread-safe. I looked at `java.time` but I'm not sure which class to use for this specific format. Here is my code snippet.\"",
+    "senior": "\"Use `LocalDateTime`. Here's why...\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Error Message",
+    "setup": "You get a cryptic stack trace.",
+    "junior": "Pastes the whole thing into Slack: \"Anyone seen this?\"",
+    "senior": "Googles the specific error code, finds a GitHub issue from 2018, realizes it's a version mismatch, and upgrades the package.",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Library update",
+    "setup": "A library update breaks your build.",
+    "junior": "Downgrades the library and ignores it.",
+    "senior": "Reads the CHANGELOG. Finds the breaking change. Fixes the code.",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Deprecated Method",
+    "setup": "Your IDE strikes through a method name.",
+    "junior": "Ignores it. \"It still compiles.\"",
+    "senior": "Checks the docs to see *why* it's deprecated and what the replacement is. Updates it before it's removed in the next major version.",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Configuration Option",
+    "setup": "You need to change the default behavior of a widget.",
+    "junior": "Writes 50 lines of custom CSS and JS to hack the behavior.",
+    "senior": "Reads the \"Options\" section of the docs. Finds `enableCustomBehavior: true`. Deletes the 50 lines of hacky code.",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The \"It's Magic\" Fix",
+    "setup": "",
+    "junior": "\"I restarted the server and it works now. I don't know why.\" (The bug will come back).",
+    "senior": "\"The server was OOM. We have a memory leak in the image processing job. Here is the heap dump.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Race Condition",
+    "setup": "A bug only happens 10% of the time.",
+    "junior": "\"I can't reproduce it, so I'm closing the ticket.\"",
+    "senior": "\"This smells like a race condition. I'll add logging to the async steps and run a script to hit the endpoint 1000 times to force the failure.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Third-Party API",
+    "setup": "An external service is returning 500s.",
+    "junior": "\"Our app is broken!\" (Panics).",
+    "senior": "Checks the status page of the external service. \"Their API is down. I'll implement a retry mechanism with exponential backoff so our app recovers when they come back up.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Silent Fail",
+    "setup": "",
+    "junior": "Struggles for 3 days. Says nothing in standup. Friday comes: \"I'm not done.\"",
+    "senior": "Struggles for 4 hours. Updates ticket: \"Blocked on API issue. Reaching out to backend team. Risk to timeline: High.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Rabbit Hole",
+    "setup": "You are trying to fix a bug in a dependency.",
+    "junior": "Spends 2 days trying to patch the library locally.",
+    "senior": "\"This library is abandoned. I'm going to swap it out for a better maintained alternative. It will take 4 hours.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Wrong Path",
+    "setup": "You realize your approach won't scale.",
+    "junior": "\"I've already written 500 lines, I have to keep going.\" (Sunk Cost Fallacy).",
+    "senior": "\"I made a mistake in the design. I'm going to scrap this branch and start over with the new approach. It's faster than trying to salvage this.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Rewrite Fantasy",
+    "setup": "",
+    "junior": "\"This code is spaghetti! I'll rewrite it in TypeScript with proper patterns.\" (3 months later, the rewrite is half-done and has twice as many bugs as the original).",
+    "senior": "\"This code is spaghetti, but it works. I will add a thin wrapper around it and slowly strangle it over time.\" (The Strangler Fig pattern. Look it up).",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Archaeology",
+    "setup": "",
+    "junior": "\"I have no idea what this function does.\" (Deletes it. Production explodes).",
+    "senior": "\"I have no idea what this function does. Let me write a test that calls it with known inputs, see what it returns, and then I'll understand it.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Blame Game",
+    "setup": "",
+    "junior": "\"This code is terrible because developers 5 years ago were stupid.\"",
+    "senior": "\"This code looks terrible because I don't have the context. In 2018, they probably had 3 weeks to ship this or the company would die. They made trade-offs. It worked. Respect.\"",
+    "source": "Technical Independence",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**Code Reviews are Asynchronous Pair Programming.**\nDon't just look for bugs. Look for opportunities to teach and learn. If you see a cool technique, comment: \"I learned something new here!\" If you see a confusing block, ask: \"Can you explain how this works? I want to understand.\"",
+    "label": "Pro Tip",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "tip"
+  },
+  {
+    "text": "**The Attacker Mindset.**\nBefore you ship, spend 5 minutes thinking like a hacker. \"If I wanted to break this, how would I do it?\" Can I bypass the login by hitting the API directly? Can I upload a malicious file? Can I change the price in the cart from $100 to $1 by editing the request?\n\nIf you can think of the attack, someone else will too. Fix it before they find it.",
+    "label": "Pro Tip",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "tip"
+  },
+  {
+    "text": "You write it once. You (and your team) will read it 100 times over the next 2 years while debugging a production outage at 3 AM.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "As a Junior, you write code for the compiler. \"If it compiles, ship it.\"\nAs a Senior, you write code for *humans*. \"If my teammate can't understand this in 5 seconds, it's bad code.\"",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "There is a temptation to show off how smart you are. You use one-liners, obscure language features, and complex abstractions. You feel like a wizard.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "\"Clever\" code is hard to debug, hard to test, and hard to extend. It's job security for you, but a nightmare for everyone else. **Boring code is good code.** If your code looks like it was written by a bored accountant, you are doing it right.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "If you don't write tests, you don't care about your code. But be careful: **Code Coverage is a vanity metric.** You can have 100% coverage and 0% confidence if your tests don't assert anything meaningful.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Tests give you the confidence to refactor. They document how the code is *supposed* to behave.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Technical debt is fine if you take it on *consciously*. \"We need to ship for the demo on Friday, so we will hardcode this value and fix it next week.\" That is a business decision.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "\"I was too lazy to write a proper loop so I copy-pasted this block 5 times\" is not technical debt. That is just bad engineering.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Juniors build features. Seniors build features that don't end up on \"Have I Been Pwned.\" Your job is not just to make it work—it's to make it work without leaking 10 million passwords to a teenager in a basement.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Quality is what happens when you care. Also when you're terrified of ending up on the news.",
+    "label": "Writing for Humans",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "statement"
+  },
+  {
+    "title": "The One-Liner",
+    "setup": "",
+    "junior": "Writes a 4-line nested ternary operator in JavaScript. `const status = isUser ? (isActive ? 'active' : 'inactive') : (isGuest ? ...`",
+    "senior": "Writes an `if/else` block. It takes 6 lines. It is readable.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Abstraction",
+    "setup": "",
+    "junior": "Creates a `BaseAbstractFactoryManagerDelegate` because they read a book on Design Patterns once and didn't really understand it.",
+    "senior": "Just writes a function called `handleClick`.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Regex Wizard",
+    "setup": "You need to validate an email.",
+    "junior": "Writes a 50-character Regex that they found on a forum. It has a catastrophic backtracking bug.",
+    "senior": "Uses a well-tested library like `validator.js`.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Giant PR",
+    "setup": "",
+    "junior": "Opens a PR with 50 files changed and \"Misc fixes\" as the description.",
+    "senior": "Splits it into 3 small, focused PRs. \"Feat: Add User Model\", \"Feat: Add API Endpoint\", \"Feat: Update UI\".",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Nitpicker",
+    "setup": "",
+    "junior": "Comments on 10 different lines about missing semicolons.",
+    "senior": "Configures Prettier/ESLint to run automatically on commit, so humans never have to discuss semicolons again.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Ghost Reviewer",
+    "setup": "",
+    "junior": "Approves the PR without reading it because \"it looks complicated.\"",
+    "senior": "\"I don't understand the logic in `UserService.ts`. Can we hop on a call to walk through it?\"",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Vanity Metric",
+    "setup": "",
+    "junior": "\"I hit 100% test coverage!\" (By writing tests that just run the function and check `expect(true).toBe(true)`).",
+    "senior": "\"I don't care about the percentage. I care about the *critical path*. Does the payment actually charge the card? Test that. Ignore the getters and setters.\"",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Tautology Test",
+    "setup": "",
+    "junior": "Mocks the database, mocks the network, mocks the file system. The test checks if the mock was called.",
+    "senior": "\"You are testing your mocks, not your code. You need an integration test that actually hits a real database (in Docker) to know if your SQL is valid.\"",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Refactor Fear",
+    "setup": "You need to upgrade a library.",
+    "junior": "Terrified to touch anything because they don't know what will break.",
+    "senior": "Bumps the version, runs the test suite. Green? Ship it. Red? Fix it. Confidence.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Hack",
+    "setup": "",
+    "junior": "Hacks it together. Forgets about it.",
+    "senior": "Hacks it together. Adds a `TODO: Refactor this after demo` comment. Creates a Jira ticket to track the debt.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Dependency Hell",
+    "setup": "",
+    "junior": "Installs 5 different libraries to do the same thing because they didn't check `package.json`.",
+    "senior": "\"We already have `lodash`. Use that instead of adding `underscore`.\"",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Scalability Wall",
+    "setup": "",
+    "junior": "Writes a query that fetches all users into memory to filter them. Works fine with 10 users.",
+    "senior": "\"This will crash when we hit 10,000 users. I'll move the filtering to the database level.\"",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The SQL Injection",
+    "setup": "",
+    "junior": "`\"SELECT * FROM users WHERE name = '\" + userName + \"'\"` (Little Bobby Tables drops your entire database).",
+    "senior": "Uses parameterized queries. Always. No exceptions. \"But it's just an internal tool!\" The intern will accidentally make it public. Use parameterized queries.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Leaked Secret",
+    "setup": "",
+    "junior": "Commits `.env` file to Git. Posts about it on Blind a year later: \"I got fired for something stupid.\"",
+    "senior": "Has a `.gitignore` that blocks `.env`. Rotates API keys regularly. Sleeps soundly.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Direct Object Reference",
+    "setup": "",
+    "junior": "`/api/invoice/123` shows invoice 123. Change it to `/api/invoice/124` and see someone else's invoice. Oops.",
+    "senior": "Always checks: \"Does the current user have permission to view this resource?\" before returning it. Every. Single. Time.",
+    "source": "Code Quality & Review",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**The ORM Lie.**\nORMs (TypeORM, Prisma, Hibernate) lie to you. They make database calls look like simple function calls. They are not.\n\n* *Junior:* `users.map(u => u.getProfile())` looks clean. \"Look ma, no SQL!\"\n* *Senior:* Knows that line just triggered 10,000 SQL queries (N+1 problem) and just woke up the DBA. Always look at the raw SQL. If you don't know what generated SQL looks like, you are dangerous.",
+    "label": "Pro Tip",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "tip"
+  },
+  {
+    "text": "**Design for the Client, not the Database.**\nDon't just dump your database schema as JSON. Your API should be designed around how the client *uses* the data. If the client needs the user's name and their last 3 orders, give them an endpoint that returns exactly that. Don't make them make 4 separate calls.",
+    "label": "Pro Tip",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "tip"
+  },
+  {
+    "text": "As a Junior, your world is a function. Maybe a class if you're feeling fancy.\nAs a Senior, your world is the System. The terrifying, distributed, constantly-on-fire System.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "You need to understand how your code fits into the bigger picture. How does the frontend talk to the backend? How does the backend talk to the database? What happens when 10,000 people hit that button at the same time? (Spoiler: Usually, tears.)",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Your laptop has 1 user (you). Production has 100,000 users who all decide to click \"Buy\" at the exact same second. Your laptop is a lie. It is a controlled environment where everything is perfect. Production is a war zone.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Junior engineers look for the \"best\" database. Senior engineers ask: \"What are we optimizing for?\"",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "If you answer a system design question without saying \"It depends,\" you are wrong.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "You can redeploy code in 5 minutes. Moving 10TB of data takes days and gray hairs. Juniors treat the Database like a magic black box that accepts infinite requests. Seniors treat the Database like a fragile egg that everyone is trying to smash with a hammer.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Your API is a contract with the client (Frontend, Mobile App, Public Users). If you change the contract, you break their code.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "System design is the art of managing complexity. Also the art of knowing which complexity to ignore until it actually becomes a problem.",
+    "label": "Thinking in Boxes",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "statement"
+  },
+  {
+    "title": "The N+1 Problem",
+    "setup": "",
+    "junior": "Writes a loop that makes a database query for every item in a list. Works fine with 5 items.",
+    "senior": "Realizes this will kill the database with 1000 items. Rewrites it to fetch all data in one query.",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Timeout",
+    "setup": "",
+    "junior": "Sets the HTTP timeout to 60 seconds because \"sometimes it's slow.\"",
+    "senior": "Sets it to 5 seconds. \"If it takes longer than 5 seconds, it's failed. Fail fast so we don't tie up resources.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Race Condition",
+    "setup": "",
+    "junior": "\"I checked if the file exists, then I opened it.\"",
+    "senior": "\"Between the check and the open, another process deleted it. Use an atomic operation.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Shiny New Tool",
+    "setup": "",
+    "junior": "\"Let's use this new Graph Database because it's cool!\"",
+    "senior": "\"Our data is relational. Using a Graph DB will add complexity without benefit. Let's stick to Postgres.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Cache Invalidation",
+    "setup": "",
+    "junior": "\"Let's cache everything forever to make it fast!\"",
+    "senior": "\"How do we clear the cache when data changes? Stale data is worse than slow data.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Eventual Consistency",
+    "setup": "",
+    "junior": "\"I wrote to the database, but when I read it back immediately, it's not there!\"",
+    "senior": "\"We are using a read replica. There is a replication lag. We need to handle that in the UI.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Missing Index",
+    "setup": "",
+    "junior": "\"The dashboard is loading in 10 seconds. I'll add a loading spinner.\"",
+    "senior": "\"The dashboard is loading in 10 seconds. I ran `EXPLAIN ANALYZE`, found a sequential scan, added a composite index, and now it loads in 50ms.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Migration Nightmare",
+    "setup": "",
+    "junior": "Writes a migration to rename a column on a table with 100M rows.",
+    "senior": "\"This will lock the table for 4 hours and take the site down. I'll create the new column, dual-write to both, backfill lazily, and then deprecate the old one.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The \"Soft\" Delete",
+    "setup": "",
+    "junior": "`DELETE FROM users WHERE id = 1;`",
+    "senior": "\"Never delete data. Set `deleted_at` timestamp. You will thank me when the CEO asks to restore that account next week.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Breaking Change",
+    "setup": "",
+    "junior": "Renames a field in the API response. \"It's cleaner.\"",
+    "senior": "\"We can't rename that. The mobile app from 2 years ago still uses the old name and users haven't updated. We have to support both.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Chatty API",
+    "setup": "",
+    "junior": "Creates an endpoint for `getUser`, `getUserAddress`, `getUserOrders`. Frontend has to make 3 calls to render the profile page.",
+    "senior": "Creates a `getProfile` endpoint that returns everything needed for that view.",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Error Message",
+    "setup": "",
+    "junior": "Returns `500 Internal Server Error` for everything.",
+    "senior": "Returns `400 Bad Request` with a message: \"Password must be at least 8 characters.\"",
+    "source": "System Design Basics",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**If you answer the same question twice, write a doc.**\nThe first time, answer it. The second time, write it in a Notion doc/Wiki and send the link. The third time, just send the link. You just automated yourself.",
+    "label": "Pro Tip",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "tip"
+  },
+  {
+    "text": "**The Pre-Mortem.**\nBefore starting a risky project, gather the team and ask: \"Imagine it's 3 months from now and this project failed spectacularly. What went wrong?\" You'll surface risks that nobody would admit in a normal planning meeting. Design will say, \"We didn't have enough time for research.\" Product will say, \"The requirements weren't clear.\" Engineering will say, \"We underestimated the complexity.\" Now you can fix these issues *before* they kill the project.",
+    "label": "Pro Tip",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "tip"
+  },
+  {
+    "text": "Engineers hate \"politics.\" They hate \"marketing.\" They just want to code.\nBut here is the secret: **Visibility is not vanity. It is utility.**",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "If your manager doesn't know what you are doing, they can't help you. If the team doesn't know what you are building, they will build the same thing.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "1. **What did you do?** (Briefly)\n2. **Are you on track?** (Yes/No)\n3. **Are you blocked?** (Help me)",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "The worst thing you can do is say \"Everything is fine\" for 2 weeks, and then on the day of the deadline say \"I'm not done.\"",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "If you are going to miss a deadline, tell people **early**.\n\"Hey, this task is more complex than I thought. I might need 2 extra days.\"\nMost managers can handle a delay. They cannot handle a surprise.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "If you explain something to a teammate verbally, you helped one person.\nIf you write it in a doc, you help everyone who joins the team forever.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "There is a special place in hell for people who DM you \"Hi\" and then wait for you to reply before typing their actual question. This is a synchronous interrupt in an asynchronous world.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "You cannot build anything meaningful alone. You need Design to make it pretty. You need Product to tell you what to build (and change their mind 47 times). You need DevOps to deploy it without crying. You need QA to find the bugs you swore weren't there.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Communication is the API for your career. Don't let it timeout.",
+    "label": "Loud Work",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "statement"
+  },
+  {
+    "title": "The Rambler",
+    "setup": "",
+    "junior": "\"Well, I tried to install the library but the version was wrong, so I looked at the docs...\" (Rambles for 5 minutes about their emotional journey).",
+    "senior": "\"I'm working on the Auth feature. Hit a snag with the library version, but I have a workaround. Expecting to finish by EOD. No blockers.\" (Boring, effective).",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Wall of Text",
+    "setup": "",
+    "junior": "Writes a 500-word daily standup message detailing every function they touched.",
+    "senior": "\"Yesterday: Fixed Auth Bug. Today: API integration. Blockers: None.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Ghost",
+    "setup": "",
+    "junior": "Skips standup because \"I have nothing to say.\"",
+    "senior": "\"Still investigating the memory leak. It's trickier than expected. Will update at noon.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Optimist",
+    "setup": "",
+    "junior": "\"I can do it in 2 days!\" (Takes 5 days).",
+    "senior": "\"It looks like a 2-day task, but I'll estimate 3 days to account for testing and code review.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Hero",
+    "setup": "",
+    "junior": "Stays up all night to hit the deadline without telling anyone they are behind. Burns out.",
+    "senior": "\"I'm at risk of missing the deadline. Can we cut scope or get help?\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Silent Struggle",
+    "setup": "",
+    "junior": "Hits a blocker on Monday. Tells manager on Friday.",
+    "senior": "Hits a blocker on Monday. Tells manager on Monday afternoon.",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Bus Factor",
+    "setup": "",
+    "junior": "Keeps all the deployment knowledge in their head.",
+    "senior": "Writes a \"Deployment Runbook\" so that anyone can deploy if they get hit by a bus (or win the lottery).",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Oral Tradition",
+    "setup": "",
+    "junior": "\"Ask Sarah how the billing system works.\"",
+    "senior": "\"Read `docs/billing-architecture.md`.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Slack Search",
+    "setup": "",
+    "junior": "Searches Slack for a code snippet someone posted 3 months ago.",
+    "senior": "Puts that snippet in the team's shared code snippets or wiki.",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Cliffhanger",
+    "setup": "",
+    "junior": "\"Hey, are you there?\" (Waits 10 mins). \"Can I ask a question?\" (Waits 5 mins). \"I broke the build.\"",
+    "senior": "(Has now lost 15 minutes of flow state and wants to scream). \"Just say you broke the build so I can fix it.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The \"Urgent\" DM",
+    "setup": "",
+    "junior": "DMs 4 people the same question to see who answers first.",
+    "senior": "\"Don't broadcast. Post it in the public team channel. That way, when one person answers, everyone else sees it and doesn't waste time researching the same thing.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Meeting Plant",
+    "setup": "",
+    "junior": "Sits in the back of the Zoom call, camera off, checks phone.",
+    "senior": "\"If I have nothing to contribute, I decline the invite. If I attend, I take notes and send the recap.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The \"Not My Job\" Silo",
+    "setup": "",
+    "junior": "\"That's a product decision, not my problem.\" (The feature ships with a UX that makes users cry).",
+    "senior": "\"I think this user flow has a problem. Can we walk through it with Design before I build it?\" (Prevents 2 weeks of rework).",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Design Handoff",
+    "setup": "",
+    "junior": "\"The Figma looks pretty but it's impossible to build. Whatever, I'll just make something up.\" (Designer is confused why it looks different).",
+    "senior": "\"Hey, this animation will add 3 days. Is it critical, or can we do a simpler version for MVP?\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The DevOps Dance",
+    "setup": "",
+    "junior": "\"I finished the feature. DevOps can figure out how to deploy it.\" (DevOps hates you now).",
+    "senior": "\"I'm adding a new service. I'll pair with DevOps to set up the pipeline and make sure monitoring is in place before we go live.\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Blame Cycle",
+    "setup": "",
+    "junior": "\"QA didn't catch the bug.\" / \"Product gave bad requirements.\" / \"Design was unclear.\"",
+    "senior": "\"We (the team) missed this. What process failed? How do we fix it?\"",
+    "source": "Communication & Visibility",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**The 5 Whys.**\nWhen investigating a root cause, ask \"Why?\" 5 times.\n\n1. Why did the site crash? (DB overload)\n2. Why was the DB overloaded? (Too many connections)\n3. Why were there too many connections? (Connection pool wasn't configured)\n4. Why wasn't it configured? (We used the default settings)\n5. Why did we use defaults? (We don't have a load testing checklist) -> **Root Cause: Create a load testing checklist.**",
+    "label": "Pro Tip",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "tip"
+  },
+  {
+    "text": "Junior engineers think their job ends when the PR is merged.\nSenior engineers know that's when the job *starts*. And also when the anxiety dreams begin.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Ownership means caring about the outcome, not just the output. It means you don't sleep well if you know there is a critical bug in production. (You're not being paranoid. The bug is real. It's always real.)",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "You are responsible for the entire lifecycle of your code.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "1. **Design:** Is this the right thing to build?\n2. **Implementation:** Is the code good?\n3. **Testing:** Does it actually work?\n4. **Deployment:** Did it get to production safely?\n5. **Monitoring:** Is it throwing errors?\n6. **Maintenance:** Who fixes it in 6 months?",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Production is down. The CEO is yelling. What do you do?",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "When things break, we don't look for *who* broke it. We look for *why* the system allowed them to break it.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "If you break production, own it. \"I broke it. Here is how I fixed it. Here is how I will prevent it from happening again.\" That is high-status behavior.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "If you are the only person who knows how the billing system works, you can never go on vacation. You are a prisoner of your own knowledge.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "A Senior Engineer's goal is to make themselves unnecessary for the day-to-day operations, so they can focus on the next big problem.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Ownership is the price of autonomy. And also the price of interesting stories for your therapist.",
+    "label": "The 'Bus Factor'",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "statement"
+  },
+  {
+    "title": "The \"QA will catch it\" mindset",
+    "setup": "",
+    "junior": "Merges code without testing edge cases. \"QA will find the bugs.\"",
+    "senior": "Tests it thoroughly. Treats QA as the *last* line of defense, not the first.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Deployment",
+    "setup": "",
+    "junior": "Merges the PR and goes to lunch.",
+    "senior": "Merges the PR, watches the build pipeline, verifies it in staging, watches the canary deployment in production, and checks the logs for errors.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Monitoring",
+    "setup": "",
+    "junior": "Waits for a user to complain that the site is slow.",
+    "senior": "Sets up an alert if latency exceeds 500ms. Fixes it before users notice.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Cowboy",
+    "setup": "",
+    "junior": "SSHs into the production server and edits files with Vim to \"fix it fast.\" (Then forgets what they changed, and the server explodes 2 days later).",
+    "senior": "Follows the standard deployment process, even during an emergency, to ensure auditability and prevent regression.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Communicator",
+    "setup": "",
+    "junior": "Fixes the issue silently but leaves everyone wondering what happened.",
+    "senior": "Posts in the `#incidents` channel: \"Issue identified (Bad DB config). Fix deploying. ETA 5 mins.\"",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Freeze",
+    "setup": "",
+    "junior": "Stares at the error logs, paralyzed by fear.",
+    "senior": "Calls for help. \"I'm looking at this but I'm not sure. Can someone from the DB team jump on?\"",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Witch Hunt",
+    "setup": "",
+    "junior": "\"It wasn't me! It was the library!\"",
+    "senior": "\"It was my code. I missed this edge case. Here is the fix and the test case to prevent it.\"",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Root Cause",
+    "setup": "",
+    "junior": "\"I restarted the server and it works now.\" (Band-aid).",
+    "senior": "\"I found a memory leak in the image processor. I've patched it so we don't have to restart every day.\"",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Follow-up",
+    "setup": "",
+    "junior": "Fixes the bug and moves on.",
+    "senior": "Writes a Post-Mortem document, schedules a review meeting, and creates Jira tickets for the preventative actions.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Gatekeeper",
+    "setup": "",
+    "junior": "Hoards knowledge to feel important/secure.",
+    "senior": "Documents everything so they can go on a 2-week vacation without checking Slack.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Mentor",
+    "setup": "",
+    "junior": "Complains that the new hire is slow.",
+    "senior": "Pairs with the new hire to transfer knowledge and help them speed up.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Hero (Negative)",
+    "setup": "",
+    "junior": "Wants to be the only one who can save the day.",
+    "senior": "Wants the system to be robust enough that *anyone* can save the day.",
+    "source": "Ownership & Accountability",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**Sponsorship vs. Mentorship.**\nMentorship is giving advice. Sponsorship is giving opportunity.\n\n* **Mentor:** \"Here is how you give a talk.\"\n* **Sponsor:** \"I was asked to speak at this conference, but I think you should do it instead. I'll help you prepare.\"",
+    "label": "Pro Tip",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "tip"
+  },
+  {
+    "text": "If you write 10x code, you are a 10x engineer.\nIf you help 5 people write 2x code, you are a 10x engineer.\nThe second one is scalable. The first one means you can never take a vacation because the whole codebase lives in your head.",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "Mentoring is not \"teaching people how to code.\" It is teaching them how to *think*, how to *navigate the system*, and how to not repeat the same dumb mistakes you made. (Learn from my pain so I didn't suffer for nothing.)",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "When a new hire joins, they are useless. Your job is to make them useful as fast as possible.",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "This is how Juniors learn *how you debug*. That is more valuable than the code itself.",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "Don't just say \"Fix this.\" Ask \"Why did you choose this approach?\"",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "If a Junior is afraid to ask questions, they will hide their mistakes. You need to create an environment where it is okay to say \"I don't know.\"",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "You rise by lifting others. Also by documenting things so you don't have to explain them for the 47th time.",
+    "label": "The Multiplier Effect",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "statement"
+  },
+  {
+    "title": "The Sink or Swim",
+    "setup": "",
+    "junior": "\"Here is the repo. Good luck.\" (New hire quits in 3 months).",
+    "senior": "\"Let's pair on setting up your environment. Then we will pick a 'Good First Issue' and solve it together.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Shadow",
+    "setup": "",
+    "junior": "Does their work while the new hire watches silently.",
+    "senior": "\"I'm going to debug this issue. Watch what I do, and stop me if I'm moving too fast.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Documentation Update",
+    "setup": "",
+    "junior": "Complains that the setup docs are outdated.",
+    "senior": "Asks the new hire to update the docs as they go through the setup. \"You are the best person to catch missing steps.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Unstuck Session",
+    "setup": "",
+    "junior": "Struggles alone for 4 hours.",
+    "senior": "\"You seem stuck. Let's pair for 15 minutes.\" (Solves it in 5 minutes, explains how).",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Design Review",
+    "setup": "",
+    "junior": "Writes the code, then asks for feedback.",
+    "senior": "Pairs on the *design* before a single line of code is written. \"Let's sketch out the data model first.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Reverse Shadow",
+    "setup": "",
+    "junior": "Watches the Senior code.",
+    "senior": "\"You drive. I'll navigate.\" (Forces the Junior to think and type).",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Suggestion",
+    "setup": "",
+    "junior": "\"Change this loop to a map.\"",
+    "senior": "\"This loop works, but `map` is more idiomatic here because we are transforming data. Here is a link to the docs.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Offline Discussion",
+    "setup": "",
+    "junior": "Writes 50 comments on a PR.",
+    "senior": "\"There are a lot of structural comments here. Let's hop on a call to discuss the overall approach.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Nitpick",
+    "setup": "",
+    "junior": "\"You missed a space here.\" (The linter would have caught this if you set it up correctly).",
+    "senior": "(Ignores formatting). \"This logic seems to have a security vulnerability. Let's discuss.\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Stupid Question",
+    "setup": "",
+    "junior": "Afraid to ask what an acronym means.",
+    "senior": "\"Wait, what does 'ACID' stand for again? I always forget the 'I'.\" (Even if they know, they normalize asking).",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Public Failure",
+    "setup": "",
+    "junior": "Hides a mistake.",
+    "senior": "Posts in the team channel: \"I just accidentally deleted the dev database. Restoring now. My bad!\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Blame Game",
+    "setup": "",
+    "junior": "\"It was the frontend team's fault.\"",
+    "senior": "\"We (the engineering team) missed this requirement. How do we fix it?\"",
+    "source": "Mentoring & Onboarding",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**The STAR Method for Career Stories.**\nWhen talking about your achievements, use the STAR format:\n\n* **Situation:** What was the problem?\n* **Task:** What did you need to do?\n* **Action:** What did you do?\n* **Result:** What was the impact? (Quantify it!)\n\nExample: \"We had a critical payment bug (S) that was causing failed transactions (T). I debugged the issue, found a race condition, and deployed a fix within 2 hours (A). This prevented $50k in lost revenue that day (R).\"",
+    "label": "Pro Tip",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "tip"
+  },
+  {
+    "text": "You don't get promoted just because you worked hard. You get promoted because you delivered value and *people noticed*. The \"noticed\" part is not optional. If you're the silent hero who fixes everything but never tells anyone, congratulations: you're a well-kept secret. Secrets don't get promoted.",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Career growth is an engineering problem. You need a plan, metrics, and execution. Also, a Brag Doc. (We'll get to that.)",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Do not wait until performance review season to remember what you did 6 months ago. You will forget.",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Always tie your work to business metrics. Revenue, User Growth, Cost Savings, Velocity.",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Your manager is not a mind reader. Tell them what you want.",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "You are the CEO of your own career. Good luck. You're going to need it.",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "(Just kidding. You don't need luck. You need this guide. And maybe some coffee.)",
+    "label": "The Promotion Game",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "statement"
+  },
+  {
+    "title": "The Forgotten Win",
+    "setup": "",
+    "junior": "Tries to remember what they did 6 months ago during review season. Comes up blank.",
+    "senior": "Opens their Brag Doc. \"I shipped 8 major features, reduced latency by 30%, and mentored 3 juniors. Here are the metrics.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Quantified Impact",
+    "setup": "",
+    "junior": "\"I worked on the checkout page.\"",
+    "senior": "\"I improved the checkout conversion rate by 15%, which led to $2M in additional revenue.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Visibility",
+    "setup": "",
+    "junior": "Does great work silently.",
+    "senior": "Posts updates in the team channel: \"Shipped the payment API today. It's handling 1000 req/sec with 99.9% uptime.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Effort Flex",
+    "setup": "",
+    "junior": "\"I worked 60 hours this week.\"",
+    "senior": "\"I automated the deployment process, which will save the team 10 hours per week going forward.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Vanity Metric",
+    "setup": "",
+    "junior": "\"I wrote 10,000 lines of code.\"",
+    "senior": "\"I deleted 10,000 lines of code and simplified the architecture.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Business Outcome",
+    "setup": "",
+    "junior": "\"I added caching.\"",
+    "senior": "\"I added caching, which reduced page load time from 3 seconds to 500ms. This improved user retention by 8%.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Passive Wait",
+    "setup": "",
+    "junior": "Assumes the manager will promote them when they are \"ready.\"",
+    "senior": "\"I've been operating at the Senior level for 6 months. Here is my Promo Packet. Can we discuss a timeline?\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Feedback Loop",
+    "setup": "",
+    "junior": "Waits for annual review to get feedback.",
+    "senior": "Asks for feedback every 1:1. \"How am I tracking toward my goal of becoming a Tech Lead?\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Strategic Ask",
+    "setup": "",
+    "junior": "\"I want a promotion.\"",
+    "senior": "\"I noticed the team is growing. I'd like to help with the hiring and onboarding process. That would give me experience in leadership.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Silo",
+    "setup": "",
+    "junior": "Only talks to engineers on their team.",
+    "senior": "Has coffee chats with Product Managers, Designers, and engineers from other teams. Knows who to call when they need help.",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The Internal Brand",
+    "setup": "",
+    "junior": "Works quietly.",
+    "senior": "Volunteers to give a tech talk at the company All-Hands. \"Here is how we scaled the database.\"",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "title": "The External Presence",
+    "setup": "",
+    "junior": "No LinkedIn, no GitHub, no blog. \"I just want to code.\"",
+    "senior": "Writes a blog post about a bug they solved. It trends on Hacker News. Recruiters start reaching out. Becomes a \"Thought Leader\" (shudder).",
+    "source": "Career Navigation",
+    "track": "Junior → Senior",
+    "link": "/docs/junior-to-senior/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Junior",
+    "seniorRole": "Senior"
+  },
+  {
+    "text": "**The \"Bus Factor\" isn't just about people quitting.**\nIt's about them winning the lottery, having a baby, or just getting sick. If you can't survive a key person taking a 2-week vacation, you are not managing a team; you are managing a hostage situation.",
+    "label": "Pro Tip",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "tip"
+  },
+  {
+    "text": "The truth is, the dopamine loop you’ve been addicted to for the last decade—write code, tests pass, green checkmark, feel good—is gone. You are now in the business of *people*, and people don't have unit tests. They have feelings, mortgage payments, and weird opinions about tabs vs. spaces.",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "This module is about killing the \"Maker\" inside you so the \"Manager\" can live. It’s going to hurt.",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "You will hit 5:00 PM on a Tuesday. You will look back at your day. You attended four Zoom calls, replied to 30 Slacks, and updated a Jira board. You wrote zero lines of code. Your brain will scream: *\"I DID NOTHING TODAY. THEY ARE GOING TO FIRE ME.\"*",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "This is the phantom limb pain of the Engineer. You need to realize that \"Talking to humans\" and \"Thinking about process\" is now actual, billable work.",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Think of your relationship with each direct report as a battery (thanks, Tobi Lütke). When you hire them, it’s at 50%.",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "If the battery is empty, everything you say is viewed with suspicion. If it’s full, you can ask them to walk through hell, and they’ll bring snacks.",
+    "label": "Identity Shift",
+    "source": "The Rewire",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "You thought Computer Science was hard? Try \"Human Science.\" There is no stack trace when a Senior Engineer starts crying in a Zoom room. This module is about the skills that separate great managers from the ones who get talked about in therapy sessions.",
+    "label": "People",
+    "source": "High-Performance Psychology",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "If you use your 1:1 time to ask \"Is the API done?\", you are a bad manager. That is what the stand-up is for. That is what the Jira board is for. If you can answer the question by looking at a dashboard, do not ask it in a meeting.",
+    "label": "People",
+    "source": "High-Performance Psychology",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "The 1:1 is the only sacred time you have to uncover the emotional state of your direct reports. It is for venting, career planning, and relationship building. It is awkward. It is necessary.",
+    "label": "People",
+    "source": "High-Performance Psychology",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "\"Culture Fit\" is often code for \"Someone I’d like to have a beer with.\" This leads to a team of 10 white dudes who all went to the same college and agree on everything. That is not a team; that is a fraternity. You want \"Culture Add\"—someone who brings a perspective you are missing.",
+    "label": "People",
+    "source": "High-Performance Psychology",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "You have a Senior Staff Engineer. They have been there 6 years. They own all the critical systems. They are vested and paid 50% above market rate. They are also incredibly bored. They won't leave (money is too good), so they start \"creating work\" to feel alive.",
+    "label": "People",
+    "source": "High-Performance Psychology",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "This module is about designing the \"operating system\" for your team so they can actually ship code instead of arguing about Jira workflow statuses.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Treat meetings like API calls. They need a clear endpoint (Agenda), required parameters (Attendees), and a structured response (Action Items). If a meeting throws a `500 Internal Server Error` (no clear outcome), deprecate it. Your calendar is not a pizza party; it is a resource allocation grid.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Stop asking \"Why did we only complete 30 points this sprint?\" Story points are made-up numbers based on vibes and pessimism. They are astrology for project managers. If you want to measure real performance, measure the *pain* of shipping.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "The site is down. Money is burning. Slack is screaming. Your job is not to SSH into the server and type `sudo rm -rf`. Your job is to keep the panic room calm so the people who *actually* know how to fix it can think. You are the air traffic controller, not the pilot.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Your engineers have a limited amount of RAM in their brains. If 60% of that RAM is used remembering complex deployment commands, fighting with VPNs, or parsing obscure error messages, they have no brain power left for the actual problem. Your job is to clear the RAM.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Engineers love shiny new toys. They will try to convince you that your simple CRUD app *needs* a graph database, a blockchain, and a bespoke front-end framework written in Elm. Why? Because they want to get hired by Google next year.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Process is not bureaucracy. It's the operating system for your team.",
+    "label": "Process",
+    "source": "Operational Excellence",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "**The \"Elevator Pitch\" is a Lie.**\nNobody is going to listen to your pitch in an elevator. The real \"pitch\" happens in the 5 minutes before the Zoom meeting starts while people are waiting for the host.\n\n* **Bad:** awkwardly staring at the camera.\n* **Good:** \"Hey Sarah (VP), I saw that Sales closed the Delta deal. My team just shipped the API that supports that. Let me know if you need any data on it.\"\nYou just bought yourself an ally.",
+    "label": "Pro Tip",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "tip"
+  },
+  {
+    "text": "You have mastered the team. You have mastered the process. Now you must master the beast that lives above you: The Business.",
+    "label": "Business Strategy",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Think of Political Capital as a currency. You earn it by delivering features, fixing bugs for the VP of Sales, and being pleasant to work with. You spend it when you need to say \"No\" to a bad idea, defend a team member, or ask for more headcount. If you have no capital, you have no voice.",
+    "label": "Business Strategy",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Your boss is busy, stressed, and probably has a boss yelling at them. If you make their life easier, you win. If you make their life harder (by hiding problems until they explode), you lose. Your goal is to be the person they worry about the least.",
+    "label": "Business Strategy",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "It’s 2025. The \"Infinite Money Glitch\" era of tech is over. You will face layoffs, budget cuts, and reorgs. This is when the mask slips. Your team will look to you to see if they should panic. If you panic, they leave. If you lie, they leave.",
+    "label": "Business Strategy",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Engineers suffer from \"Not Invented Here\" (NIH) syndrome. They think they can build a better authentication system than Auth0 or a better queue than SQS. They are almost always wrong. Your job is to stop them from wasting 6 months building a mediocre version of a commodity product.",
+    "label": "Business Strategy",
+    "source": "Managing Up & Out",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "If you are managing like it's 2015, you are managing a team that no longer exists.",
+    "label": "The 2025 Manager",
+    "source": "Modern Tech Leadership",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Culture used to be free beer and ping pong tables. Now, culture is \"How we write documentation\" and \"How we treat each other in Slack.\" You cannot build culture by forcing people back to the office to sit on Zoom calls. You have to build it intentionally in the digital ether.",
+    "label": "The 2025 Manager",
+    "source": "Modern Tech Leadership",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "In the office, you could see when someone looked like a zombie. On Zoom, everyone uses the \"Touch Up My Appearance\" filter and smiles for 30 minutes. You are flying blind. Burnout in remote teams is silent, invisible, and terminal.",
+    "label": "The 2025 Manager",
+    "source": "Modern Tech Leadership",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "In the old days, you bought a server and that was it. Now, you pay by the millisecond. An inefficient query used to just be slow; now it costs $5,000 a month. CFOs are watching cloud bills like hawks. You need to treat efficiency as a feature.",
+    "label": "The 2025 Manager",
+    "source": "Modern Tech Leadership",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "You are no longer a \"Software Engineering Manager.\" You are a \"Business Leader who happens to know how computers work.\"",
+    "label": "Future Outlook",
+    "source": "The Director Path",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "\"Organizations which design systems are constrained to produce designs that are copies of the communication structures of these organizations.\" — Melvin Conway.",
+    "label": "Future Outlook",
+    "source": "The Director Path",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "If you have a backend team and a frontend team, you will build a backend and a frontend that hate each other. If you have a \"Database Team,\" you will have a database that is a bottleneck. To fix the software, you must refactor the Org Chart.",
+    "label": "Future Outlook",
+    "source": "The Director Path",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "As an EM, your horizon is the Sprint (2 weeks). As a Director, your horizon is the Quarter (3 months) or the Year. You need to stop arguing about libraries and start arguing about \"Right to Win.\"",
+    "label": "Future Outlook",
+    "source": "The Director Path",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Managing ICs is checkers. Managing Managers is 3D Chess. You are now one layer removed from reality. You can't see the code. You can't see the commits. You have to debug the *people* who are debugging the people. You rely entirely on signals, trust, and skip-level meetings.",
+    "label": "Future Outlook",
+    "source": "The Director Path",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "You think your job is leadership? No. Twice a year, your job is **lawyer**.",
+    "label": "Career Mechanics",
+    "source": "The Calibration Room",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "A promotion isn't a reward for past work; it's a business decision about future capacity. Most managers write promo packets like \"Love Letters.\" You need to write them like \"Legal Briefs.\"",
+    "label": "Career Mechanics",
+    "source": "The Calibration Room",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "\"I think you deserve a 20% raise, but HR only approved 3%.\"\nIf you say this, you are a weak manager. You are throwing the company under the bus to save face. You must own the number, even if you hate the number.",
+    "label": "Career Mechanics",
+    "source": "The Calibration Room",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "HR will often have a \"Curve.\" Only 10% can be \"Top Tier.\" Only 20% can be \"Exceeds.\" If you have a team of all-stars, you have a problem. You have to fight other managers for those slots.",
+    "label": "Career Mechanics",
+    "source": "The Calibration Room",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "This is the worst day of the job. But keeping a toxic or underperforming employee is unfair to the high performers who have to carry their weight. Firing is a skill.",
+    "label": "Career Mechanics",
+    "source": "The Calibration Room",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "A group of smart engineers does not automatically make a smart team. Usually, it makes a deadlock. You can have 5 geniuses who, when put together, produce nothing but arguments and perfectly formatted bike-shedding.",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Your job is to architect the *social wiring* of the group. If Module 2 was about debugging the *CPU* (the individual), this Module is about debugging the *Network* (how they talk to each other).",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Stop structuring teams based on layers (\"Frontend Team,\" \"Backend Team\"). That creates \"Request/Response\" management where tickets get thrown over walls. Structure teams based on *Flow*.",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Google spent millions studying this (Project Aristotle). The #1 predictor of a high-performing team wasn't IQ or coding speed. It was \"Psychological Safety.\" This doesn't mean \"everyone is nice.\" It means \"I can say I screwed up without being executed.\"",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "If you ask the team to approve a nuclear power plant design, they will say \"Sure.\" It's too complex to argue about.\nIf you ask the team to design a bike shed, they will argue for 4 hours about the color of the paint. Everyone has an opinion on paint.",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "As a manager, your job is to identify when the team is bike-shedding (arguing about trivial things because they are easy to grasp) and kill the discussion.",
+    "label": "Group Dynamics",
+    "source": "The Team Operating System",
+    "track": "Senior → Manager",
+    "link": "/docs/senior-to-manager/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "When you managed engineers, you could look at the PRs. You could see the work. You could feel productive.\nWhen you manage managers, you are managing a \"Black Box.\" You input \"Headcount and Strategy\" and you hope \"Software\" comes out the other side. Spoiler: it usually doesn't.",
+    "label": "Managing Managers",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "You cannot micro-manage a manager. If you try, they will quit (or worse, become useless). You have to manage through *principles* and *signals*.",
+    "label": "Managing Managers",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Your job is no longer to *produce* output. Your job is to *design the machine* that produces output.",
+    "label": "Managing Managers",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "statement"
+  },
+  {
+    "title": "The Incident",
+    "setup": "",
+    "junior": "Panics during an outage. Runs around like a headless chicken.",
+    "senior": "\"I am watching. I will not intervene unless the company is about to literally die. Afterward, we will deconstruct your response over a stiff drink.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Bad Hire",
+    "setup": "",
+    "junior": "Wants to hire a candidate with \"red flags\" because they are desperate.",
+    "senior": "\"I see these risks (X, Y). If you hire them, you own the outcome. Are you willing to bet your reputation on this?\" (Forces them to think).",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Process Deviant",
+    "setup": "",
+    "junior": "Refuses to do Sprint Retrospectives.",
+    "senior": "\"I don't care about the ritual. I care about the loop. Show me how your team improves over time. If you can't show improvement, you must adopt the standard ritual.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Vibe Check",
+    "setup": "",
+    "junior": "\"The team is happy.\"",
+    "senior": "\"On a scale of 1-10, how likely are you to quit tomorrow?\" (Engineer says \"8\"). Director realizes Manager is blind.",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Broken Telephone",
+    "setup": "",
+    "junior": "\"Management says we have to work weekends.\"",
+    "senior": "\"I never said that. Your manager is using me as a scapegoat to push you. I will correct this.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Career Blocker",
+    "setup": "",
+    "junior": "\"Dave isn't ready for promotion.\"",
+    "senior": "Realizes Dave is doing Staff-level work but the Manager is threatened by him. Director intervenes to prevent Dave from quitting.",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Tool War",
+    "setup": "",
+    "junior": "Wants Jira. *Manager B:* Wants Linear.",
+    "senior": "\"We are using ONE tool. Standardization beats preference because we need to move engineers between teams. We use Linear. End of discussion.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Performance Review",
+    "setup": "",
+    "junior": "Grades everyone \"Exceeds.\" *Manager B:* Grades everyone \"Meets.\"",
+    "senior": "\"We are doing a calibration session. I will normalize your curves. You cannot be the 'Cool Dad' manager who gives everyone A's.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Hiring Bar",
+    "setup": "",
+    "junior": "Lowers the bar to fill a seat fast.",
+    "senior": "\"I am vetoing this hire. It is better to have an open seat than a B-player who drags down the org density.\"",
+    "source": "Meta-Management",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-1",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "If you ship a broken org chart, you will ship broken software. (Conway's Law). This is not a suggestion; it's physics.\nAs a Director, your main architectural contribution is not classes and microservices; it is Teams and Squads. You are now playing SimCity with humans. Try not to bulldoze anyone.",
+    "label": "Conway's Architect",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Don't create \"Frontend\" and \"Backend\" teams. That creates \"Throw it over the wall\" culture.\nCreate \"Stream-Aligned\" teams (Squads) that can ship end-to-end.\nCreate \"Platform\" teams that treat the Squads as customers.",
+    "label": "Conway's Architect",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "statement"
+  },
+  {
+    "title": "The Megateam",
+    "setup": "",
+    "junior": "\"I like having 14 direct reports.\"",
+    "senior": "\"You are failing them. You can't do career dev for 14 people. We are splitting into 'Core Product' and 'Platform'. You get two Tech Leads.\"",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Reorg Pain",
+    "setup": "",
+    "junior": "\"The team hates reorgs.\"",
+    "senior": "\"Everyone hates reorgs. We are changing strategy. The structure must follow the strategy. We will rip the band-aid off quickly. One day of chaos is better than 6 months of misalignment. Also, the org chart is just 'musical chairs for adults' — they'll get used to it.\"",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"Bus Factor\" Split",
+    "setup": "",
+    "junior": "Keeps all the \"Payment\" experts on one team.",
+    "senior": "\"We are embedding a Payment expert into the Checkout team. We need to distribute the knowledge, not silo it.\"",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Dependency Hell",
+    "setup": "",
+    "junior": "\"We are blocked on the API team.\"",
+    "senior": "\"I am dissolving the API team. I am moving the API engineers *into* the Product teams. You now own your own stack. No more excuses.\"",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"Enablement\" Team",
+    "setup": "",
+    "junior": "\"We have no standards.\"",
+    "senior": "\"I'm creating a small 'Architecture Enablement' team. They don't write features. They write the libraries and RFCs that keep us from becoming a spaghetti factory.\"",
+    "source": "Org Design",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-2",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "If you don't know your burn rate, you aren't a Director; you're just a glorified team lead with a credit card.",
+    "label": "Budgeting",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "You don't just ask for \"more people.\" You ask for \"Revenue Capacity.\"\n\"If you give me $500k for 3 engineers, I can deliver the Enterprise feature which unlocks $2M in ARR.\"",
+    "label": "Budgeting",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Your cloud bill is your second biggest expense after salaries. It haunts your dreams.\nIf you let it grow unchecked, you are burning the company's runway. AWS Sales Reps love sloppy Directors. Don't be their favorite customer. They will send you a fruit basket while extracting your budget.",
+    "label": "Budgeting",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "statement"
+  },
+  {
+    "title": "The Vague Ask",
+    "setup": "",
+    "junior": "\"We are drowning. We need help.\"",
+    "senior": "\"Finance will say no. Show me the *impact* of not hiring. 'We will miss the Q3 launch.' Now Finance listens.\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Contractor Lever",
+    "setup": "",
+    "junior": "\"We need a full-time hire for this migration.\"",
+    "senior": "\"It's a one-time project. I won't give you headcount (OpEx commit for years). I will give you $100k for a contractor (CapEx one-time). Get it done.\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"Seniority\" Mix",
+    "setup": "",
+    "junior": "Wants 5 Seniors.",
+    "senior": "\"We can't afford 5 Seniors. You get 1 Staff, 1 Senior, and 3 Juniors. It is your job to train the Juniors. That is how we scale efficiently.\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"On-Demand\" Trap",
+    "setup": "",
+    "junior": "Spins up GPU instances.",
+    "senior": "\"We are committing to a 1-year Savings Plan / Reserved Instances. This saves 40%. I need you to commit to this architecture for 1 year. Can you?\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The SaaS Sprawl",
+    "setup": "",
+    "junior": "\"Team A wants Trello, Team B wants Asana, Team C wants Monday.\"",
+    "senior": "\"We are buying ONE Enterprise license for Jira. Volume discount. I don't care if the UI is worse. It saves us $50k/year.\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"Build vs Buy\"",
+    "setup": "",
+    "junior": "\"We can build our own Search for free!\"",
+    "senior": "\"Maintenance is not free. Engineering time is $100/hour. Buying Algolia is cheaper than you fixing Elasticsearch on a Sunday.\"",
+    "source": "The P&L",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-3",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "If you only recruit when someone quits, you are already dead.\nDirectors build a \"Always On\" hiring engine. You are selling the company, not just judging candidates.",
+    "label": "Talent Acquisition",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "When a team is overworked, they will hire *anyone* with a pulse. \"We just need a body\" is the most dangerous phrase in hiring. A body with a pulse can still destroy your team.\nYou must install a mechanism to stop this. The \"Bar Raiser\" is an interviewer from *another* team with veto power.",
+    "label": "Talent Acquisition",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "You are competing with Google and OpenAI. You can't beat their salaries. You must beat them on *Mission*, *Autonomy*, and *Speed*.",
+    "label": "Talent Acquisition",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "statement"
+  },
+  {
+    "title": "The False Positive",
+    "setup": "",
+    "junior": "\"He's not great at coding, but he's a nice guy and we need a body.\"",
+    "senior": "**VETO.** \"A bad hire takes 6 months to fire and destroys morale. We wait.\"",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The \"Culture Fit\" Bias",
+    "setup": "",
+    "junior": "\"I don't think he'd fit in at happy hour.\"",
+    "senior": "\"We hire for Culture Add, not Culture Fit. He brings a background in FinTech we lack. Hire him.\"",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Closing",
+    "setup": "",
+    "junior": "Sends the offer letter and waits.",
+    "senior": "Calls the candidate. \"I want you to join. Here is the vision. Here is why you matter.\" Executive outreach closes candidates.",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Tech Blog",
+    "setup": "",
+    "junior": "Too busy to write.",
+    "senior": "Mandates one tech blog post per quarter. \"We solved X scale problem.\" This is bait for Senior engineers.",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Job Description",
+    "setup": "",
+    "junior": "Pastes a generic \"5+ years Java experience\" list. (The framework is 3 years old.)",
+    "senior": "Rewrites it. \"Come build the engine that processes $1B in transactions. You will own the Architecture.\" Sell the *problem*, not the requirements. Nobody dreams of having \"5+ years experience.\"",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Diversity Pipeline",
+    "setup": "",
+    "junior": "\"We only get male applicants.\"",
+    "senior": "\"That's because we only source from your frat buddies on LinkedIn. We are going to sponsor 'Women in Tech' conferences and change our sourcing partners.\"",
+    "source": "The Hiring Machine",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-4",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "Managing performance for 5 people is easy. Managing it for 50 is statistics.\nYou will have high performers (Stars) and low performers (Detractors). You cannot save everyone. You must rigorously cull the bottom to protect the top.",
+    "label": "The Bell Curve",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Manager A is \"Nice.\" Manager B is \"Strict.\"\nIf you don't calibrate them, Manager A's team gets all the promotions (unfairly).\nYou lock all managers in a room and make them fight. This is called \"calibration.\" It's Thunderdome for adults.",
+    "label": "The Bell Curve",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Sometimes the business fails. You have to cut 20% of the org.\nDo not blame HR. Do not blame the CEO. You must lead through the valley of death.",
+    "label": "The Bell Curve",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "statement"
+  },
+  {
+    "title": "The Inflation",
+    "setup": "",
+    "junior": "Rates everyone \"Exceeds Expectations.\" (Because they're conflict-averse and want to be the \"cool manager.\")",
+    "senior": "\"Statistically impossible. Force rank your team. Who is the bottom 10%? If you can't tell me, I will pick for you. And I won't be as nice.\"",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Hidden Gem",
+    "setup": "",
+    "junior": "\"Sarah is quiet, she's just 'Meets'.\"",
+    "senior": "\"Looking at the data, Sarah merged the most critical code. You are biasing towards loudness. I am bumping her to 'Exceeds'.\"",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Protectionism",
+    "setup": "",
+    "junior": "Hides a toxic high-performer because they need the output.",
+    "senior": "\"He made the Junior cry. I don't care about his output. He is fired. This is non-negotiable.\"",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The List",
+    "setup": "",
+    "junior": "Tries to save everyone. \"We can't cut anyone!\"",
+    "senior": "\"We have to cut $1M. If we don't, the whole company dies. Pick the roles that are least aligned with the *new* strategy.\"",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Speech",
+    "setup": "",
+    "junior": "Cries. \"I'm so sorry, this is unfair.\"",
+    "senior": "\"This is a business decision. It is not a reflection of your worth. Here is your severance. Here is how I will help you network.\" Be the rock, not the puddle.",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Survivor's Guilt",
+    "setup": "",
+    "junior": "The remaining team is paralyzed by fear.",
+    "senior": "\"We acknowledge the pain. But we have a mission. Here is the new roadmap. Here is why we will win. Let's get back to work.\"",
+    "source": "Performance at Scale",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-5",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "If your team is working hard but going in the wrong direction, it is your fault. You forgot to provide the direction.\nYou define \"Winning.\" If you don't define it, everyone invents their own definition.",
+    "label": "The North Star",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Bad OKR: \"Rewrite the backend.\" (Output. Also, why?)\nGood OKR: \"Reduce checkout latency by 50% to increase conversion.\" (Outcome. Money talks.)\nYou shift the org from \"Feature Factory\" to \"Impact Factory.\"",
+    "label": "The North Star",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "You don't pick the libraries, but you pick the direction.\n\"We are moving from Monolith to Services.\" \"We are becoming an AI-first company.\"",
+    "label": "The North Star",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "statement"
+  },
+  {
+    "title": "The Laundry List",
+    "setup": "",
+    "junior": "Has 15 priorities. And 5 \"stretch goals.\" And a \"moonshot.\"",
+    "senior": "\"If you have 15 priorities, you have 0. Pick the Top 3. Everything else is a 'Nice to have' that we will probably cut. I don't care about your moonshot until we land the airplane.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Alignment",
+    "setup": "",
+    "junior": "\"We are building a Chat feature.\"",
+    "senior": "\"The Company Goal is 'Profitability'. How does Chat help Profitability? It doesn't? Kill it.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Sandbag",
+    "setup": "",
+    "junior": "Sets easy goals to look good.",
+    "senior": "\"These targets are too low. We need 'Stretch Goals'. If we hit 100% of our goals, we weren't ambitious enough. Aim for 70% of the impossible.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Legacy Trap",
+    "setup": "",
+    "junior": "\"We can keep patching the PHP app.\"",
+    "senior": "\"We cannot hire good engineers for PHP anymore. The 3-year vision is a migration to Go. Start the Strangler Fig pattern now.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Hype Train",
+    "setup": "",
+    "junior": "\"Let's rewrite in [New Framework].\"",
+    "senior": "\"Does this give us a 'Right to Win'? Does it make us 10x faster? No? Then we stay on the boring stack. Innovation tokens are expensive.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Debt Paydown",
+    "setup": "",
+    "junior": "Can't get time for refactoring.",
+    "senior": "\"I am reserving 20% of our capacity for 'Engineering Excellence'. You don't need to ask Product for permission. It is a tax we pay to keep the lights on.\"",
+    "source": "Strategy & Vision",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-6",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "You sit in a room with the VP of Sales, VP of Marketing, and CFO.\nThey don't care about code. They care about their own bonuses.\nYou have to defend Engineering's interests while looking like a team player.\nIf you talk about \"Refactoring\" or \"Kubernetes\" in this room, you will lose funding.",
+    "label": "Politics",
+    "source": "Executive Presence",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "Executives have the attention span of a gnat and the memory of an elephant (for things that hurt them).\nDo not show them Jira. They will fall asleep. Show them: **Red/Yellow/Green.**\nNever lie. They will find out. And they will remember.",
+    "label": "Politics",
+    "source": "Executive Presence",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "Sales wants to sell features that don't exist. Engineering wants to build features nobody buys. This is the eternal dance.\nYou are the diplomat. You are the only thing stopping Sales from promising a \"Time Machine\" feature to a client by Friday.",
+    "label": "Politics",
+    "source": "Executive Presence",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-7",
+    "type": "statement"
+  },
+  {
+    "title": "The Elevator Pitch",
+    "setup": "",
+    "junior": "Explains the technical complexity of the database migration.",
+    "senior": "\"We migrated the database. It's faster and cheaper. No downtime. Next topic.\"",
+    "source": "Executive Presence",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "title": "The Bad News",
+    "setup": "",
+    "junior": "Hides the delay until the last minute.",
+    "senior": "\"We are Red on the Q4 launch. The blocker is Vendor X. I am escalating. Here is the mitigation plan.\" Bad news must travel fast.",
+    "source": "Executive Presence",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-7",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "You can't be everywhere. You have to install an \"Operating System\" in your managers' heads so they make the same decision you would.\nYour mood, your tolerance for errors, and your work ethic set the tone for 100 people.",
+    "label": "Shadow of the Leader",
+    "source": "Culture as an OS",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "\"Integrity\" is a poster. It looks nice in the lobby. It means nothing.\n\"Don't ship broken code even if the CEO is yelling\" is a Value. That's something people actually remember when making decisions.\nYou have to operationalize values into decision heuristics.",
+    "label": "Shadow of the Leader",
+    "source": "Culture as an OS",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "A homogeneous team has blind spots. A diverse team builds better products.\nAs a Director, you control the pipeline and the promotion cycle.",
+    "label": "Shadow of the Leader",
+    "source": "Culture as an OS",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-8",
+    "type": "statement"
+  },
+  {
+    "title": "The Pipeline Excuse",
+    "setup": "",
+    "junior": "\"We can't find any diverse candidates.\"",
+    "senior": "\"Then we aren't looking hard enough. I am doubling the referral bonus for underrepresented groups and changing our sourcing agencies.\"",
+    "source": "Culture as an OS",
+    "track": "Manager → Director",
+    "link": "/docs/manager-to-director/module-8",
+    "type": "scenario_comparison",
+    "juniorRole": "Manager",
+    "seniorRole": "Director"
+  },
+  {
+    "text": "As a Senior Engineer, you were the \"closer.\" You were the person they called to fix the impossible bug in the Kafka consumer at 4 PM on a Friday while chugging Red Bull. You felt like a hero. You probably even have a t-shirt that says \"I deploy on Fridays.\"",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "To become a Staff Engineer, you must kill the hero. Ideally, with a dull spoon.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "If you are personally writing the critical path code for every major feature, you are failing. A Staff Engineer doesn't solve *a* problem; they solve a *class* of problems. You are not paid to type; you are paid to make sure the other 10 engineers aren't typing garbage.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Seniors execute. Staffs explore.\nA Senior gets a ticket: \"Implement the payment gateway.\"\nA Staff gets a vague panic from the CTO: \"Our margins are too low, and the billing system smells like cheese. Fix it.\"",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "You have to turn \"Fix it\" into a 6-month roadmap, 3 architecture diagrams, and 40 Jira tickets for other people who will complain about them.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "This hurts. I know. You love code. It's safe. It doesn't talk back (usually). But at the Staff level, your code is often a prototype, a proof-of-concept, or a specific piece of high-risk plumbing that nobody else is qualified to touch because it involves bit-shifting and ancient curses.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "Most of your \"coding\" happens in Google Docs, LucidChart, and Slack threads. You are coding the organization. It compiles much slower and the error messages are passive-aggressive.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "A Senior Engineer owns a Feature or a Service.\nA Staff Engineer owns a Domain or a Vertical.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "If your changes only affect your immediate team, you are still a Senior. Staff impact ripples across teams. You change how *other* teams write code. You are the infection.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "As a Senior, you mentor 1-2 people directly. You pair, you review, you coach.\nAs a Staff, you mentor the *org*. You build the systems that make everyone better: documentation, standards, templates, tech talks. You are not just teaching people to fish—you are building the fishing school.",
+    "label": "Solves-via-Others",
+    "source": "The Scope Shift",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-1",
+    "type": "statement"
+  },
+  {
+    "text": "You cannot scale your influence by talking to people one by one. You scale by writing things down. A Staff Engineer is effectively a Technical Writer who knows how to debug a race condition and has a drinking problem.",
+    "label": "The RFC",
+    "source": "Writing is Engineering",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Here is the sad truth: **Nobody reads.** They scan. If your doc is boring, they will ignore it, build the wrong thing, and you will get blamed. You must write like a copywriter and edit like a lawyer who hates their client.",
+    "label": "The RFC",
+    "source": "Writing is Engineering",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "You aren't just naming variables; you are naming concepts. If Marketing calls it \"Credits,\" Product calls it \"Tokens,\" and Engineering calls it \"Coins,\" you have a disaster. Staff Engineers enforce the \"Ubiquitous Language\" like a linguistic dictator.",
+    "label": "The RFC",
+    "source": "Writing is Engineering",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "Why did we choose DynamoDB over Postgres 3 years ago? Nobody knows. Dave left, and now everyone hates Dave because DynamoDB is expensive.\nStaff Engineers write **Architecture Decision Records (ADRs)**.\n\"We chose X because of Y constraints. We rejected Z because of reasons.\"",
+    "label": "The RFC",
+    "source": "Writing is Engineering",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "You are now a Technical Writer who happens to know Kubernetes. Embrace it.",
+    "label": "The RFC",
+    "source": "Writing is Engineering",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-2",
+    "type": "statement"
+  },
+  {
+    "text": "You need to know the constraints of your org better than anyone.\n*   **Personnel:** Do we have enough backend devs? (No).\n*   **Budget:** Can we afford this datastore? (No).\n*   **Time:** Can we ship this before Black Friday? (Also No).",
+    "label": "The Long Game",
+    "source": "Technical Strategy",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "A Senior plans for the sprint. A Staff plans for the year. A Principal plans for the decade (and is usually wrong, but impressively so).",
+    "label": "The Long Game",
+    "source": "Technical Strategy",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "Your job is to create a \"North Star\"—a technical direction that gives the org confidence that you're not just reacting to fires but actually building toward something. This is part prophecy, part salesmanship, and part educated guessing.",
+    "label": "The Long Game",
+    "source": "Technical Strategy",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-3",
+    "type": "statement"
+  },
+  {
+    "text": "**The Migration Rule.**\nNever choose a technology unless you also have a theory on how you would migrate *off* of it. If you can't imagine how to delete it, don't build it.",
+    "label": "Pro Tip",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "tip"
+  },
+  {
+    "text": "Juniors build solutions. Staff Engineers buy solutions, or delete the problem entirely.\nThe most scalable code is the code you never wrote. It has 0 bugs, 0 latency, and costs $0.",
+    "label": "The 'Buy' Button",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Engineers suffer from NIH (Not Invented Here). We love building queues, auth systems, and logging frameworks because it makes us feel smart.\nStaff Engineers are the \"Fun Police.\" They say: \"Use AWS SQS. Use Auth0. Use Datadog. We are a sock company, not a distributed message queue company.\"",
+    "label": "The 'Buy' Button",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "A **Two-Way Door** decision is reversible (e.g., A/B testing a button color). Make these fast.\nA **One-Way Door** decision is irreversible (e.g., Choosing a database, picking a primary language, getting a face tattoo). Make these slow.\nStaff Engineers identify which is which.",
+    "label": "The 'Buy' Button",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Functional requirements: \"User can click button.\"\nNon-Functional requirements: \"Button works when 100,000 users click it at once and doesn't cost $5 per click.\"\nStaff Engineers obsess over NFRs: Latency, Throughput, Cost, Security, Compliance, Observability.",
+    "label": "The 'Buy' Button",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "Architecture is the art of making decisions you'll regret slightly less than the alternatives. Choose wisely, and document why.",
+    "label": "The 'Buy' Button",
+    "source": "Architectural Thinking",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-4",
+    "type": "statement"
+  },
+  {
+    "text": "**The One-Pager.**\nExecutives have the attention span of a caffeinated goldfish. Never send them a 10-page doc. Send a one-page summary with: Problem, Proposed Solution, Cost/Benefit, Timeline. Put the details in an appendix \"for those who want to go deeper\" (nobody will).",
+    "label": "Pro Tip",
+    "source": "Influence & Politics",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-5",
+    "type": "tip"
+  },
+  {
+    "text": "Every time you help someone, fix a build, or unblock a team, you deposit capital.\nEvery time you force a technical standard or say \"No,\" you withdraw capital.\nIf you are overdrawn, people will nod in meetings and then ignore you. They will \"forget\" to invite you to the design review.",
+    "label": "Herding Cats",
+    "source": "Influence & Politics",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "You will never get 10 engineers to agree on anything. If you wait for consensus, you will die of old age.\nStaff Engineers push for \"Consent,\" not \"Consensus.\"\n\"Is this approach safe enough to try? Yes? Then we go. I don't care if you don't love it.\"",
+    "label": "Herding Cats",
+    "source": "Influence & Politics",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Executives don't care about your microservices. They care about money, risk, and timelines. If you can't translate \"We need to refactor the payment system\" into \"This will reduce fraud losses by $500k/year and cut development time by 30%,\" you will get a polite nod and zero budget.",
+    "label": "Herding Cats",
+    "source": "Influence & Politics",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Politics is just influence with a bad reputation. Learn to play the game, or be played by it.",
+    "label": "Herding Cats",
+    "source": "Influence & Politics",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-5",
+    "type": "statement"
+  },
+  {
+    "text": "Seniors celebrate merging the PR. Staff Engineers celebrate the deployment surviving the weekend without a PagerDuty alert.\nYou are responsible for the system *behaving* in the wild. The wild is a scary place full of users who do things you didn't expect, like \"clicking the button twice.\"",
+    "label": "Sleeping at Night",
+    "source": "Operational Maturity",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "When the site crashes, panic ensues. The Staff Engineer steps up as the Incident Commander (IC).\nYour job is not to fix the bug. Your job is to coordinate the people fixing the bug so they don't trip over each other.",
+    "label": "Sleeping at Night",
+    "source": "Operational Maturity",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Ops maturity is the difference between \"the site is down and everyone is panicking\" and \"the site is down and we're calmly following the runbook.\" Be the calm.",
+    "label": "Sleeping at Night",
+    "source": "Operational Maturity",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-6",
+    "type": "statement"
+  },
+  {
+    "text": "Legacy code isn't bad code. It's code that paid for your salary while you were still in high school.\nDon't mock it. Understand it.\nStaff Engineers dive into the darkest, oldest parts of the repo (The \"Mordor\" directory) and clean it up.",
+    "label": "The Janitor",
+    "source": "Glue Work",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "If it takes 20 minutes to run tests, nobody will run tests. They will play Xbox.\nIf it takes 3 days to onboard a new hire, you are burning money.\nStaff Engineers treat \"Other Engineers\" as their customers. And their customers are angry.",
+    "label": "The Janitor",
+    "source": "Glue Work",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "Glue work is invisible but essential. It's the difference between a team that ships and a team that's stuck debugging environment issues for 3 days. Be the janitor. Own the broom.",
+    "label": "The Janitor",
+    "source": "Glue Work",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-7",
+    "type": "statement"
+  },
+  {
+    "text": "**The Failure Resume.**\nKeep a private doc of your biggest failures and what you learned. When you interview for your next role and they ask \"Tell me about a time you failed,\" you'll have a genuine, thoughtful answer instead of the fake \"I work too hard\" nonsense.",
+    "label": "Pro Tip",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "tip"
+  },
+  {
+    "text": "If you wait for your manager to give you a Staff project, you will wait forever. Your manager is busy trying not to get fired.\nYou must look at the organization, find a systemic inefficiency, and propose a solution that saves the company money or time.",
+    "label": "Career Game",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Staff work is often invisible (glue work, meetings, docs, therapy sessions for juniors). You must make it visible.\nThis isn't bragging. It's \"signaling alignment.\" If you don't tell the story, someone else will (or nobody will).",
+    "label": "Career Game",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "At the Senior level, you break a feature. At the Staff level, you break a strategy. You convinced leadership to invest 6 months and 5 engineers in a platform migration, and it failed. The old system is still running. The new system is a graveyard. Your credibility is on fire.",
+    "label": "Career Game",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "This will happen. The question is: how do you recover?",
+    "label": "Career Game",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "statement"
+  },
+  {
+    "text": "Now go write a doc. And then write another doc. And then maybe, just maybe, you can write some code.",
+    "label": "Career Game",
+    "source": "The Staff-Level Gap",
+    "track": "Senior → Staff",
+    "link": "/docs/senior-to-staff/module-8",
+    "type": "statement"
+  }
+]

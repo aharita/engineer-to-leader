@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint:md": "markdownlint \"docs/**/*.md\" --fix"
+    "lint:md": "markdownlint \"docs/**/*.md\" --fix",
+    "prebuild": "node scripts/extract-quotes.js"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

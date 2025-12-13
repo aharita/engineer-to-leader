@@ -1,28 +1,81 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
+import QuoteCard from '../components/QuoteCard';
 import styles from './index.module.css';
+
+const HERO_TITLES = [
+  {
+    title: "The Code Is The Easy Part",
+    subtitle: "The tutorials stopped 5 years ago. Good luck.",
+    quote: "\"Whether you're herding cats (Management) or wrestling architects (Staff), welcome to the deep end.\""
+  },
+  {
+    title: "Hello, Meetings",
+    subtitle: "The cynical guide to trading your compiler for a calendar.",
+    quote: "\"You wanted a promotion. Now you have to deal with people.\""
+  },
+  {
+    title: "Debug Your Career",
+    subtitle: "Stack Overflow doesn't have the answer to \"Why does my team hate me?\"",
+    quote: "\"Senior Engineer is just a Junior who knows how to Google. Staff Engineer is a Senior who knows who to ask.\""
+  },
+  {
+    title: "It's Not Imposter Syndrome",
+    subtitle: "You actually don't know what you're doing. Yet.",
+    quote: "\"Fake it 'til you make it? No. Learn it 'til you own it.\""
+  },
+  {
+    title: "git push --force career",
+    subtitle: "Sometimes you have to break things to move up.",
+    quote: "\"Warning: This action cannot be undone. Are you sure you want to become a manager? [y/N]\""
+  }
+];
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const [heroData, setHeroData] = React.useState(null);
+
+  React.useEffect(() => {
+    setHeroData(HERO_TITLES[Math.floor(Math.random() * HERO_TITLES.length)]);
+  }, []);
+
+  if (!heroData) {
+    // Server-side / Initial render text (SEO friendly default)
+    return (
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <Heading as="h1" className="hero__title">
+            The Code Is The Easy Part
+          </Heading>
+          <p className="hero__subtitle">The tutorials stopped 5 years ago. Good luck.</p>
+          <p style={{ fontSize: '1.2rem', marginTop: '1.5rem', opacity: 0 }}>Loading...</p>
+        </div>
+      </header>
+    );
+  }
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          {heroData.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">{heroData.subtitle}</p>
         <p
           style={{
-            fontSize: '1.1rem',
-            marginTop: '1rem',
-            maxWidth: '600px',
-            margin: '1rem auto',
+            fontSize: '1.2rem',
+            marginTop: '1.5rem',
+            maxWidth: '650px',
+            margin: '1.5rem auto',
+            fontStyle: 'italic',
+            opacity: 0.8
           }}>
-          Choose your path. Master the transition.
+          {heroData.quote}
         </p>
       </div>
     </header>
@@ -114,6 +167,9 @@ export default function Home() {
       description="Transform from Individual Contributor to Engineering Leader. Learn the frameworks, scripts, and tactics to succeed as an engineering manager.">
       <HomepageHeader />
       <main>
+        <div className="container">
+          <QuoteCard />
+        </div>
         <section style={{ padding: '3rem 0' }}>
           <div className="container">
             <Heading
